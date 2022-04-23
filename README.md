@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ![hotspot-zine-ssid](./images/scavengerhunt.jpg)
 
 # Solarpunk Kids: Wifi Scavenger Hunt 
