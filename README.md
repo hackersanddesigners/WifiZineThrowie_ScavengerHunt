@@ -4,6 +4,15 @@
 
 This is an adaptation of the workshop and – amazing – documentation prepared by Wonjung Shin and Dooho Yi (Dianaband) for the Walking signal / WIFI hotspot zine workshop hosted at Hackers and Designers in 2019. See original here: [https://github.com/applecargo/WifiZineThrowie](https://github.com/applecargo/WifiZineThrowie) 
 
+**WIP! Still needs to be edited/adapted for solarpunk workshop.**
+
+**To Do**: 
+
+ * link download Sublime text or other code/html editor
+ * add own intro and activities (so it becomes workshop script)
+ * etc
+
+
 ## What is a hot-spot zine?
 
 ### One line description
