@@ -2,9 +2,11 @@
 layout: default
 ---
 
-[한글](./index.ko.html)
+![hotspot-zine-ssid](./images/scavengerhunt.jpg)
 
-# Hackers and Designers - Walking signal / WIFI hotspot zine workshop.
+# Solarpunk Kids: Wifi Scavenger Hunt 
+
+This is an adaptation of the workshop and – amazing – documentation prepared by Wonjung Shin and Dooho Yi (Dianaband) for the Walking signal / WIFI hotspot zine workshop hosted at Hackers and Designers in 2019. See original here: [https://github.com/applecargo/WifiZineThrowie](https://github.com/applecargo/WifiZineThrowie) 
 
 ## What is a hot-spot zine?
 
