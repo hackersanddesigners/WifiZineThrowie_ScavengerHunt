@@ -123,7 +123,7 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
       [![arduino-wifizine-select-board](./images/arduino-wifizine-select-board.png)](./images/arduino-wifizine-select-board.png)
 
-    - Adjust ESP32 Dev Module board settings
+   - Adjust ESP32 Dev Module board settings
 
       [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png)](./images/arduino-wifizine-config-board.png)
 
