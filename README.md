@@ -10,68 +10,10 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
  * link download Sublime text or other code/html editor
  * add own intro and activities (so it becomes workshop script)
- * etc
+ * image captions/alt text
 
 
-## What is a hot-spot zine?
-
-### One line description
-
-- A wireless communication and web service device designed to service an independent publications in webzine format when a smartphone attempts to log in to a hotspot
-
-[![hotspot-zine-ssid](./images/hotspot-zine-ssid.jpg){:width="500px"}](./images/hotspot-zine-ssid.jpg)
-[![hotspot-zine-login](./images/hotspot-zine-login.jpg){:width="500px"}](./images/hotspot-zine-login.jpg)
-
-- [View more](http://pilote.byus.net/wpdiana/?page_id=1064)
-
-### Preceding project
-
-- [CaptiveIntraweb by AReResearch (Andy Reischle) @ 2015](https://github.com/reischle/CaptiveIntraweb)
-
-  [![construction-overview](./images/areresearch/img4.png){:width="500px"}](./images/areresearch/img4.png)
-
-### Components
-
-- Tangible components
-  - Espressif's ESP32 module
-  - Power supply (battery or DC adapter)
-  - (Optional) a case or a hull
-  - (Optional) Magnets
-
-  [![construction-overview](./images/areresearch/img1.png){:width="500px"}](./images/areresearch/img1.png)
-
-  [![construction-overview](./images/areresearch/img2.png){:width="500px"}](./images/areresearch/img2.png)
-
-  [![construction-overview](./images/areresearch/img5.png){:width="500px"}](./images/areresearch/img5.png)
-
-  [![construction-overview](./images/areresearch/img6.png){:width="500px"}](./images/areresearch/img6.png)
-
-  [![construction-overview](./images/areresearch/img7.png){:width="500px"}](./images/areresearch/img7.png)
-
-  (These images are posted by Andy Reischle (AReResearch).)
-
-- Intangible components
-  - [ESP-IDF Development Environment](https://github.com/espressif/esp-idf/tree/master/components)
-  - [ESP32 Arduino Compatibility Package](https://github.com/espressif/arduino-esp32)
-  - [SPIFFS file system](https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS)
-  - [ESP web server library](https://github.com/me-no-dev/ESPAsyncWebServer)
-  - [A domain name server (captive portal)](https://github.com/espressif/arduino-esp32/tree/master/libraries/DNSServer)
-  - Web page (Webzine)
-
-  [![Wi-Fi-zine-stacks](./images/Wi-Fi-zine-stacks.png){:width="500px"}](./images/Wi-Fi-zine-stacks.png)
-
-  - [More information](http://esp32.net/)
-  - [The Wi-Fi stack is not open source](https://github.com/espressif/esp32-wifi-lib/issues/2)
-
-### Limitations of Hot-spot zine platform that you should know
-
-- Storage 2MB or less
-- Slightly slower than a typical web server
-- Somewhat unstable behavior compared to a typical web server (sometimes a system restart may be required)
-
-## Making a Hot-spot zine
-
-### Materials and preparations
+## Materials and preparations
 
 - A computer
 - A Development board with ESP32 module
@@ -80,135 +22,142 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 - Web page (html / css / js + media files)
 - (Optionally) a sensor or actuator (such as a speaker)
 
-### Preparing Hot-spot zine platform
+## Preparing Hot-spot zine platform
 
-- [Arduino Download](https://www.arduino.cc/en/Main/Software)
+- [**Arduino Download**](https://www.arduino.cc/en/Main/Software)
 
-- Installing Arduino
+- **Installing Arduino**
 
   - [Windows](https://www.arduino.cc/en/Guide/Windows)
 
   - [Mac OSX](https://www.arduino.cc/en/Guide/MacOSX)
 
-    [![arduino-confirm](./images/arduino-confirm.png){:width="300px"}](./images/arduino-confirm.png)
+    [![arduino-confirm](./images/arduino-confirm.png)](./images/arduino-confirm.png)
 
-    Click 'Open'.
+    *Click 'Open'.*
 
   - [Linux](https://www.arduino.cc/en/Guide/Linux)
 
-- Arduino IDE launch screen
+- **Arduino IDE launch screen**
 
-  [![arduino-screen](./images/arduino-screen.png){:width="300px"}](./images/arduino-screen.png)
+	[![arduino-screen](./images/arduino-screen.png)](./images/arduino-screen.png)
 
-- Arduino IDE settings
+- **Arduino IDE settings**
 
   - Change the compilation and upload process display mode to 'verbose mode'
 
-    [![arduino-verbose](./images/arduino-verbose.png){:width="300px"}](./images/arduino-verbose.png)
+ 	   [![arduino-verbose](./images/arduino-verbose.png)](./images/arduino-verbose.png)
 
-    Check 'compile' and 'upload' in 'Show verbose output during:'
+  - Check 'compile' and 'upload' in 'Show verbose output during:'
 
-- [Adding an ESP32 boards to the Arduino IDE's board list](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+- [**Adding an ESP32 boards to the Arduino IDE's board list**](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
 
   - Copy and paste the following into 'Additional Boards Manager URLs' and click 'Ok'.
+	
+ 	   ```
+ 	   https://dl.espressif.com/dl/package_esp32_index.json
+	    ```
+		[![arduino-board-url](./images/arduino-board-url.png)](./images/arduino-board-url.png)
 
-    ```
-    https://dl.espressif.com/dl/package_esp32_index.json
-    ```
+- **Launch the Board Manager**
 
-    [![arduino-board-url](./images/arduino-board-url.png){:width="300px"}](./images/arduino-board-url.png)
+	[![arduino-board-manager](./images/arduino-board-manager.png)](./images/arduino-board-manager.png)
 
-  - Launch the Board Manager
+- **Select the Board Manager pop-up window**
 
-    [![arduino-board-manager](./images/arduino-board-manager.png){:width="300px"}](./images/arduino-board-manager.png)
+   	 [![arduino-board-manager-popup](./images/arduino-board-manager-popup.png)](./images/arduino-board-manager-popup.png)
 
-  - The Board Manager popup window
+- **Type 'esp32' in the search box and click 'Install'**
 
-    [![arduino-board-manager-popup](./images/arduino-board-manager-popup.png){:width="300px"}](./images/arduino-board-manager-popup.png)
+    [![arduino-board-manager-esp32](./images/arduino-board-manager-esp32.png)](./images/arduino-board-manager-esp32.png)
 
-  - Type 'esp32' in the search box and click 'Install'
+## Download Dianaband's WifiZineThrowie code and required libraries
 
-    [![arduino-board-manager-esp32](./images/arduino-board-manager-esp32.png){:width="300px"}](./images/arduino-board-manager-esp32.png)
+  - Navigate to the [WifiZineThrowie Github Repository](https://github.com/applecargo/WifiZineThrowie/) download and installation
+	
+  - Click 'Clone or download' -> 'Download ZIP'
 
-- Add Hop-spot zine platform code and required libraries to the Arduino IDE
+   	[![arduino-00010](./images/arduino-00010.png)](./images/arduino-00010.png)
 
-  - [Hot-spot zine](https://github.com/applecargo/WifiZineThrowie/) download and installation
+- **Renaming and moving the folder**
+    - Decompress the .zipfile by doubleclicking
+    - Then change the name by deleting the part "-master" from the folder name (see images below)
 
-    Click 'Clone or download' -> 'Download ZIP'
+    	[![arduino-00011](./images/arduino-00011.png)](./images/arduino-00011.png)
+    	[![arduino-00012](./images/arduino-00012.png)](./images/arduino-00012.png)
 
-    [![arduino-00010](./images/arduino-00010.png){:width="300px"}](./images/arduino-00010.png)
+    - Copy that folder to ~/Documents/Arduino (the '~' sign means your home folder)
 
-    Rename folder after decompression
+    	[![arduino-00013](./images/arduino-00013.png)](./images/arduino-00013.png)
 
-    [![arduino-00011](./images/arduino-00011.png){:width="300px"}](./images/arduino-00011.png)
-    [![arduino-00012](./images/arduino-00012.png){:width="300px"}](./images/arduino-00012.png)
+## Downloading and installing the ESPAsyncWebServer and AsyntTCP libraries
 
-    Copy that folder to ~/Documents/Arduino ('~' means your home folders)
+   - Click 'Clone or download' -> 'Download ZIP' on the github page for the [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 
-    [![arduino-00013](./images/arduino-00013.png){:width="300px"}](./images/arduino-00013.png)
+   	[![arduino-00001](./images/arduino-00001.png)](./images/arduino-00001.png)
 
-  - Downloading and installing the [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer) and [AsyncTCP](https://github.com/me-no-dev/AsyncTCP) libraries
+   - Rename folder after decompression (remove the part "-master")
 
-    Click 'Clone or download' -> 'Download ZIP'
+   	 	[![arduino-00003](./images/arduino-00003.png)](./images/arduino-00003.png)
+    	[![arduino-00004](./images/arduino-00004.png)](./images/arduino-00004.png)
 
-    [![arduino-00001](./images/arduino-00001.png){:width="300px"}](./images/arduino-00001.png)
+  - Click 'Clone or download' -> 'Download ZIP' on the github page for the [AsyncTCP library](https://github.com/me-no-dev/AsyncTCP).
 
-    Rename folder after decompression
+    [![arduino-00006](./images/arduino-00006.png)](./images/arduino-00006.png)
 
-    [![arduino-00003](./images/arduino-00003.png){:width="300px"}](./images/arduino-00003.png)
-    [![arduino-00004](./images/arduino-00004.png){:width="300px"}](./images/arduino-00004.png)
+    - Rename folder after decompression (remove the part "-master")
 
-    Click 'Clone or download' -> 'Download ZIP'
+    	[![arduino-00007](./images/arduino-00007.png)](./images/arduino-00007.png)
+    	[![arduino-00008](./images/arduino-00008.png)](./images/arduino-00008.png)
 
-    [![arduino-00006](./images/arduino-00006.png){:width="300px"}](./images/arduino-00006.png)
+    - Copy these 2 renamed folders to ~/Documents/Arduino/libraries. It should look like this:
 
-    Rename folder after decompression
+    	[![arduino-00009](./images/arduino-00009.png)](./images/arduino-00009.png)
 
-    [![arduino-00007](./images/arduino-00007.png){:width="300px"}](./images/arduino-00007.png)
-    [![arduino-00008](./images/arduino-00008.png){:width="300px"}](./images/arduino-00008.png)
+## Confirming code compilation
 
-    Copy that 2 folders to ~/Documents/Arduino/libraries
+   - Restart the Arduino IDE (the Arduino software)
 
-    [![arduino-00009](./images/arduino-00009.png){:width="300px"}](./images/arduino-00009.png)
-
-  - Confirming code compilation
-
-    - Restart the Arduino IDE
-
-    - Open 'WifiZineThrowie' sketch
-
-      [![arduino-wifizine](./images/arduino-wifizine.png){:width="300px"}](./images/arduino-wifizine.png)
+    - Open 'WifiZineThrowie.ino' sketch that is inside the WiFiZineThrowie folder (in your downloads folder or on your desktop probably.  t(from > File > Sketchbook)
 
     - Select the ESP32 Dev Module board
 
-      [![arduino-wifizine-select-board](./images/arduino-wifizine-select-board.png){:width="300px"}](./images/arduino-wifizine-select-board.png)
+      [![arduino-wifizine-select-board](./images/arduino-wifizine-select-board.png)](./images/arduino-wifizine-select-board.png)
 
     - Adjust ESP32 Dev Module board settings
 
-      [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png){:width="300px"}](./images/arduino-wifizine-config-board.png)
+      [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png)](./images/arduino-wifizine-config-board.png)
 
-      - Upload Speed : 921600
-      - CPU Frequency : 240MHz
-      - Flash Frequency : 80MHz
-      - Flash Mode : DIO
-      - Flash Size : 4MB (32Mb)
-      - Partition Scheme : Default
-      - Core Debug Level : None
-      - PSRAM : Disabled
 
-    - Click on the compile button (red arrow)
+	- **Most of these settings are correct by default, you just have to change QIO to DIO**
+		
+	      - Upload Speed : 921600
+	      - CPU Frequency : 240MHz (WiFi BT)
+	      - Flash Frequency : 80MHz
+	      - Flash Mode : **DIO** (is QIO by default)
+	      - Flash Size : 4MB (32Mb)
+	      - Partition Scheme : Default
+	      - Core Debug Level : None
+	      - PSRAM : Disabled
 
-      [![arduino-wifizine-popup](./images/arduino-wifizine-popup.png){:width="300px"}](./images/arduino-wifizine-popup.png)
+    - **Click on the compile button in the top left of the editor (see red arrow in pic beneath)**
 
-    - If the compilation process is successful,
+      	[![arduino-wifizine-popup](./images/arduino-wifizine-popup.png)](./images/arduino-wifizine-popup.png)
 
-      [![arduino-wifizine-compile-done](./images/arduino-wifizine-compile-done.png){:width="300px"}](./images/arduino-wifizine-compile-done.png)
+    - **If the compilation process is successful, it will say "DONE COMPILING" at the bottom**
+    
+    - This means Arduino confirms it can find everything it needs to upload working code 
+    - Don't upload the code to the board yet, first we need some more stuff
 
-    - If the compilation process ends abnormally,
+	  	[![arduino-wifizine-compile-done](./images/arduino-wifizine-compile-done.png)](./images/arduino-wifizine-compile-done.png)
 
-      [![arduino-wifizine-compile-failed](./images/arduino-wifizine-compile-failed.png){:width="300px"}](./images/arduino-wifizine-compile-failed.png)
+    - **If the compilation process ends abnormally, it will give an orange error**
+  
+    	- If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
 
-- Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
+    	  [![arduino-wifizine-compile-failed](./images/arduino-wifizine-compile-failed.png)](./images/arduino-wifizine-compile-failed.png)
+
+## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
   - [USB communication chip driver download](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
@@ -225,8 +174,8 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
         - [Legacy driver must be installed, instead normal one.](https://www.silabs.com/community/interface/forum.topic.html/latest_vcp_driverfo-96RK)
 
-        [![yosemite-cp2102](./images/yosemite-cp2102.png){:width="300px"}](./images/yosemite-cp2102.png)
-        [![yosemite-cp2102-legacy](./images/yosemite-cp2102-legacy.png){:width="300px"}](./images/yosemite-cp2102-legacy.png)
+        [![yosemite-cp2102](./images/yosemite-cp2102.png)](./images/yosemite-cp2102.png)
+        [![yosemite-cp2102-legacy](./images/yosemite-cp2102-legacy.png)](./images/yosemite-cp2102-legacy.png)
 
       - El capitan (10.11.x)
 
@@ -268,28 +217,28 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
     - System Preferences -> Security & Privacy -> General
 
-      [![gatekeeper-check](./images/gatekeeper-check.png){:width="300px"}](./images/gatekeeper-check.png)
-      [![gatekeeper-check-popup](./images/gatekeeper-check-popup.png){:width="300px"}](./images/gatekeeper-check-popup.png)
+      [![gatekeeper-check](./images/gatekeeper-check.png)](./images/gatekeeper-check.png)
+      [![gatekeeper-check-popup](./images/gatekeeper-check-popup.png)](./images/gatekeeper-check-popup.png)
 
       If there is an error message in the red box area, GateKeeper is interrupting the driver's operation.
 
-      [![security_and_privacy_kextload_approval](./images/security_and_privacy_kextload_approval.png){:width="300px"}](./images/security_and_privacy_kextload_approval.png)
+      [![security_and_privacy_kextload_approval](./images/security_and_privacy_kextload_approval.png)](./images/security_and_privacy_kextload_approval.png)
 
       If you are in a similar state as above, click 'Allow' and confirm with administrator password, then restart your computer.
 
   - After starting the Arduino IDE, make sure it can communicate with the ESP32 module
 
-    [![arduino-esp32-comm](./images/arduino-esp32-comm.png){:width="300px"}](./images/arduino-esp32-comm.png)
+    [![arduino-esp32-comm](./images/arduino-esp32-comm.png)](./images/arduino-esp32-comm.png)
 
     If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) as above.
 
-    [![arduino-esp32-comm-failed](./images/arduino-esp32-comm-failed.png){:width="300px"}](./images/arduino-esp32-comm-failed.png)
+    [![arduino-esp32-comm-failed](./images/arduino-esp32-comm-failed.png)](./images/arduino-esp32-comm-failed.png)
 
     If communication is not possible, /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) does not exist as above.
 
 - Set the name of the Wi-Fi network i.e. SSID of the Hot-spot zine, and modify the code.
 
-  [![arduino-wifizine-ssid-change](./images/arduino-wifizine-ssid-change.png){:width="300px"}](./images/arduino-wifizine-ssid-change.png)
+  [![arduino-wifizine-ssid-change](./images/arduino-wifizine-ssid-change.png)](./images/arduino-wifizine-ssid-change.png)
 
   - Since it may not work due to the number of characters or spacing, we try firstly with simple and short English names that does not include a space character.
   - Hangul(or any other non-English characters) may be used. (later, trial and error)
@@ -298,15 +247,15 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
   - Click on the Upload button (red arrow), while 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
 
-    [![arduino-wifizine-upload](./images/arduino-wifizine-upload.png){:width="300px"}](./images/arduino-wifizine-upload.png)
+    [![arduino-wifizine-upload](./images/arduino-wifizine-upload.png)](./images/arduino-wifizine-upload.png)
 
     Upload success screen
 
-    [![arduino-wifizine-upload-done](./images/arduino-wifizine-upload-done.png){:width="300px"}](./images/arduino-wifizine-upload-done.png)
+    [![arduino-wifizine-upload-done](./images/arduino-wifizine-upload-done.png)](./images/arduino-wifizine-upload-done.png)
 
     Upload error screen
 
-    [![arduino-wifizine-upload-failed](./images/arduino-wifizine-upload-failed.png){:width="300px"}](./images/arduino-wifizine-upload-failed.png)
+    [![arduino-wifizine-upload-failed](./images/arduino-wifizine-upload-failed.png)](./images/arduino-wifizine-upload-failed.png)
 
 - [Various problem factors](https://randomnerdtutorials.com/esp32-troubleshooting-guide/)
 
@@ -318,7 +267,7 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 - During the above procedure, when setting up the ESP32 board, we selected:
 
-  [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png){:width="300px"}](./images/arduino-wifizine-config-board.png)
+  [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png)](./images/arduino-wifizine-config-board.png)
 
   ```
   Partition Scheme : Default
@@ -330,7 +279,7 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 - Once you have completed this procedure, you may select,
 
-  [![arduino-wifizine-custom-partition](./images/arduino-wifizine-custom-partition.png){:width="300px"}](./images/arduino-wifizine-custom-partition.png)
+  [![arduino-wifizine-custom-partition](./images/arduino-wifizine-custom-partition.png)](./images/arduino-wifizine-custom-partition.png)
 
   ```
   Partition Scheme : WIFI ZINE
@@ -342,25 +291,25 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
     Paste it into ~/Library/Arduino15/packages/esp32/hardware/esp32/1.0.1/tools/partitions
 
-    [![arduino-partition-00001](./images/arduino-partition-00001.png){:width="300px"}](./images/arduino-partition-00001.png)
+    [![arduino-partition-00001](./images/arduino-partition-00001.png)](./images/arduino-partition-00001.png)
 
     The '~/Library/' folder is a hidden folder in the Finder, so type Cmd-Shift-G and type in 'Library'
 
-    [![arduino-partition-00002](./images/arduino-partition-00002.png){:width="300px"}](./images/arduino-partition-00002.png)
+    [![arduino-partition-00002](./images/arduino-partition-00002.png)](./images/arduino-partition-00002.png)
 
     Then, double-click the 'Arduino15' folder as a normal folder
 
-    [![arduino-partition-00003](./images/arduino-partition-00003.png){:width="300px"}](./images/arduino-partition-00003.png)
+    [![arduino-partition-00003](./images/arduino-partition-00003.png)](./images/arduino-partition-00003.png)
 
     Move to the above position
 
-    [![arduino-partition-00004](./images/arduino-partition-00004.png){:width="300px"}](./images/arduino-partition-00004.png)
+    [![arduino-partition-00004](./images/arduino-partition-00004.png)](./images/arduino-partition-00004.png)
 
     Make it like this.
 
   - Edit the boards.txt file
 
-    [![arduino-partition-00005](./images/arduino-partition-00005.png){:width="300px"}](./images/arduino-partition-00005.png)
+    [![arduino-partition-00005](./images/arduino-partition-00005.png)](./images/arduino-partition-00005.png)
 
     Open the file boards.txt file located in the above location and add the next four lines marked with + (remove the + sign!)
 
@@ -390,29 +339,29 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
   Create a folder called '~/Documents/Arduino/tools'
 
-  [![arduino-esp32fs-00002](./images/arduino-esp32fs-00002.png){:width="300px"}](./images/arduino-esp32fs-00002.png)
+  [![arduino-esp32fs-00002](./images/arduino-esp32fs-00002.png)](./images/arduino-esp32fs-00002.png)
 
   Copy unpacked ESP32FS to here
 
-  [![arduino-esp32fs-00003](./images/arduino-esp32fs-00003.png){:width="300px"}](./images/arduino-esp32fs-00003.png)
+  [![arduino-esp32fs-00003](./images/arduino-esp32fs-00003.png)](./images/arduino-esp32fs-00003.png)
 
   Be mindful with the construction of the folders. It should be installed as shown in the following figure. (Note also that the folder name is ESP32FS!)
 
-  [![arduino-esp32fs-00004](./images/arduino-esp32fs-00004.png){:width="300px"}](./images/arduino-esp32fs-00004.png)
+  [![arduino-esp32fs-00004](./images/arduino-esp32fs-00004.png)](./images/arduino-esp32fs-00004.png)
 
   After restarting the Arduino IDE, verify that the plug-in installation was successful. If successful, you will see a menu called 'ESP32 Sketch Data Upload' added.
 
-  [![arduino-esp32fs-00005](./images/arduino-esp32fs-00005.png){:width="300px"}](./images/arduino-esp32fs-00005.png)
+  [![arduino-esp32fs-00005](./images/arduino-esp32fs-00005.png)](./images/arduino-esp32fs-00005.png)
 
   When you run this menu, it will move all the files in the '~/Documents/Arduino/WifiZineThrowie/data' folder to the ESP32 module's web page store.
 
-  [![arduino-wifizine-webpage-upload](./images/arduino-wifizine-webpage-upload.png){:width="300px"}](./images/arduino-wifizine-webpage-upload.png)
+  [![arduino-wifizine-webpage-upload](./images/arduino-wifizine-webpage-upload.png)](./images/arduino-wifizine-webpage-upload.png)
 
   Please execute the upload. The color of the message output during upload is displayed in white instead of red.  While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
 
   Screen when upload is completed successfully
 
-  [![arduino-wifizine-webpage-upload-done](./images/arduino-wifizine-webpage-upload-done.png){:width="300px"}](./images/arduino-wifizine-webpage-upload-done.png)
+  [![arduino-wifizine-webpage-upload-done](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
 
   Congratulations. We are all ready to produce / publish Hot-spot zine.
 
@@ -472,3 +421,67 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 - If you have any other thoughts or opinions, please email me. <mailto:pilotedeguerre@gmail.com>
 
 ## Thank you!
+
+----
+
+## What is a hot-spot zine?
+
+### One line description
+
+- A wireless communication and web service device designed to service an independent publications in webzine format when a smartphone attempts to log in to a hotspot
+
+[![hotspot-zine-ssid](./images/hotspot-zine-ssid.jpg){:width="500px"}](./images/hotspot-zine-ssid.jpg)
+[![hotspot-zine-login](./images/hotspot-zine-login.jpg){:width="500px"}](./images/hotspot-zine-login.jpg)
+
+- [View more](http://pilote.byus.net/wpdiana/?page_id=1064)
+
+### Preceding project
+
+- [CaptiveIntraweb by AReResearch (Andy Reischle) @ 2015](https://github.com/reischle/CaptiveIntraweb)
+
+  [![construction-overview](./images/areresearch/img4.png){:width="500px"}](./images/areresearch/img4.png)
+
+### Components
+
+- Tangible components
+  - Espressif's ESP32 module
+  - Power supply (battery or DC adapter)
+  - (Optional) a case or a hull
+  - (Optional) Magnets
+
+  [![construction-overview](./images/areresearch/img1.png){:width="500px"}](./images/areresearch/img1.png)
+
+  [![construction-overview](./images/areresearch/img2.png){:width="500px"}](./images/areresearch/img2.png)
+
+  [![construction-overview](./images/areresearch/img5.png){:width="500px"}](./images/areresearch/img5.png)
+
+  [![construction-overview](./images/areresearch/img6.png){:width="500px"}](./images/areresearch/img6.png)
+
+  [![construction-overview](./images/areresearch/img7.png){:width="500px"}](./images/areresearch/img7.png)
+
+  (These images are posted by Andy Reischle (AReResearch).)
+
+- Intangible components
+  - [ESP-IDF Development Environment](https://github.com/espressif/esp-idf/tree/master/components)
+  - [ESP32 Arduino Compatibility Package](https://github.com/espressif/arduino-esp32)
+  - [SPIFFS file system](https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS)
+  - [ESP web server library](https://github.com/me-no-dev/ESPAsyncWebServer)
+  - [A domain name server (captive portal)](https://github.com/espressif/arduino-esp32/tree/master/libraries/DNSServer)
+  - Web page (Webzine)
+
+  [![Wi-Fi-zine-stacks](./images/Wi-Fi-zine-stacks.png){:width="500px"}](./images/Wi-Fi-zine-stacks.png)
+
+  - [More information](http://esp32.net/)
+  - [The Wi-Fi stack is not open source](https://github.com/espressif/esp32-wifi-lib/issues/2)
+
+### Limitations of Hot-spot zine platform that you should know
+
+- Storage 2MB or less
+- Slightly slower than a typical web server
+- Somewhat unstable behavior compared to a typical web server (sometimes a system restart may be required)
+
+
+
+## Making a Hot-spot zine
+
+
