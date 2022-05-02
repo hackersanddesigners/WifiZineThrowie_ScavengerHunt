@@ -54,9 +54,9 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
   - Copy and paste the following into 'Additional Boards Manager URLs' and click 'Ok'.
 	
- 	   ```
- 	   https://dl.espressif.com/dl/package_esp32_index.json
-	    ```
+ 	 ```
+ 	 https://dl.espressif.com/dl/package_esp32_index.json
+	 ```
 		[![arduino-board-url](./images/arduino-board-url.png)](./images/arduino-board-url.png)
 
 - **Launch the Board Manager**
