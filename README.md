@@ -22,7 +22,11 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 - Web page (html / css / js + media files)
 - (Optionally) a sensor or actuator (such as a speaker)
 
-## Preparing Hot-spot zine platform
+## Things to install before
+
+- [**Brackets code editor**](https://brackets.io/) to edit your HTML page
+
+- [**Online image compression tool**](https://www.iloveimg.com/compress-image) (to make your pictures smaller)
 
 - [**Arduino Download**](https://www.arduino.cc/en/Main/Software)
 
