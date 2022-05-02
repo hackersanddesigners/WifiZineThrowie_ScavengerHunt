@@ -12,6 +12,12 @@ This is an adaptation of the workshop and – amazing – documentation prepare
  * add own intro and activities (so it becomes workshop script)
  * image captions/alt text
 
+## Workshop outline
+
+### to be added
+
+Info her info here 
+
 
 ## Materials and preparations
 
@@ -254,28 +260,23 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
     If communication is not possible, /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) does not exist as above.
 
-- Set the name of the Wi-Fi network i.e. SSID of the Hot-spot zine, and modify the code.
 
-  [![arduino-wifizine-ssid-change](./images/arduino-wifizine-ssid-change.png)](./images/arduino-wifizine-ssid-change.png)
+### Upload to the Board
 
-  - Since it may not work due to the number of characters or spacing, we try firstly with simple and short English names that does not include a space character.
-  - Hangul(or any other non-English characters) may be used. (later, trial and error)
+  - Click on the Upload button (arrow pointing right on top of the Arduino window), and then **_while_** the text '*Connecting ...*' displays in the control window at the bottom of the screen, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
 
-- Upload to the Board
+  
+      [![arduino-connecting](./images/arduino-connecting.png)](./images/arduino-connecting.png)
+      
+- **If the upload was successful, you will see this screen**: 
 
-  - Click on the Upload button (red arrow), while 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
+	  [![arduino-wifizine-upload-done](./images/arduino-wifizine-upload-done.png)](./images/arduino-wifizine-upload-done.png)
 
-    [![arduino-wifizine-upload](./images/arduino-wifizine-upload.png)](./images/arduino-wifizine-upload.png)
+- **If the upload was unsuccessful, you will see this error**
 
-    Upload success screen
+	[![arduino-wifizine-upload-failed](./images/arduino-wifizine-upload-failed.png)](./images/arduino-wifizine-upload-failed.png)
 
-    [![arduino-wifizine-upload-done](./images/arduino-wifizine-upload-done.png)](./images/arduino-wifizine-upload-done.png)
-
-    Upload error screen
-
-    [![arduino-wifizine-upload-failed](./images/arduino-wifizine-upload-failed.png)](./images/arduino-wifizine-upload-failed.png)
-
-- [Various problem factors](https://randomnerdtutorials.com/esp32-troubleshooting-guide/)
+- [Troubleshooting tips for various problem factors here](https://randomnerdtutorials.com/esp32-troubleshooting-guide/)
 
 ### Increasing the upload capacity of the board (optional)
 
@@ -349,11 +350,11 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
   - After restarting the Arduino IDE, select PartitionScheme as 'WIFI ZINE' during ESP32 DEV Module setup and compile.
 
-### Uploading and publishing Hot-spot zine content
+## Publishing your first mini webpage to the module
 
-- Hot-spot zine content is stored separately from the running code. Therefore, it goes through a separate process from the usual Arduino IDE code upload process. To do this, you need to install a separate extension plug-in.
+- The content of the small webpage we will put on the wifi modules is stored separately from the running code that takes care of publishing it. Therefore, it goes through a separate process from the usual Arduino IDE code upload process. To do this, you need to install a separate extension plug-in.
 
-- Download and install [the ESP32FS plug-in](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases)
+- **Download and install** [**the ESP32FS plug-in**](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases)
 
   Create a folder called '~/Documents/Arduino/tools'
 
@@ -372,18 +373,32 @@ This is an adaptation of the workshop and – amazing – documentation prepare
   [![arduino-esp32fs-00005](./images/arduino-esp32fs-00005.png)](./images/arduino-esp32fs-00005.png)
 
   When you run this menu, it will move all the files in the '~/Documents/Arduino/WifiZineThrowie/data' folder to the ESP32 module's web page store.
+  
+### Changing the name of your wifi network
+
+The arduino code (WifiZineThrowie.ino) specifies the name of your personal mini network by looking for a file in the data folder that ends with .ssid. In the files you downloaded you can see it is now called: "THE-text-ZINE.ssid". You can change this filename to the name you like for your network (avoid symbols to be sure).  E.g. Clue1-Loes.
+
+  [![arduino-ssid-file](./images/arduino_ssid_file.png)](./images/arduino_ssid_file.png)
+
+### Uploading your website to the module
+
+Then, in the Arduino software, go to > Tools and select > ESP32 Sketch Data Upload 
 
   [![arduino-wifizine-webpage-upload](./images/arduino-wifizine-webpage-upload.png)](./images/arduino-wifizine-webpage-upload.png)
 
-  Please execute the upload. The color of the message output during upload is displayed in white instead of red.  While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
+Please execute the upload. The color of the message output during upload is displayed in white instead of red.  
+
+While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
 
   Screen when upload is completed successfully
 
   [![arduino-wifizine-webpage-upload-done](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
 
-  Congratulations. We are all ready to produce / publish Hot-spot zine.
+  Success! You can now find your private internet spot. Open the network settings on your phone, and select your network. Your website should pop up automatically, but some patience might help :) 
 
-## Generic content example of Hot-spot zines
+## Designing your website 
+
+Now that you know how to upload a website, you can design your own! Here are some tips and tricks to design your own website you can build to hide a clue. 
 
 - Example 1 Text page
 
@@ -417,28 +432,6 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 - Example 9 : Tone.js  (TBD)
 
-
-## Play with shapes and materials
-
-- Attaching a sensor
-
-  - switch? G-sensor?
-
-- Attaching something that moves/acts
-
-  - motor? speaker?
-
-## Thinking with locations / places
-
-- Attaching to the steel structure of the street or space using magnets
-
-## Contributing to the project
-
-- By sharing ZINE content, you can share ideas and inspirations for others who are creating Hot-spot zines. It is better to tell us your background story, context, form and so on.
-- If you have ideas on how to improve the various parts of the Hot-spot zine program, please send us a revision with PR.
-- If you have any other thoughts or opinions, please email me. <mailto:pilotedeguerre@gmail.com>
-
-## Thank you!
 
 ----
 
