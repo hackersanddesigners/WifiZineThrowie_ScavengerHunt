@@ -102,9 +102,8 @@ This is an adaptation of the workshop and – amazing – documentation prepare
    [![arduino-00001](./images/arduino-00001.png)](./images/arduino-00001.png)
 
    - Rename folder after decompression (remove the part "-master")
-
-   	 	[![arduino-00003](./images/arduino-00003.png)](./images/arduino-00003.png)
-    	[![arduino-00004](./images/arduino-00004.png)](./images/arduino-00004.png)
+	   - [![arduino-00003](./images/arduino-00003.png)](./images/arduino-00003.png)
+	   - [![arduino-00004](./images/arduino-00004.png)](./images/arduino-00004.png)
 
   - Click 'Clone or download' -> 'Download ZIP' on the github page for the [AsyncTCP library](https://github.com/me-no-dev/AsyncTCP).
 
@@ -165,57 +164,70 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
-  - [USB communication chip driver download](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+  - Check if you already have this driver installed by searching your machine for a file named "SiLabsUSBDriver.kext" AND/OR "SiLabsUSBDriverYos.kext" AND/OR "SiLabsUSBDriver64.kext". On a Mac, they can be in either of these folders listed below, depending on your system. If you find nothing, proceed to install. Otherwise, uninstall using the uninstaller provided, before re-installing (drag the uninstall.sh file into a terminal window and hit enter to uninstall.
 
-    - [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
-    - [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip)
+ 	* /Library/Extensions/SiLabsUSBDriver.kext
+	* /Library/Extensions/SiLabsUSBDriverYos.kext
+	* /System/Library/Extensions/SiLabsUSBDriver64.kext
+	* /System/Library/Extensions/SiLabsUSBDriver.kext
+  
+  - Download the driver: [Silabs USB communication chip driver download](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+  - Doubleclick "Install CP210x VCP Driver.app" to install it. 
+  - When it gives a security message, follow the instructions to allow the install to continue
 
-      - [Installation process](https://www.pololu.com/docs/0J7/all)
+### Mac OS
 
-    - [Mac OSX](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
+- [Mac OSX](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
+	- You need to work around a safetymeasure called gatekeeper which is a little different per OS operating system. Follow instructions below for your OS or google "disable gatekeeper on mac [insert your version here, e.g. monterey]" [More info here](https://support.apple.com/en-us/HT202491)
 
-      - [GateKeeper is a bastard!](https://support.apple.com/en-us/HT202491)
+	- Mojave (10.14.x)
 
-      - Yosemite (10.10.x)
+		- [How to disable GateKeeper](http://osxdaily.com/2016/09/27/allow-apps-from-anywhere-macos-gatekeeper/)
+		- sudo spctl --master-disable
 
-        - [Legacy driver must be installed, instead normal one.](https://www.silabs.com/community/interface/forum.topic.html/latest_vcp_driverfo-96RK)
-
-        [![yosemite-cp2102](./images/yosemite-cp2102.png)](./images/yosemite-cp2102.png)
-        [![yosemite-cp2102-legacy](./images/yosemite-cp2102-legacy.png)](./images/yosemite-cp2102-legacy.png)
-
-      - El capitan (10.11.x)
-
-        - [How to disable GateKeeper](https://medium.com/@krukmat/macos-el-capitan-enabling-usb-for-cp2102-usb-to-ttl-3b63449e02e9)
-        - [csrutil enable --without kext](https://forums.developer.apple.com/thread/17452)
-
-      - Sierra (10.12.x)
-
-        - [How to disable GateKeeper](https://www.tekrevue.com/tip/gatekeeper-macos-sierra/)
-        - sudo spctl --master-disable
-
-      - High Sierra (10.13.x)
+	- High Sierra (10.13.x)
 
         - [How to disable GateKeeper](https://stackoverflow.com/questions/47109036/cp2102-device-is-not-listed-in-dev-on-macos-10-13)
         - [How to disable GateKeeper](https://pikeralpha.wordpress.com/2017/08/29/user-approved-kernel-extension-loading/)
         - [How to disable GateKeeper](https://www.silabs.com/community/interface/knowledge-base.entry.html/2018/03/30/usb_to_uart_bridgev-Dnef)
         - spctl kext-consent disable
 
-      - Mojave (10.14.x)
-
-        - [How to disable GateKeeper](http://osxdaily.com/2016/09/27/allow-apps-from-anywhere-macos-gatekeeper/)
+	- Sierra (10.12.x)
+        - [How to disable GateKeeper](https://www.tekrevue.com/tip/gatekeeper-macos-sierra/)
         - sudo spctl --master-disable
 
-    - Linux 3.x.x & 4.x.x
+	- El capitan (10.11.x)
+		- [How to disable GateKeeper](https://medium.com/@krukmat/macos-el-capitan-enabling-usb-for-cp2102-usb-to-ttl-3b63449e02e9)
+        - [csrutil enable --without kext](https://forums.developer.apple.com/thread/17452)
 
-      - Driver installation not required (included in kernel)
-      - [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
-      - [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
+	- Yosemite (10.10.x)
+		- [Legacy driver must be installed, instead normal one.](https://www.silabs.com/community/interface/forum.topic.html/latest_vcp_driverfo-96RK)
 
-    - [Linux 2.6.x](https://www.silabs.com/documents/login/software/Linux_2.6.x_VCP_Driver_Source.zip)
+        [![yosemite-cp2102](./images/yosemite-cp2102.png)](./images/yosemite-cp2102.png)
+        [![yosemite-cp2102-legacy](./images/yosemite-cp2102-legacy.png)](./images/yosemite-cp2102-legacy.png)
 
-      - No information
 
-- Check if the USB driver is working
+
+
+
+### Linux 3.x.x & 4.x.x
+
+ - Driver installation not required (included in kernel)
+ 	- [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
+	- [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
+
+### Linux 2.6.x
+[Linux 2.6.x](https://www.silabs.com/documents/login/software/Linux_2.6.x_VCP_Driver_Source.zip)
+		- No information
+
+### Windows
+
+- [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
+- [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip)
+- [Installation process](https://www.pololu.com/docs/0J7/all)
+
+
+## Check if the USB driver is working
 
   - If you just installed the driver, restart your computer.
 
