@@ -129,17 +129,16 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 
 
-	- **Check/update the settings**
+	- Check/update the settings
 	- Most of these settings are correct by default, you just have to change QIO to DIO
-		
-	      - Upload Speed : 921600
-	      - CPU Frequency : 240MHz (WiFi BT)
-	      - Flash Frequency : 80MHz
-	      - Flash Mode : **DIO** (is QIO by default)
-	      - Flash Size : 4MB (32Mb)
-	      - Partition Scheme : Default
-	      - Core Debug Level : None
-	      - PSRAM : Disabled
+      - Upload Speed : 921600
+      - CPU Frequency : 240MHz (WiFi BT)
+      - Flash Frequency : 80MHz
+      - Flash Mode : **DIO** (is QIO by default)
+      - Flash Size : 4MB (32Mb)
+      - Partition Scheme : Default
+      - Core Debug Level : None
+      - PSRAM : Disabled
 
     - **Click on the compile button in the top left of the editor (see red arrow in pic beneath)**
 
