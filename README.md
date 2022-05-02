@@ -129,8 +129,9 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 
 
-	- Check/update the settings
-	- Most of these settings are correct by default, you just have to change QIO to DIO
+###Check/update the settings
+
+- Most of these settings are correct by default, you just have to change QIO to DIO
       - Upload Speed : 921600
       - CPU Frequency : 240MHz (WiFi BT)
       - Flash Frequency : 80MHz
