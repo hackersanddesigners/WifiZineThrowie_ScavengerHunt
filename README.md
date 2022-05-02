@@ -118,10 +118,8 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 ## Confirming code compilation
 
    - Restart the Arduino IDE (the Arduino software)
-
-    - Open 'WifiZineThrowie.ino' sketch that is inside the WiFiZineThrowie folder (in your downloads folder or on your desktop probably.  t(from > File > Sketchbook)
-
-    - Select the ESP32 Dev Module board
+   - Open 'WifiZineThrowie.ino' sketch that is inside the WiFiZineThrowie folder (in your downloads folder or on your desktop probably.  t(from > File > Sketchbook)
+   - Select the ESP32 Dev Module board
 
       [![arduino-wifizine-select-board](./images/arduino-wifizine-select-board.png)](./images/arduino-wifizine-select-board.png)
 
