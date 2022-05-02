@@ -50,14 +50,15 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
   - Check 'compile' and 'upload' in 'Show verbose output during:'
 
-- [**Adding an ESP32 boards to the Arduino IDE's board list**](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+- [**Adding ESP32 boards to the Arduino IDE's board list**](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
 
   - Copy and paste the following into 'Additional Boards Manager URLs' and click 'Ok'.
-	
+
+	[![arduino-board-url](./images/arduino-board-url.png)](./images/arduino-board-url.png)
+
  	 ```
  	 https://dl.espressif.com/dl/package_esp32_index.json
 	 ```
-		[![arduino-board-url](./images/arduino-board-url.png)](./images/arduino-board-url.png)
 
 - **Launch the Board Manager**
 
