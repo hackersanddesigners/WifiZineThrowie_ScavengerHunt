@@ -127,7 +127,8 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
       [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png)](./images/arduino-wifizine-config-board.png)
 
-	- **Most of these settings are correct by default, you just have to change QIO to DIO**
+	- **Check/update the settings**
+	- Most of these settings are correct by default, you just have to change QIO to DIO
 		
 	      - Upload Speed : 921600
 	      - CPU Frequency : 240MHz (WiFi BT)
