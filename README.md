@@ -95,7 +95,7 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
    - Click 'Clone or download' -> 'Download ZIP' on the github page for the [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 
-   	[![arduino-00001](./images/arduino-00001.png)](./images/arduino-00001.png)
+	[![arduino-00001](./images/arduino-00001.png)](./images/arduino-00001.png)
 
    - Rename folder after decompression (remove the part "-master")
 
