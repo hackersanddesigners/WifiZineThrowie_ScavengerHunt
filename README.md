@@ -73,24 +73,70 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 <img src="./images/brackets_preview.png" alt="brackets code editor and preview window" width="600"/>
 
+### Download our github repository for all the required code and HTML templates
 
+  - Navigate to the [H&D Scavenger hunt Github Repository](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt)
+	
+  - On the top right of the page, click 'Clone or download' -> 'Download ZIP'
 
-**Important!**
+  	 <img src="./images/repositoryHD.png" alt="repository on github" width="650"/>
 
-Note that your entire website (so the index.html plus any other files like images, has to be **_less than 2MB_** in total or it will fail to upload. This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
+- **Renaming and moving the folder**
+    - Decompress the .zip file by doubleclicking
+    - If necessary, move the folder to some place where you would like to keep it and can find it for a while. 
+    - It's good practice to change the name of the folder by deleting the part "-master" from the folder name (see images below)
 
 ### Step 1: open the example
 
+- In the .zip file you downloaded, you can find some folders. Find the one called "code" and inside that navigate to > data > index.html
+
+	<img src="./images/path_to_index.html.png" alt="path to index.html file" width="650"/> 
+
+- If you double click it it will open a new browser window with a page that says "Hallo SolarPunk Kids"! This is what we designed as a template. 
+
+	<img src="./images/openinbrowser.png" alt="index page opened in a browser" width="650"/> 
+
+- Now you can close it. 
+
+- Next: open the index.html file in the Brackets app you downloaded. (Right click > Open with > Brackets). 
+
+- Now you see a text document that starts with: *<!DOCTYPE html>*. This is the HTML code, which, when opened with a browser application, displays as a colorful website with images, emojis, and cool fonts. 
+
+- Brackets even has a function to give you a live preview. If you click on the lightning bolt on the top right, it opens a preview window with the webpage you are designing. Every time you save the code (e.g. using command + S) it will refresh the preview you you can see your changes. 
+
+	<img src="./images/brackets_preview_bolt.png" alt="brackets_preview_bolt" width="650"/> 
+
+
 ### Step 2: change some things
+
+- Find line 17 in the code, where it says: "color = rebeccapurple"
+
+- Now go ahead and instead of rebeccapurple, type "deepskyblue"
+
+- Save the file. See how the preview changes automatically? 
+
+	<img src="./images/rebeccapurple.png" alt="html code showing color = rebeccapurple" width="750"/> 
+
+	<img src="./images/deepskyblue.png" alt="html code showing color = rebeccapurple" width="750"/> 
+
+**Tip**: if you want to try some other colors, replace the name "rebeccapurple" with a number you can look up with a color picker like this [color picker tool](https://imagecolorpicker.com/color-code/6800ff)
+
 
 ### Step 3: change *more* things!
 
-### Step 4: think of something else to try 
+- You are probably getting bold now and want to try more! Save a copy of the index.html file so you have a copy of the original where everything still worked, just in case. 
 
-And look them up on the internet, or ask someone in the group for help. 
+- Now go ahead and try some other things, make small changes and save every time to see what happens. If you break it, you can always go back with command + z!
 
+- Think of thinks like: changing the size of the emoji's to REALLY BIG! Or change the background color to something else. Or use a different font! Orrrr make some ASCII art for your web page. 
 
-### Some tools that are useful for designing your mini website
+- Play around and change some things and save, change and save, change and save. You will figure out the logic of the code by doing this, and come up with ideas for your design!
+
+- It is totally ok if you break the website, just ask for help to fix it again if you can't un-break it yourself. 
+
+- Is it doing some thing different than what you expected? Look very carefully! Small typos can make a big difference. We're also around to help. 
+
+**Some tools that are useful for designing your mini website**
 
 * [Online image compression tool](https://www.iloveimg.com/compress-image) (to make your pictures smaller)
 * [W3 schools tutorials](https://www.w3schools.com/html/default.asp) to look up how to write html bits and bobs
@@ -98,6 +144,16 @@ And look them up on the internet, or ask someone in the group for help.
 * [Libre fonts by wxmen](https://www.design-research.be/by-womxn/) find a cool typeface!
 * [Emoji codes](https://www.w3schools.com/charsets/ref_emoji.asp) all the emoji's you ever wanted! 
 * [Color picker tool](https://imagecolorpicker.com/color-code/6800ff) to help find the code that stands for a particular color you like and want to use in the HTML.
+
+### Step 4: think of something else to try 
+
+What else could you do? Add some interactivity? Sound? Little animated GIFs? 
+
+Use whatever skills and knowledge you already have, or look things up on the internet (W3 schools is a nice resource, see list above). Or ask someone in the group, we all know a little bit about different things. 
+
+**Important!**
+
+Note that your entire website (so the index.html plus any other files like images, has to be **_less than 2MB_** in total or it will fail to upload. This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
 
 
 ## 3. Programming the WiFi modules
@@ -150,26 +206,25 @@ First we need to download some tools (more to follow along the way!)
     <img src="./images/arduino-board-manager-esp32.png" alt="arduino-board-manager-esp32" width="600"/>
 
 
-## Download Dianaband's WifiZineThrowie code and required libraries
+## Download our github repository for all the required code and HTML templates
 
-  - Navigate to the [WifiZineThrowie Github Repository](https://github.com/applecargo/WifiZineThrowie/) download and installation
+Do this if you haven't done so previously. 
+
+  - Navigate to the [H&D Scavenger hunt Github Repository](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt)
 	
-  - Click 'Clone or download' -> 'Download ZIP'
+  - On the top right of the page, click 'Clone or download' -> 'Download ZIP'
 
-  	 <img src="./images/arduino-00010.png" alt="arduino-00010" width="650"/>
+  	 <img src="./images/repositoryHD.png" alt="repository on github" width="650"/>
 
 - **Renaming and moving the folder**
-    - Decompress the .zipfile by doubleclicking
-    - Then change the name by deleting the part "-master" from the folder name (see images below)
+    - Decompress the .zip file by doubleclicking
+    - If necessary, move the folder to some place where you would like to keep it and can find it for a while. 
+    - It's good practice to change the name of the folder by deleting the part "-master" from the folder name (see images below)
 
-    	[![arduino-00011](./images/arduino-00011.png)](./images/arduino-00011.png)
-    	[![arduino-00012](./images/arduino-00012.png)](./images/arduino-00012.png)
-
-    - Copy that folder to YourComputerName/Documents/Arduino
-
-    	[![arduino-00013](./images/arduino-00013.png)](./images/arduino-00013.png)
 
 ## Downloading and installing the ESPAsyncWebServer and AsyntTCP libraries
+
+Next, we need some libraries. They are in the .zip file you downloaded before, but just in case they are updated in the future: here are the links to the developers' repositories. You still need to move them to the right folders on your system.  
 
    - Click 'Clone or download' -> 'Download ZIP' on the github page for the [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer).
 
