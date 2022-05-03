@@ -11,7 +11,7 @@ Their workshop in turn builds up on the research by Andy Reischle (AreResearch),
 **To Do**: 
 
  * add own intro and activities (so it becomes workshop script)
- * add files and update download links to point to HD git
+ * add sound to html template
  * image captions/alt text
 
 ## Workshop outline
