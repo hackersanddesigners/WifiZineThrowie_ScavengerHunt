@@ -165,7 +165,7 @@ First we need to download some tools (more to follow along the way!)
     	[![arduino-00011](./images/arduino-00011.png)](./images/arduino-00011.png)
     	[![arduino-00012](./images/arduino-00012.png)](./images/arduino-00012.png)
 
-    - Copy that folder to "~/Documents/Arduino" (the "~" sign means your home folder)
+    - Copy that folder to YourComputerName/Documents/Arduino
 
     	[![arduino-00013](./images/arduino-00013.png)](./images/arduino-00013.png)
 
