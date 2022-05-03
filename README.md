@@ -19,7 +19,7 @@ Info her info here
 
   [![module in a box](./images/module_box.jpg)](./images/module_box.jpg)*Solarpowered mini server module in a non-black-box*
  
-### Solarpunk? Internet? 
+## Solarpunk? Internet? 
 
 ### Alternative energy sources
 
