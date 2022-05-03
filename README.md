@@ -23,9 +23,13 @@ Info her info here
 
 ### Alternative energy sources
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AXfvayFPXFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Text text
+
+[![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)*Click on the image to watch on Youtube!*
 
 ### Alternatives for batteries?
+
+Text text
 
 ### The incredible shrinking internet? 
 
