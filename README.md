@@ -17,6 +17,9 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 Info her info here 
 
+  [![module in a box](./images/module_box.jpg)](./images/module_box.jpg)*Solarpowered mini server module in a non-black-box*
+
+
 
 ## 0. Materials and preparations
 
