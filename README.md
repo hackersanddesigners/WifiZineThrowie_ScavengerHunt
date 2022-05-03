@@ -17,7 +17,7 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 Info her info here 
 
-  [![module in a box](./images/module_box2.jpg)](./images/module_box2.jpg)*Solarpowered mini server module in a non-black-box*
+  [![module in a box](./images/module_box2.jpg)](./images/module_box2.jpg)<br>*Solarpowered mini server module in a non-black-box*
  
 ## Solarpunk? Internet? 
 
@@ -25,7 +25,8 @@ Info her info here
 
 Text text
 
-[![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)*Click on the image to watch on Youtube!*
+[![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)
+<br>*Click on the image to watch on Youtube!*
 
 ### Alternatives for batteries?
 
