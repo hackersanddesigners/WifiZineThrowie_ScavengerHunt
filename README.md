@@ -1,4 +1,6 @@
-![hotspot-zine-ssid](./images/scavengerhunt.jpg)
+![scavenger hunt](./images/scavengerhunt.jpg)
+
+<img src="./images/scavengerhunt.jpg" alt="scavengerhunt" width="500"/>
 
 # Solarpunk Kids: Wifi Scavenger Hunt 
 
@@ -9,6 +11,7 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 **To Do**: 
 
  * add own intro and activities (so it becomes workshop script)
+ * add files and update download links to point to HD git
  * image captions/alt text
 
 ## Workshop outline
@@ -17,7 +20,6 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 Info her info here 
 
-  [![module in a box](./images/module_box2.jpg)](./images/module_box2.jpg)<br>*Solarpowered mini server module in a non-black-box*
  
 ## Solarpunk? Internet? 
 
@@ -37,6 +39,7 @@ Text text
 - What if it were only 2 MB
 - What if some of the internet wasn't worldwide? 
 
+  [![module in a box](./images/module_box2.jpg)](./images/module_box2.jpg)<br>*Solarpowered mini server module in a non-black-box*
 
 ## 0. Materials and preparations
 
