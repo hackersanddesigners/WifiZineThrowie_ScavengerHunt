@@ -1,10 +1,10 @@
-![scavenger hunt](./images/scavengerhunt.jpg)
-
-<img src="./images/scavengerhunt.jpg" alt="scavengerhunt" width="500"/>
+<img src="./images/scavengerhunt.jpg" alt="scavengerhunt" width="600"/>
 
 # Solarpunk Kids: Wifi Scavenger Hunt 
 
 This is an adaptation of the workshop and – amazing – documentation prepared by Wonjung Shin and Dooho Yi (Dianaband) for the Walking signal / WIFI hotspot zine workshop hosted at Hackers and Designers in 2019. See original here: [https://github.com/applecargo/WifiZineThrowie](https://github.com/applecargo/WifiZineThrowie) 
+
+Their workshop in turn builds up on the research by Andy Reischle (AreResearch), whose research is linked to at the bottom of this page. 
 
 **WIP! Still needs to be edited/adapted for solarpunk workshop.**
 
@@ -19,6 +19,11 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 ### to be added
 
 Info her info here 
+
+
+### What are we making? 
+
+We will program a small wireless device with an ESP32 chip to serve a tiny (max 2MB) html websites via WiFi. The module is powered by a battery, which in turn is charged by a solar cell. The Wifi module "serves" a small website anytime a smartphone tries to log on to the network it is broadcasting (like an internet hotspot). It allows you to redesign the "log-in" screen that usually pops up when you try to log on to public WiFi networks, and hijack it to publish content you want to share WiFi, but only with your neighbours and local friends within a ~25 m range. 
 
  
 ## Solarpunk? Internet? 
@@ -39,7 +44,7 @@ Text text
 - What if it were only 2 MB
 - What if some of the internet wasn't worldwide? 
 
-  [![module in a box](./images/module_box2.jpg)](./images/module_box2.jpg)<br>*Solarpowered mini server module in a non-black-box*
+<img src="./images/components.jpeg" alt="wifi modules with solar panel" width="600"/>
 
 ## 0. Materials and preparations
 
@@ -53,6 +58,8 @@ Text text
 - A solar cell 
 - Web page (html / css / js + media files)
 - A puzzle (one you make or one you have!)
+- Tie wraps of different sizes
+- Electrical tape
 - Pens and paper, cardboard, scissors, hotglue, tape
 
 
@@ -64,7 +71,8 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 - [**Brackets code editor**](https://brackets.io/) to edit your HTML page
 
-    [![brackets](./images/brackets_preview.png)](./images/brackets_preview.png)*On the left is your HTML code pad, and on the right you see a preview of what the page will look like.*
+<img src="./images/brackets_preview.png" alt="brackets code editor and preview window" width="600"/>
+
 
 
 **Important!**
@@ -110,15 +118,12 @@ First we need to download some tools (more to follow along the way!)
 
   - [Linux](https://www.arduino.cc/en/Guide/Linux)
 
-- **Arduino IDE launch screen**
-
-	[![arduino-screen](./images/arduino-screen.png)](./images/arduino-screen.png)
-
 - **Arduino IDE settings**
 
   - Change the compilation and upload process display mode to 'verbose mode'
+ 	   
+ 	 <img src="./images/arduino-verbose.png" alt="Arduino settings with verbose mode checked" width="600"/>
 
- 	   [![arduino-verbose](./images/arduino-verbose.png)](./images/arduino-verbose.png)
 
   - Check 'compile' and 'upload' in 'Show verbose output during:'
 
@@ -134,15 +139,16 @@ First we need to download some tools (more to follow along the way!)
 
 - **Launch the Board Manager**
 
-	[![arduino-board-manager](./images/arduino-board-manager.png)](./images/arduino-board-manager.png)
+ 	 <img src="./images/arduino-board-manager.png" alt="arduino-board-managerd" width="550"/>
 
 - **Select the Board Manager pop-up window**
-
-   	 [![arduino-board-manager-popup](./images/arduino-board-manager-popup.png)](./images/arduino-board-manager-popup.png)
+   	 
+    <img src="./images/arduino-board-manager-popup.png" alt="arduino-board-manager-popup" width="600"/>
 
 - **Type 'esp32' in the search box and click 'Install'**
 
-    [![arduino-board-manager-esp32](./images/arduino-board-manager-esp32.png)](./images/arduino-board-manager-esp32.png)
+    <img src="./images/arduino-board-manager-esp32.png" alt="arduino-board-manager-esp32" width="600"/>
+
 
 ## Download Dianaband's WifiZineThrowie code and required libraries
 
@@ -150,7 +156,7 @@ First we need to download some tools (more to follow along the way!)
 	
   - Click 'Clone or download' -> 'Download ZIP'
 
-   	[![arduino-00010](./images/arduino-00010.png)](./images/arduino-00010.png)
+  	 <img src="./images/arduino-00010.png" alt="arduino-00010" width="650"/>
 
 - **Renaming and moving the folder**
     - Decompress the .zipfile by doubleclicking
@@ -167,7 +173,7 @@ First we need to download some tools (more to follow along the way!)
 
    - Click 'Clone or download' -> 'Download ZIP' on the github page for the [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer).
 
-   [![arduino-00001](./images/arduino-00001.png)](./images/arduino-00001.png)
+  	 <img src="./images/arduino-00001.png" alt="arduino-00001" width="650"/>
 
    - Rename folder after decompression (remove the part "-master")
 	   - [![arduino-00003](./images/arduino-00003.png)](./images/arduino-00003.png)
@@ -191,13 +197,12 @@ First we need to download some tools (more to follow along the way!)
    - Restart the Arduino IDE (the Arduino software)
    - Open 'WifiZineThrowie.ino' sketch that is inside the WiFiZineThrowie folder (in your downloads folder or on your desktop probably.  t(from > File > Sketchbook)
    - Select the ESP32 Dev Module board
-
-      [![arduino-wifizine-select-board](./images/arduino-wifizine-select-board.png)](./images/arduino-wifizine-select-board.png)
+      
+       <img src="./images/arduino-wifizine-select-board.png" alt="arduino-wifizine-select-board" width="650"/>
 
    - Adjust ESP32 Dev Module board settings
 
-      [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png)](./images/arduino-wifizine-config-board.png)
-
+       <img src="./images/arduino-wifizine-config-board.png" alt="arduino-wifizine-config-board" width="350"/>
 
 
 ### Check/update the settings
@@ -214,21 +219,21 @@ First we need to download some tools (more to follow along the way!)
       * PSRAM : Disabled
 
     - **Click on the compile button in the top left of the editor (see red arrow in pic beneath)**
-
-      	[![arduino-wifizine-popup](./images/arduino-wifizine-popup.png)](./images/arduino-wifizine-popup.png)
+      	
+      	 <img src="./images/arduino-wifizine-popup.png" alt="arduino-wifizine-popup" width="350"/>
 
     - **If the compilation process is successful, it will say "DONE COMPILING" at the bottom**
     
     - This means Arduino confirms it can find everything it needs to upload working code 
     - Don't upload the code to the board yet, first we need some more stuff
-
-	  	[![arduino-wifizine-compile-done](./images/arduino-wifizine-compile-done.png)](./images/arduino-wifizine-compile-done.png)
-
+	  	
+	  	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino-wifizine-compile-done" width="350"/>
+	  
     - **If the compilation process ends abnormally, it will give an orange error**
   
     	- If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
-
-    	  [![arduino-wifizine-compile-failed](./images/arduino-wifizine-compile-failed.png)](./images/arduino-wifizine-compile-failed.png)
+    	  
+    	  <img src="./images/arduino-wifizine-compile-failed.png" alt="arduino-wifizine-compile-failed" width="350"/>
 
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
@@ -270,11 +275,10 @@ First we need to download some tools (more to follow along the way!)
 
 	- Yosemite (10.10.x)
 		- [Legacy driver must be installed, instead normal one.](https://www.silabs.com/community/interface/forum.topic.html/latest_vcp_driverfo-96RK)
-
-        [![yosemite-cp2102](./images/yosemite-cp2102.png)](./images/yosemite-cp2102.png)
-        [![yosemite-cp2102-legacy](./images/yosemite-cp2102-legacy.png)](./images/yosemite-cp2102-legacy.png)
-
-
+        
+        <img src="./images/yosemite-cp2102.png" alt="yosemite-cp2102" width="550"/>
+        
+        <img src="./images/yosemite-cp2102-legacy.png" alt="yosemite-cp2102-legacy" width="550"/>
 
 
 
@@ -302,37 +306,40 @@ First we need to download some tools (more to follow along the way!)
   - After restarting, make sure GateKeeper does not interfere with driver loading.
 
     - System Preferences -> Security & Privacy -> General
+      
+		<img src="./images/gatekeeper-check.png" alt="gatekeeper-check" width="550"/>
+      
+		<img src="./images/gatekeeper-check-popup.png" alt="gatekeeper-check-popup" width="550"/>
 
-      [![gatekeeper-check](./images/gatekeeper-check.png)](./images/gatekeeper-check.png)
-      [![gatekeeper-check-popup](./images/gatekeeper-check-popup.png)](./images/gatekeeper-check-popup.png)
 
       If there is an error message in the red box area, GateKeeper is interrupting the driver's operation.
 
-      [![security_and_privacy_kextload_approval](./images/security_and_privacy_kextload_approval.png)](./images/security_and_privacy_kextload_approval.png)
+	<img src="./images/security_and_privacy_kextload_approval.png" alt="security_and_privacy_kextload_approval" width="550"/>
 
-      If you are in a similar state as above, click 'Allow' and confirm with administrator password, then restart your computer.
 
-  - After starting the Arduino IDE, make sure it can communicate with the ESP32 module
+ - If you are in a similar state as above, click 'Allow' and confirm with administrator password, **then restart your computer**.
 
-    [![arduino-esp32-comm](./images/arduino-esp32-comm.png)](./images/arduino-esp32-comm.png)
+ - After starting the Arduino IDE, make sure it can communicate with the ESP32 module
+    
+  	<img src="./images/arduino-esp32-comm.png" alt="arduino-esp32-comm" width="450"/>
 
-    If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) as above.
+- If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) as above.
 
-    [![arduino-esp32-comm-failed](./images/arduino-esp32-comm-failed.png)](./images/arduino-esp32-comm-failed.png)
+<img src="./images/arduino-esp32-comm-failed.png" alt="arduino-esp32-comm-failed." width="550"/>
 
-    If communication is not possible, /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) does not exist as above.
+- If communication is not possible, /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) does not exist as above.
 
 
 ### Upload to the Board
 
   - Click on the Upload button (arrow pointing right on top of the Arduino window), and then **_while_** the text '*Connecting ...*' displays in the control window at the bottom of the screen, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
-
-  
-      [![arduino-connecting](./images/arduino-connecting.png)](./images/arduino-connecting.png)
+        
+     <img src="./images/arduino-connecting.png" alt="arduino-connecting" width="650"/>
       
 - **If the upload was successful, you will see this screen**: 
+	  
+	<img src="./images/arduino-wifizine-upload-done.png" alt="arduino-wifizine-upload-done" width="450"/>
 
-	  [![arduino-wifizine-upload-done](./images/arduino-wifizine-upload-done.png)](./images/arduino-wifizine-upload-done.png)
 
 - **If the upload was unsuccessful, you will see this error**
 
@@ -347,20 +354,21 @@ First we need to download some tools (more to follow along the way!)
 - The flash memory of the ESP32 module must be partitioned first to be used partly with different purposes.
 
 - During the above procedure, when setting up the ESP32 board, we selected:
+  
+  	<img src="./images/arduino-wifizine-config-board.png" alt="arduino-wifizine-config-board" width="350"/>
 
-  [![arduino-wifizine-config-board](./images/arduino-wifizine-config-board.png)](./images/arduino-wifizine-config-board.png)
 
   ```
   Partition Scheme : Default
   ```
 
-  The default partitioning scheme includes elements that are not necessarily required for Hot-spot zine, and the default partition configuration does have less room available for Zine content. (~ 1MB)
+- The default partitioning scheme includes elements that are not necessarily required for Hot-spot zine, and the default partition configuration does have less room available for Zine content. (~ 1MB)
 
 - So, by reconfiguring the Partition Scheme more efficiently, you may be able to upload a little more Hot-spot zine content. In this way, a capacity of about 1.9 MB can be used for Zine contents.
 
 - Once you have completed this procedure, you may select,
 
-  [![arduino-wifizine-custom-partition](./images/arduino-wifizine-custom-partition.png)](./images/arduino-wifizine-custom-partition.png)
+  	<img src="./images/arduino-wifizine-custom-partition.png" alt="arduino-wifizine-custom-partition" width="450"/>
 
   ```
   Partition Scheme : WIFI ZINE
@@ -371,28 +379,30 @@ First we need to download some tools (more to follow along the way!)
   - Download and install [the partition configuration file](https://raw.githubusercontent.com/applecargo/WifiZineThrowie/master/partition/wifi_zine.csv)
 
     Paste it into ~/Library/Arduino15/packages/esp32/hardware/esp32/1.0.1/tools/partitions
+    
+   	<img src="./images/arduino-partition-00001.png" alt="arduino-partition-00001" width="650"/>
 
-    [![arduino-partition-00001](./images/arduino-partition-00001.png)](./images/arduino-partition-00001.png)
 
-    The '~/Library/' folder is a hidden folder in the Finder, so type Cmd-Shift-G and type in 'Library'
+- The '~/Library/' folder is a hidden folder in the Finder, so type Cmd-Shift-G and type in 'Library'
+    
+    <img src="./images/arduino-partition-00002.png" alt="arduino-partition-00002" width="650"/>
 
-    [![arduino-partition-00002](./images/arduino-partition-00002.png)](./images/arduino-partition-00002.png)
 
-    Then, double-click the 'Arduino15' folder as a normal folder
+- Then, double-click the 'Arduino15' folder as a normal folder
+    
+    <img src="./images/arduino-partition-00003.png" alt="arduino-partition-00003" width="650"/>
 
-    [![arduino-partition-00003](./images/arduino-partition-00003.png)](./images/arduino-partition-00003.png)
+- Move to the above position
+    
+    <img src="./images/arduino-partition-00004.png" alt="arduino-partition-00004" width="650"/>
 
-    Move to the above position
+- Make it like this.
 
-    [![arduino-partition-00004](./images/arduino-partition-00004.png)](./images/arduino-partition-00004.png)
+- Edit the boards.txt file
+    
+    <img src="./images/arduino-partition-00005.png" alt="arduino-partition-00005" width="650"/>
 
-    Make it like this.
-
-  - Edit the boards.txt file
-
-    [![arduino-partition-00005](./images/arduino-partition-00005.png)](./images/arduino-partition-00005.png)
-
-    Open the file boards.txt file located in the above location and add the next four lines marked with + (remove the + sign!)
+- Open the file boards.txt file located in the above location and add the next four lines marked with + (remove the + sign!)
 
     ```diff
     --- /Users/doohoyi/Downloads/Telegram Desktop/boards.txt
@@ -440,7 +450,7 @@ First we need to download some tools (more to follow along the way!)
 
 The arduino code (WifiZineThrowie.ino) specifies the name of your personal mini network by looking for a file in the data folder that ends with .ssid. In the files you downloaded you can see it is now called: "THE-text-ZINE.ssid". You can change this filename to the name you like for your network (avoid symbols to be sure).  E.g. Clue1-Loes.
 
-  [![arduino-ssid-file](./images/arduino_ssid_file.png)](./images/arduino_ssid_file.png)
+<img src="./images/arduino_ssid_file.png" alt="arduino_ssid_file" width="650"/>
 
 ### Uploading your website to the module
 
@@ -457,14 +467,54 @@ While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP bo
   [![arduino-wifizine-webpage-upload-done](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
 
   Success! You can now find your private internet spot. Open the network settings on your phone, and select your network. Your website should pop up automatically, but some patience might help :) 
+  
+### Find your wifi network!
+
+Look up the list of available networks on your phone with the name you provided to the .ssid file earlier. You should see your network popping up there. Try connecting to it. Your website should come up automatically with a pop-up window. 
+
+<img src="./images/login_network.png" alt="wifi list and website" width="650"/>
+
 
 
 ## 4. Power up your module to a battery and solar cell
 
-### Step 1
-### Step 2
-### Step 3
-### Step 4
+### Step 1: Prepare the solar panel
+
+Enforce the connections with some electrical tape (or normal tape if you don't have any, or hotglue even). 
+
+<img src="./images/solarpanel_tape.jpeg" alt="solar panel with tape" width="650"/>
+
+### Step 2: Insert the battery into the charging board
+
+The flatter side is -, the less flat side is +
+
+If you are not sure, check with a multimeter. 
+
+A green light will turn on to indicate it is powered up. 
+
+<img src="./images/battery_plus-minus.png" alt="plus and minus of the battery" width="650"/>
+
+<img src="./images/battery_markings.jpeg" alt="battery marks" width="650"/>
+
+### Step 3: Plug in the USB cable and power the board
+
+Connect the solar panel to the board as indicated in the image. Plug the Wifi module to the USB port. 
+
+If the battery is fully powered, a second light will turn on to indicate charging is done (marked CHG DONE on the PCB board). 
+
+<img src="./images/solarpad_connections.jpeg" alt="connections to solar charging board" width="650"/>
+
+### Step 4: Wrap it up nicely
+
+Use tie-wraps to wrap everything together nice and tight. Make a little cardboard enclosure to "hide" your wifi server. 
+
+<img src="./images/components.jpeg" width="650"/> 
+<br>
+*All the components connected*
+
+<img src="./images/module_box2.jpg" width="650"/>
+<br>
+*All the components inside a non-black box :)*
 
 
 
@@ -506,44 +556,23 @@ Now that you know how to upload a website, you can design your own! Here are som
 - Example 9 : Tone.js  (TBD)
 
 
-----
 
-## What is a hot-spot zine?
 
-### One line description
+## Previous research this project builds upon
 
-- A wireless communication and web service device designed to service an independent publications in webzine format when a smartphone attempts to log in to a hotspot
-
-[![hotspot-zine-ssid](./images/hotspot-zine-ssid.jpg){:width="500px"}](./images/hotspot-zine-ssid.jpg)
-[![hotspot-zine-login](./images/hotspot-zine-login.jpg){:width="500px"}](./images/hotspot-zine-login.jpg)
-
-- [View more](http://pilote.byus.net/wpdiana/?page_id=1064)
-
-### Preceding project
+Dianaband's workshop, and this H&D workshop builds upon the generous documentation of Andy Reischle on his blog AReResearch. Check it out! He is very funny too :) 
 
 - [CaptiveIntraweb by AReResearch (Andy Reischle) @ 2015](https://github.com/reischle/CaptiveIntraweb)
 
-  [![construction-overview](./images/areresearch/img4.png){:width="500px"}](./images/areresearch/img4.png)
 
-### Components
+[![Lighting an LED with a DC motor](https://img.youtube.com/vi/fQM-GHY6VJ8/0.jpg)](https://www.youtube.com/watch?v=fQM-GHY6VJ8)
+<br>*Click on the image to watch on Youtube!*
 
-- Tangible components
-  - Espressif's ESP32 module
-  - Power supply (battery or DC adapter)
-  - (Optional) a case or a hull
-  - (Optional) Magnets
+<img src="./images/areresearch/img4.png" width="650"/>
 
-  [![construction-overview](./images/areresearch/img1.png){:width="500px"}](./images/areresearch/img1.png)
+## Technical details 
 
-  [![construction-overview](./images/areresearch/img2.png){:width="500px"}](./images/areresearch/img2.png)
-
-  [![construction-overview](./images/areresearch/img5.png){:width="500px"}](./images/areresearch/img5.png)
-
-  [![construction-overview](./images/areresearch/img6.png){:width="500px"}](./images/areresearch/img6.png)
-
-  [![construction-overview](./images/areresearch/img7.png){:width="500px"}](./images/areresearch/img7.png)
-
-  (These images are posted by Andy Reischle (AReResearch).)
+Below is a diagram and list of technologies ("stack") that makes up this application. This information was compiled by Dianaband for the original workshop. 
 
 - Intangible components
   - [ESP-IDF Development Environment](https://github.com/espressif/esp-idf/tree/master/components)
@@ -551,21 +580,11 @@ Now that you know how to upload a website, you can design your own! Here are som
   - [SPIFFS file system](https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS)
   - [ESP web server library](https://github.com/me-no-dev/ESPAsyncWebServer)
   - [A domain name server (captive portal)](https://github.com/espressif/arduino-esp32/tree/master/libraries/DNSServer)
-  - Web page (Webzine)
+  - Webpage (the one you wrote in HTML)
 
-  [![Wi-Fi-zine-stacks](./images/Wi-Fi-zine-stacks.png){:width="500px"}](./images/Wi-Fi-zine-stacks.png)
+<img src="./images/Wi-Fi-zine-stacks.png" width="750"/>
 
   - [More information](http://esp32.net/)
   - [The Wi-Fi stack is not open source](https://github.com/espressif/esp32-wifi-lib/issues/2)
-
-### Limitations of Hot-spot zine platform that you should know
-
-- Storage 2MB or less
-- Slightly slower than a typical web server
-- Somewhat unstable behavior compared to a typical web server (sometimes a system restart may be required)
-
-
-
-## Making a Hot-spot zine
 
 
