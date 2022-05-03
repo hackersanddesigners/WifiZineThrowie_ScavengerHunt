@@ -14,21 +14,20 @@ Their workshop in turn builds up on the research by Andy Reischle (AreResearch),
  * add sound to html template
  * image captions/alt text
 
-## Workshop outline
+## Solarpunk? Internet? Kids?
 
-### to be added
+### Intergenerational workshop collaboration
 
-Info her info here 
+Mz* Baltazar
+Prototype PGH
+H&D
+Funders
 
+Info info info
 
-### What are we making? 
+See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 
-We will program a small wireless device with an ESP32 chip to serve a tiny (max 2MB) html websites via WiFi. The module is powered by a battery, which in turn is charged by a solar cell. The Wifi module "serves" a small website anytime a smartphone tries to log on to the network it is broadcasting (like an internet hotspot). It allows you to redesign the "log-in" screen that usually pops up when you try to log on to public WiFi networks, and hijack it to publish content you want to share WiFi, but only with your neighbours and local friends within a ~25 m range. 
-
- 
-## Solarpunk? Internet? 
-
-### Alternative energy sources
+### Energy and material sources we need to have an Internet
 
 Text text
 
@@ -37,7 +36,8 @@ Text text
 
 ### Alternatives for batteries?
 
-Text text
+- Can we power devices that make up "the Internet" in a different way?
+- Possibilities? Difficulties? 
 
 ### The incredible shrinking internet? 
 
@@ -45,6 +45,28 @@ Text text
 - What if some of the internet wasn't worldwide? 
 
 <img src="./images/components.jpeg" alt="wifi modules with solar panel" width="600"/>
+
+
+## Workshop outline
+
+### to be added
+
+Info her info here 
+
+<img src="./images/workshop_solar01.jpg" alt="wifi modules with solar panel" width="600"/>
+
+Text text text
+
+<img src="./images/workshop_solar02.jpg" alt="wifi modules with solar panel" width="600"/>
+
+Text text text
+
+
+
+### What are we making? 
+
+We will program a small wireless device with an ESP32 chip to serve a tiny (max 2MB) html websites via WiFi. The module is powered by a battery, which in turn is charged by a solar cell. The Wifi module "serves" a small website anytime a smartphone tries to log on to the network it is broadcasting (like an internet hotspot). It allows you to redesign the "log-in" screen that usually pops up when you try to log on to public WiFi networks, and hijack it to publish content you want to share WiFi, but only with your neighbours and local friends within a ~25 m range. 
+
 
 ## 0. Materials and preparations
 
@@ -64,6 +86,15 @@ Text text
 
 
 ## 1. Hide the treasure & create some clues
+
+- text
+- text
+- text
+
+Image
+
+- text 
+- text
 
 ## 2. Designing a mini HTML webpage (CSS and Javascript optional)
 
