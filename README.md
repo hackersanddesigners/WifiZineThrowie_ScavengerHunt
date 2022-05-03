@@ -165,7 +165,7 @@ First we need to download some tools (more to follow along the way!)
     	[![arduino-00011](./images/arduino-00011.png)](./images/arduino-00011.png)
     	[![arduino-00012](./images/arduino-00012.png)](./images/arduino-00012.png)
 
-    - Copy that folder to ~/Documents/Arduino (the '~' sign means your home folder)
+    - Copy that folder to "~/Documents/Arduino" (the "~" sign means your home folder)
 
     	[![arduino-00013](./images/arduino-00013.png)](./images/arduino-00013.png)
 
@@ -256,18 +256,37 @@ First we need to download some tools (more to follow along the way!)
 	- Mojave (10.14.x)
 
 		- [How to disable GateKeeper](http://osxdaily.com/2016/09/27/allow-apps-from-anywhere-macos-gatekeeper/)
-		- sudo spctl --master-disable
+
+		 ```
+		 sudo spctl --master-disable
+		  ```
 
 	- High Sierra (10.13.x)
 
         - [How to disable GateKeeper](https://stackoverflow.com/questions/47109036/cp2102-device-is-not-listed-in-dev-on-macos-10-13)
         - [How to disable GateKeeper](https://pikeralpha.wordpress.com/2017/08/29/user-approved-kernel-extension-loading/)
         - [How to disable GateKeeper](https://www.silabs.com/community/interface/knowledge-base.entry.html/2018/03/30/usb_to_uart_bridgev-Dnef)
-        - spctl kext-consent disable
+        - https://stackoverflow.com/questions/47109036/cp2102-device-is-not-listed-in-dev-on-macos-10-13 
+        - The allow button in the settings menu might not werk, then to disable checking altogether:
+			1.	Shut down your Mac
+			2.	Start again while holding mac+ R during boot to enter recovery mode
+			3.	Open a terminal window
+			4.	type the following command and press enter
+
+			```
+			spctl kext-consent disable
+			```			
+
+			5.	Reboot
+			6.	Try install driver again
+	
 
 	- Sierra (10.12.x)
         - [How to disable GateKeeper](https://www.tekrevue.com/tip/gatekeeper-macos-sierra/)
-        - sudo spctl --master-disable
+      
+			  ```
+			  sudo spctl --master-disable			
+			  ```	
 
 	- El capitan (10.11.x)
 		- [How to disable GateKeeper](https://medium.com/@krukmat/macos-el-capitan-enabling-usb-for-cp2102-usb-to-ttl-3b63449e02e9)
@@ -448,9 +467,9 @@ First we need to download some tools (more to follow along the way!)
   
 ### Changing the name of your wifi network
 
-The arduino code (WifiZineThrowie.ino) specifies the name of your personal mini network by looking for a file in the data folder that ends with .ssid. In the files you downloaded you can see it is now called: "THE-text-ZINE.ssid". You can change this filename to the name you like for your network (avoid symbols to be sure).  E.g. Clue1-Loes.
+The arduino code (WifiZineThrowie.ino) specifies the name of your personal mini network by looking for a file in the data folder that ends with .ssid. In the files you downloaded you can see it is now called: "solarpunk-schat.ssid". You can change this filename to the name you like for your network (avoid symbols to be sure).  E.g. Clue1-Loes.
 
-<img src="./images/arduino_ssid_file.png" alt="arduino_ssid_file" width="650"/>
+<img src="./images/ssid_name.png" alt="ssid_name in finder" width="450"/>
 
 ### Uploading your website to the module
 
