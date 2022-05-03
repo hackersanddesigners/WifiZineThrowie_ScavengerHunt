@@ -18,7 +18,19 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 Info her info here 
 
   [![module in a box](./images/module_box.jpg)](./images/module_box.jpg)*Solarpowered mini server module in a non-black-box*
+ 
+### Solarpunk? Internet? 
 
+### Alternative energy sources
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AXfvayFPXFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Alternatives for batteries?
+
+### The incredible shrinking internet? 
+
+- What if it were only 2 MB
+- What if some of the internet wasn't worldwide? 
 
 
 ## 0. Materials and preparations
