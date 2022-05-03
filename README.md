@@ -8,7 +8,6 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 **To Do**: 
 
- * link download Sublime text or other code/html editor
  * add own intro and activities (so it becomes workshop script)
  * image captions/alt text
 
@@ -19,20 +18,60 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 Info her info here 
 
 
-## Materials and preparations
+## 0. Materials and preparations
 
-- A computer
-- A Development board with ESP32 module
-- A Micro USB cable for communication (Android data cable)
-- Battery, battery pack or DC adapter
+- A computer per duo
+- A mobile phone per duo (no dataplan needed)
+- Internet connection to download libraries and look things up
+- A development board with ESP32 module
+- A micro USB cable for communication (Android data cable)
+- A rechargeabe battery 3.7V
+- A charging board 
+- A solar cell 
 - Web page (html / css / js + media files)
-- (Optionally) a sensor or actuator (such as a speaker)
+- A puzzle (one you make or one you have!)
+- Pens and paper, cardboard, scissors, hotglue, tape
 
-## Things to install before
+
+## 1. Hide the treasure & create some clues
+
+## 2. Designing a mini HTML webpage (CSS and Javascript optional)
+
+Download a code editing tool to create your HTML code. We really like Brackets, because it has a feature to show you a live preview of what you are writing in the code, in a separate browser window (see below). 
 
 - [**Brackets code editor**](https://brackets.io/) to edit your HTML page
 
-- [**Online image compression tool**](https://www.iloveimg.com/compress-image) (to make your pictures smaller)
+    [![brackets](./images/brackets_preview.png)](./images/brackets_preview.png)*On the left is your HTML code pad, and on the right you see a preview of what the page will look like.*
+
+
+**Important!**
+
+Note that your entire website (so the index.html plus any other files like images, has to be **_less than 2MB_** in total or it will fail to upload. This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
+
+### Step 1: open the example
+
+### Step 2: change some things
+
+### Step 3: change *more* things!
+
+### Step 4: think of something else to try 
+
+And look them up on the internet, or ask someone in the group for help. 
+
+
+### Some tools that are useful for designing your mini website
+
+* [Online image compression tool](https://www.iloveimg.com/compress-image) (to make your pictures smaller)
+* [W3 schools tutorials](https://www.w3schools.com/html/default.asp) to look up how to write html bits and bobs
+* [ASCII art generator!](https://textkool.com/en/ascii-art-generator) make art made up out of letters and numbers
+* [Libre fonts by wxmen](https://www.design-research.be/by-womxn/) find a cool typeface!
+* [Emoji codes](https://www.w3schools.com/charsets/ref_emoji.asp) all the emoji's you ever wanted! 
+* [Color picker tool](https://imagecolorpicker.com/color-code/6800ff) to help find the code that stands for a particular color you like and want to use in the HTML.
+
+
+## 3. Programming the WiFi modules
+
+First we need to download some tools (more to follow along the way!)
 
 - [**Arduino Download**](https://www.arduino.cc/en/Main/Software)
 
@@ -395,6 +434,17 @@ While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP bo
   [![arduino-wifizine-webpage-upload-done](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
 
   Success! You can now find your private internet spot. Open the network settings on your phone, and select your network. Your website should pop up automatically, but some patience might help :) 
+
+
+## 4. Power up your module to a battery and solar cell
+
+### Step 1
+### Step 2
+### Step 3
+### Step 4
+
+
+
 
 ## Designing your website 
 
