@@ -139,7 +139,13 @@ Then take 2 or 3 pictures with your phone of the surrounding area to provide a c
 
 **Back at the studio**
 
-Think a little bit about how you want to make your clues exciting on your tiny website
+Think a little bit about how you want to make your clues exciting on your tiny website. Do you want to add a sound clip where you tell a story? Or some mysterious sounds? Do you want to add a drawing? What is your hiding spot called? 
+
+You can design your mini website by drawing it out, and together with your grown-up start building it with code. 
+
+**Lunch preparations**
+
+Around 12 o'clock the designers will prepare lunch together so we can all eat! 
 
 
 ## 2. Designing a mini HTML webpage (CSS and Javascript optional)
