@@ -73,9 +73,10 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 
 * Turn off your data plan
 * Look for the list of wifi networks on your phone
-* Found it? Let's go out and find the network called "solarpunk-schat".
+* Found it? Let's go out and find the network called **"solarpunk-schat"**.
 * When you find it, connect to it and follow the instructions to find the first treasure.
 
+<img src="./images/workshop_solar01.jpg" alt="wifi modules with solar panel" width="600"/>
 
 ## Workshop outline
 
@@ -83,21 +84,15 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 
 Then we split into groups to design our own scavenger hunt extravaganza using small wifi servers and mini websites we will make together. 
  
-**Designers** 
+**Designers - team B** 
 
-Our young participants will be the designers of the scavenger hunt. With Pernilla they will explore the building for clever hiding spots, and ways to give visual clues to find them - but not too many because we like a challenge! When that is taken care of, they will prepare lunch together with Pernilla and Jennifer, so the grown-ups can be fed around 12.30. 
+Our young participants will be the designers of the scavenger hunt. With Pernilla they will explore the building for clever hiding spots, and ways to give visual clues to find them - but not too many because we like a challenge! When that is taken care of, they will prepare lunch together, so the grown-ups can be fed around 12.30. 
  
-**Hackers**
+**Hackers - team A**
 
-In the meantime, the grown-up participants will take on the hacker roles! Depending on your interests and skillset you experiment with coding your own small website in HTML (and CSS and Javascript if you are up for it), and/or you will learn to program a small microcontroller so can act as a tiny webserver that can be used to publish the tiny websites hyperlocally (range of +/- 20 m). After all that hacking business, we will be hungry for lunch and catching up. 
-<img src="./images/workshop_solar01.jpg" alt="wifi modules with solar panel" width="600"/>
-
-Text text text
-
+In the meantime, the grown-up participants will take on the hacker roles! Depending on your interests and skillset you experiment with coding your own small website in HTML (and CSS and Javascript if you are up for it), and/or you will learn to program a small microcontroller so can act as a tiny webserver that can be used to publish the tiny websites hyperlocally (range of +/- 20 m). After all that hacking business, we will be hungry for lunch and catching up.
+ 
 <img src="./images/workshop_solar02.jpg" alt="wifi modules with solar panel" width="600"/>
-
-Text text text
-
 
 
 ### What are we making? 
@@ -124,14 +119,28 @@ We will program a small wireless device with an ESP32 chip to serve a tiny (max 
 
 ## 1. Hide the treasure & create some clues
 
-- text
-- text
-- text
+We made a jigsaw puzzle, and each young designer will get a few pieces of the puzzle to hide in the space. 
 
-Image
+**Let's decide on the rules**
 
-- text 
-- text
+To make sure it's fun and safe for everyone, let's think about the rules we want to agree on (kids lead).
+
+**Let's explore the space!**
+
+NDSM is a big place with lots of fun spots! We'll walk around together to get an idea. And then you can decide which hiding spot you will choose to hide your puzzle pieces (don't show the others!)
+
+**Choose your hiding spot and provide clues**
+
+Find a good hiding spot that is not clearly visible to everyone, but a little hidden from plain sight. 
+
+Then take 2 or 3 pictures with your phone of the surrounding area to provide a clue about where the hiding spot is. 
+
+***Tip: take one close-up picture of an interesting detail that people can recognize. And take one picture a bit further away so give some more clues about where it is. Don't make it too easy!*** 
+
+**Back at the studio**
+
+Think a little bit about how you want to make your clues exciting on your tiny website
+
 
 ## 2. Designing a mini HTML webpage (CSS and Javascript optional)
 
