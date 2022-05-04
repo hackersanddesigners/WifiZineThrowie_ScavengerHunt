@@ -117,7 +117,7 @@ We will program a small wireless device with an ESP32 chip to serve a tiny (max 
 - Pens and paper, cardboard, scissors, hotglue, tape
 
 
-## 1. Hide the treasure & create some clues
+## 1. Hide the treasure & create some clues (team B)
 
 We made a jigsaw puzzle, and each young designer will get a few pieces of the puzzle to hide in the space. 
 
@@ -148,7 +148,7 @@ You can design your mini website by drawing it out, and together with your grown
 Around 12 o'clock the designers will prepare lunch together so we can all eat! 
 
 
-## 2. Designing a mini HTML webpage (CSS and Javascript optional)
+## 2. Designing a mini HTML webpage (CSS and Javascript optional) (team A - option 1)
 
 Download a code editing tool to create your HTML code. We really like Brackets, because it has a feature to show you a live preview of what you are writing in the code, in a separate browser window (see below). 
 
@@ -240,7 +240,7 @@ Use whatever skills and knowledge you already have, or look things up on the int
 Note that your entire website (so the index.html plus any other files like images, has to be **_less than 2MB_** in total or it will fail to upload. This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
 
 
-## 3. Programming the WiFi modules
+## 3. Programming the WiFi modules (team A option 2)
 
 First we need to download some tools (more to follow along the way!)
 
@@ -634,7 +634,7 @@ Look up the list of available networks on your phone with the name you provided 
 
 
 
-## 4. Power up your module to a battery and solar cell
+## 4. Power up your module to a battery and solar cell (team A + B)
 
 ### Step 1: Prepare the solar panel
 
@@ -673,47 +673,6 @@ Use tie-wraps to wrap everything together nice and tight. Make a little cardboar
 <img src="./images/module_box2.jpg" width="650"/>
 <br>
 *All the components inside a non-black box :)*
-
-
-
-
-## Designing your website 
-
-Now that you know how to upload a website, you can design your own! Here are some tips and tricks to design your own website you can build to hide a clue. 
-
-- Example 1 Text page
-
-  - [Hello, Text?](https://github.com/applecargo/WifiZineThrowie/blob/master/data-text.zip?raw=true)
-
-    - [Obtaining fonts](https://www.dafont.com/)
-
-- Example 2 Images page
-
-  - [Imaginary, world](https://github.com/applecargo/WifiZineThrowie/blob/master/data-image.zip?raw=true)
-
-- Example 3 Sounding page
-
-  - [Sound-world!](https://github.com/applecargo/WifiZineThrowie/blob/master/data-sound.zip?raw=true)
-
-- Example 4 Hyper-linked pages
-
-  - Looooong story! (TBD)
-
-- Example 5
-
-  - (advanced) WebSocket - socket.io + server-side programming @ arduino (TBD)
-
-    - I have not tried it, but it must be possible. Let's create an example.
-
-- Example 6 : Paper.js  (TBD)
-
-- Example 7 : P5.js  (TBD)
-
-- Example 8 : <http://molleindustria.github.io/p5.play/>  (TBD)
-
-- Example 9 : Tone.js  (TBD)
-
-
 
 
 ## Previous research this project builds upon
