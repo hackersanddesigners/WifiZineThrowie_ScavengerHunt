@@ -14,9 +14,10 @@ Their workshop in turn builds up on the research by Andy Reischle (AreResearch),
  * add sound to html template
  * image captions/alt text
 
-## Solarpunk? Internet? Kids?
+ 
+## About this project
 
-### Intergenerational workshop collaboration
+Intergenerational workshop collaboration
 
 Mz* Baltazar
 Prototype PGH
@@ -27,24 +28,53 @@ Info info info
 
 See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 
-### Energy and material sources we need to have an Internet
+## Solarpunk? Internet? Kids?
 
-Text text
+### Introductions
+
+* What is your name?
+* What gives you energy and a good feeling?
+
+### Why do technologies need energy? 
+
+* What is energy? Where does it come from?
+
+* Only transforms, never disappears? What does it mean? 
+
+	* running, getting hot
+	* drinking tea: the kettle, our body
+
+* Alternative sources of energy do you know?
+
+	* Solar power
+	* Dynamo
+	* Lemons
+	* How much energy can you create with them?
 
 [![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)
 <br>*Click on the image to watch on Youtube!*
 
 ### Alternatives for batteries?
 
-- Can we power devices that make up "the Internet" in a different way?
-- Possibilities? Difficulties? 
+* How much energy do we need to have Internet?
+* How can you find out? 
+* LED is easily satisfied but chips (brains) are not
+* Can we power devices that make up "the Internet" in a different way?
+* Possibilities? Difficulties? 
 
-### The incredible shrinking internet? 
+### The incredible shrinking Internet? 
 
-- What if it were only 2 MB
-- What if some of the internet wasn't worldwide? 
+* What if it were only 2 MB
+* What if some of the Internet wasn't worldwide? 
 
 <img src="./images/components.jpeg" alt="wifi modules with solar panel" width="600"/>
+
+### We made a small Internet, let's find it!
+
+* Turn off your data plan
+* Look for the list of wifi networks on your phone
+* Found it? Let's go out and find the network called "solarpunk-schat".
+* When you find it, connect to it and follow the instructions to find the first treasure.
 
 
 ## Workshop outline
@@ -175,6 +205,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 * [Libre fonts by wxmen](https://www.design-research.be/by-womxn/) find a cool typeface!
 * [Emoji codes](https://www.w3schools.com/charsets/ref_emoji.asp) all the emoji's you ever wanted! 
 * [Color picker tool](https://imagecolorpicker.com/color-code/6800ff) to help find the code that stands for a particular color you like and want to use in the HTML.
+* [Freesound archive](https://freesound.org/) to find sound clips that are free to use
 
 ### Step 4: think of something else to try 
 
