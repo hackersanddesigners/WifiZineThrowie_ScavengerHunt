@@ -79,10 +79,17 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 
 ## Workshop outline
 
-### to be added
+### After we find the first treasure
 
-Info her info here 
+Then we split into groups to design our own scavenger hunt extravaganza using small wifi servers and mini websites we will make together. 
+ 
+**Designers** 
 
+Our young participants will be the designers of the scavenger hunt. With Pernilla they will explore the building for clever hiding spots, and ways to give visual clues to find them - but not too many because we like a challenge! When that is taken care of, they will prepare lunch together with Pernilla and Jennifer, so the grown-ups can be fed around 12.30. 
+ 
+**Hackers**
+
+In the meantime, the grown-up participants will take on the hacker roles! Depending on your interests and skillset you experiment with coding your own small website in HTML (and CSS and Javascript if you are up for it), and/or you will learn to program a small microcontroller so can act as a tiny webserver that can be used to publish the tiny websites hyperlocally (range of +/- 20 m). After all that hacking business, we will be hungry for lunch and catching up. 
 <img src="./images/workshop_solar01.jpg" alt="wifi modules with solar panel" width="600"/>
 
 Text text text
