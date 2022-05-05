@@ -64,7 +64,7 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 
 ### The incredible shrinking Internet? 
 
-* What if it were only 2 MB
+* What if an average webpage were only 1 MB
 * What if some of the Internet wasn't worldwide? 
 
 <img src="./images/components.jpeg" alt="wifi modules with solar panel" width="600"/>
@@ -102,19 +102,41 @@ We will program a small wireless device with an ESP32 chip to serve a tiny (max 
 
 ## 0. Materials and preparations
 
+*Account for one kit per duo. Total cost of the components per kit is around € 16,75 ex shipping.*
+
 - A computer per duo
 - A mobile phone per duo (no dataplan needed)
 - Internet connection to download libraries and look things up
-- A development board with ESP32 module
-- A micro USB cable for communication (Android data cable)
-- A rechargeabe battery 3.7V
-- A charging board 
-- A solar cell 
+- A development board with ESP32 module and 4MB flash memory, e.g. [ESP32 - CP2102](https://www.tinytronics.nl/shop/nl/development-boards/microcontroller-boards/met-wi-fi/esp32-wifi-en-bluetooth-board-cp2102)
+- A short micro USB cable e.g. [this one](https://www.tinytronics.nl/shop/nl/kabels-en-connectoren/kabels-en-adapters/usb/micro-usb/micro-usb-kabel-30cm)
+- A 5V charging board e.g. this [LilyGo TTGO H435 with a 18650 rechargeable battery holder](https://www.tinytronics.nl/shop/nl/power/bms-en-laders/li-ion-en-li-po/met-protectiecircuit/lilygo-ttgo-t-bat-met-18650-batterijhouder-cn3065)
+- A rechargeable Li-ion battery compatible with the board, e.g. [LG 18650 Li-ion battery 3400mAh](https://www.tinytronics.nl/shop/nl/power/batterijen/18650/lg-18650-li-ion-batterij-3400mah-10a-inr18650-mj1)
+- A 5.5V solar cell with JST-PH connector e.g. [Seeed Studio 5.5V Solar Panel](https://www.tinytronics.nl/shop/nl/power/zonne-energie/zonnepanelen/seeed-studio-zonnepaneel-5.5v-170ma-80x100mm-met-jst-ph-connector)
 - Web page (html / css / js + media files)
 - A puzzle (one you make or one you have!)
 - Tie wraps of different sizes
 - Electrical tape
 - Pens and paper, cardboard, scissors, hotglue, tape
+
+### Space
+
+In terms of space you will need a workshop space with internet access to program the modules and create the HTML pages. 
+
+And for the scavenger hunt, it's most fun if you have a large space to play in. The wifi modules have a range of 20-25 meters. The location for our workshop was at an old warehouse in Amsterdam North, called NDSM Kunststad where our studio is. 
+
+Since it is all wireless (and solar powered), you could also play this outside! Just take a look at the weather forecast and maybe consider making waterproof cover of sorts. 
+
+<img src="./images/kunststad1.jpg" alt="NDSM warehouse in Amsterdam" width="600"/>
+
+<img src="./images/kunststad3.jpg" alt="NDSM warehouse in Amsterdam" width="600"/>
+
+<img src="./images/kunststad4.jpg" alt="NDSM warehouse in Amsterdam" width="600"/>
+
+<img src="./images/kunststad5.png" alt="NDSM warehouse in Amsterdam" width="600"/>
+
+<img src="./images/kunststad6.png" alt="NDSM warehouse in Amsterdam" width="600"/>
+
+*Images by NDSM: https://www.ndsm.nl/en/location/ndsm-loods*
 
 
 ## 1. Hide the treasure & create some clues (team B)
@@ -192,7 +214,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 ### Step 2: change some things
 
-- Find line 17 in the code, where it says: "color = rebeccapurple"
+- Find line 19 in the code, where it says: "color = rebeccapurple"
 
 - Now go ahead and instead of rebeccapurple, type "deepskyblue"
 
@@ -237,7 +259,7 @@ Use whatever skills and knowledge you already have, or look things up on the int
 
 **Important!**
 
-Note that your entire website (so the index.html plus any other files like images, has to be **_less than 2MB_** in total or it will fail to upload. This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
+Note that your entire website (so the index.html plus any other files like images, has to be **_around 1MB_** in total or it will fail to upload (we're not sure about the exact number) This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
 
 
 ## 3. Programming the WiFi modules (team A option 2)
