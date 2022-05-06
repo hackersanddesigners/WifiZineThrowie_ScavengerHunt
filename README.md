@@ -393,7 +393,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
     - This means Arduino confirms it can find everything it needs to upload working code 
     - Don't upload the code to the board yet, first we need some more stuff
 	  	
-	  	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino window with "Done compiling" message in the bottom bar of the window" width="350"/>
+	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino window with "Done compiling" message in the bottom bar of the window" width="350"/>
 	  
     - **If the compilation process ends abnormally, it will give an orange error**
   
