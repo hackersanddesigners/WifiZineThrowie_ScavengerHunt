@@ -1,4 +1,4 @@
-<img src="./images/scavengerhunt.jpg" alt="scavengerhunt" width="600"/>
+<img src="./images/scavengerhunt.jpg" alt="hand holding twig with colorful wifi signal beaming out of it" width="600"/>
 
 # Solarpunk Kids: Wifi Scavenger Hunt 
 
@@ -67,7 +67,7 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 * What if an average webpage were only 1 MB
 * What if some of the Internet wasn't worldwide? 
 
-<img src="./images/components.jpeg" alt="wifi modules with solar panel" width="600"/>
+<img src="./images/components.jpeg" alt="wifi module with solar panel and a battery" width="600"/>
 
 ### We made a small Internet, let's find it!
 
@@ -76,7 +76,7 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 * Found it? Let's go out and find the network called **"solarpunk-schat"**.
 * When you find it, connect to it and follow the instructions to find the first treasure.
 
-<img src="./images/workshop_solar01.jpg" alt="wifi modules with solar panel" width="600"/>
+<img src="./images/workshop_solar01.jpg" alt="drawing of a phone, a puzzle and wifi signal" width="600"/>
 
 ## Workshop outline
 
@@ -92,7 +92,7 @@ Our young participants will be the designers of the scavenger hunt. With Pernill
 
 In the meantime, the grown-up participants will take on the hacker roles! Depending on your interests and skillset you experiment with coding your own small website in HTML (and CSS and Javascript if you are up for it), and/or you will learn to program a small microcontroller so can act as a tiny webserver that can be used to publish the tiny websites hyperlocally (range of +/- 20 m). After all that hacking business, we will be hungry for lunch and catching up.
  
-<img src="./images/workshop_solar02.jpg" alt="wifi modules with solar panel" width="600"/>
+<img src="./images/workshop_solar02.jpg" alt="drawing explaining roles of team A and team B and how they come together" width="600"/>
 
 
 ### What are we making? 
@@ -126,15 +126,15 @@ And for the scavenger hunt, it's most fun if you have a large space to play in. 
 
 Since it is all wireless (and solar powered), you could also play this outside! Just take a look at the weather forecast and maybe consider making waterproof cover of sorts. 
 
-<img src="./images/kunststad1.jpg" alt="NDSM warehouse in Amsterdam" width="600"/>
+<img src="./images/kunststad1.jpg" alt="NDSM warehouse entrance" width="600"/>
 
-<img src="./images/kunststad3.jpg" alt="NDSM warehouse in Amsterdam" width="600"/>
+<img src="./images/kunststad3.jpg" alt="hallways in NDSM warehouse" width="600"/>
 
-<img src="./images/kunststad4.jpg" alt="NDSM warehouse in Amsterdam" width="600"/>
+<img src="./images/kunststad4.jpg" alt="outside view of NDSM warehouse" width="600"/>
 
-<img src="./images/kunststad5.png" alt="NDSM warehouse in Amsterdam" width="600"/>
+<img src="./images/kunststad5.png" alt="inside square in NDSM warehouse with large colorful curtain hanging from the sealing and seating area " width="600"/>
 
-<img src="./images/kunststad6.png" alt="NDSM warehouse in Amsterdam" width="600"/>
+<img src="./images/kunststad6.png" alt="one of the large empty halls inside the NDSM warehouse, lined with yellow iron columns" width="600"/>
 
 *Images by NDSM: https://www.ndsm.nl/en/location/ndsm-loods*
 
@@ -176,7 +176,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 - [**Brackets code editor**](https://brackets.io/) to edit your HTML page
 
-<img src="./images/brackets_preview.png" alt="brackets code editor and preview window" width="600"/>
+<img src="./images/brackets_preview.png" alt="brackets code editor and preview window of the example website" width="600"/>
 
 ### Download our github repository for all the required code and HTML templates
 
@@ -184,7 +184,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 	
   - On the top right of the page, click 'Clone or download' -> 'Download ZIP'
 
-  	 <img src="./images/repositoryHD.png" alt="repository on github" width="650"/>
+  	 <img src="./images/repositoryHD.png" alt="screenshot of repository on github" width="650"/>
 
 - **Renaming and moving the folder**
     - Decompress the .zip file by doubleclicking
@@ -195,11 +195,11 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 - In the .zip file you downloaded, you can find some folders. Find the one called "code" and inside that navigate to > data > index.html
 
-	<img src="./images/path_to_index.html.png" alt="path to index.html file" width="650"/> 
+	<img src="./images/path_to_index.html.png" alt="screenshot of file path to index.html file" width="650"/> 
 
 - If you double click it it will open a new browser window with a page that says "Hallo SolarPunk Kids"! This is what we designed as a template. 
 
-	<img src="./images/openinbrowser.png" alt="index page opened in a browser" width="650"/> 
+	<img src="./images/openinbrowser.png" alt="index.html file view in a web browser" width="650"/> 
 
 - Now you can close it. 
 
@@ -209,7 +209,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 - Brackets even has a function to give you a live preview. If you click on the lightning bolt on the top right, it opens a preview window with the webpage you are designing. Every time you save the code (e.g. using command + S) it will refresh the preview you you can see your changes. 
 
-	<img src="./images/brackets_preview_bolt.png" alt="brackets_preview_bolt" width="650"/> 
+	<img src="./images/brackets_preview_bolt.png" alt="screenshot of brackets editor and preview window, with the lightning bolt marked with a circle" width="650"/> 
 
 
 ### Step 2: change some things
@@ -222,7 +222,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 	<img src="./images/rebeccapurple.png" alt="html code showing color = rebeccapurple" width="750"/> 
 
-	<img src="./images/deepskyblue.png" alt="html code showing color = rebeccapurple" width="750"/> 
+	<img src="./images/deepskyblue.png" alt="html code showing color = deepskyblue" width="750"/> 
 
 **Tip**: if you want to try some other colors, replace the name "rebeccapurple" with a number you can look up with a color picker like this [color picker tool](https://imagecolorpicker.com/color-code/6800ff)
 
@@ -301,15 +301,15 @@ First we need to download some tools (more to follow along the way!)
 
 - **Launch the Board Manager**
 
- 	 <img src="./images/arduino-board-manager.png" alt="arduino-board-managerd" width="550"/>
+ 	 <img src="./images/arduino-board-manager.png" alt="screenshot showing where to path to find the board manager panel: > Tools > Board xxxx > Boards Manager " width="550"/>
 
 - **Select the Board Manager pop-up window**
    	 
-    <img src="./images/arduino-board-manager-popup.png" alt="arduino-board-manager-popup" width="600"/>
+    <img src="./images/arduino-board-manager-popup.png" alt="arduino board manager popup window" width="600"/>
 
 - **Type 'esp32' in the search box and click 'Install'**
 
-    <img src="./images/arduino-board-manager-esp32.png" alt="arduino-board-manager-esp32" width="600"/>
+    <img src="./images/arduino-board-manager-esp32.png" alt="board manager pop-up with esp32 typed into search box" width="600"/>
 
 
 ## Download our github repository for all the required code and HTML templates
@@ -320,7 +320,7 @@ Do this if you haven't done so previously.
 	
   - On the top right of the page, click 'Clone or download' -> 'Download ZIP'
 
-  	 <img src="./images/repositoryHD.png" alt="repository on github" width="650"/>
+  	 <img src="./images/repositoryHD.png" alt="H&D repository on github" width="650"/>
 
 - **Renaming and moving the folder**
     - Decompress the .zip file by doubleclicking
@@ -334,42 +334,41 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
    - Click 'Clone or download' -> 'Download ZIP' on the github page for the [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer).
 
-  	 <img src="./images/arduino-00001.png" alt="arduino-00001" width="650"/>
+  	 <img src="./images/arduino-00001.png" alt="Screenshot of the ESPAsyncWebServer repository on github" width="650"/>
 
    - Rename folder after decompression (remove the part "-master")
 	   - [![arduino-00003](./images/arduino-00003.png)](./images/arduino-00003.png)
-	   - [![arduino-00004](./images/arduino-00004.png)](./images/arduino-00004.png)
+	   - [![arduino-00004](./images/arduino-00004.png)](./images/arduino-00004.png)<br>*Screenshots showing folder name, one with -master at the and and one with that part removed.*
 
   - Click 'Clone or download' -> 'Download ZIP' on the github page for the [AsyncTCP library](https://github.com/me-no-dev/AsyncTCP).
 
-    [![arduino-00006](./images/arduino-00006.png)](./images/arduino-00006.png)
+    [![arduino-00006](./images/arduino-00006.png)](./images/arduino-00006.png)<br>*Screenshot showing github repository of the AsyncTCP library*
 
     - Rename folder after decompression (remove the part "-master")
 
     	[![arduino-00007](./images/arduino-00007.png)](./images/arduino-00007.png)
-    	[![arduino-00008](./images/arduino-00008.png)](./images/arduino-00008.png)
+    	[![arduino-00008](./images/arduino-00008.png)](./images/arduino-00008.png)<br>*Screenshots showing folder name, one with -master at the and and one with that part removed.*
 
     - Copy these 2 renamed folders to ~/Documents/Arduino/libraries. It should look like this:
 
-    	[![arduino-00009](./images/arduino-00009.png)](./images/arduino-00009.png)
+    	[![arduino-00009](./images/arduino-00009.png)](./images/arduino-00009.png)<br>*Screenshot of finder window showing Arduino's libraries folder with within that the a readme.txt file and two folders, one containing AsyncTCP and the other ESPAsyncWebServer.*
 
 ## Confirming code compilation
 
    - Restart the Arduino IDE (the Arduino software)
-   - Open 'WifiZineThrowie.ino' sketch that is inside the WiFiZineThrowie folder (in your downloads folder or on your desktop probably.  t(from > File > Sketchbook)
-   - Select the ESP32 Dev Module board
-      
-       <img src="./images/arduino-wifizine-select-board.png" alt="arduino-wifizine-select-board" width="650"/>
+   - Open 'WifiZineThrowie.ino' sketch that is inside the WiFiZineThrowie folder (in your downloads folder or on your desktop probably.
+   - Select the ESP32 Dev Module board 
+   
+<img src="./images/arduino-wifizine-select-board.png" alt="Screenshot of Arduino menu open at > Tools > Board > ESP32 Dev Module" width="450"/>
 
-   - Adjust ESP32 Dev Module board settings
-
-       <img src="./images/arduino-wifizine-config-board.png" alt="arduino-wifizine-config-board" width="350"/>
+<br><br>
 
 
-### Check/update the settings
+## **Adjust ESP32 Dev Module board settings**
 
-- Most of these settings are correct by default, you just have to change QIO to DIO
+- Look up the board settings under > Tools > Most of these settings are correct by default, you just have to change QIO to DIO
 
+      * Board: ESP32 Dev module
       * Upload Speed : 921600
       * CPU Frequency : 240MHz (WiFi BT)
       * Flash Frequency : 80MHz
@@ -379,22 +378,28 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
       * Core Debug Level : None
       * PSRAM : Disabled
 
-    - **Click on the compile button in the top left of the editor (see red arrow in pic beneath)**
+   <img src="./images/arduino-wifizine-config-board.png" alt="Screenshot of board settings under > Tools in Arduino window" width="350"/>
+   
+   <br><br>
+  
+## **Compile**
+
+- **Click on the compile button in the top left of the editor (see red arrow in pic beneath)**
       	
-      	 <img src="./images/arduino-wifizine-popup.png" alt="arduino-wifizine-popup" width="350"/>
+     <img src="./images/arduino-wifizine-popup.png" alt="arduino window with red arrow pointing to the compile button on the top left" width="350"/>
 
     - **If the compilation process is successful, it will say "DONE COMPILING" at the bottom**
     
     - This means Arduino confirms it can find everything it needs to upload working code 
     - Don't upload the code to the board yet, first we need some more stuff
 	  	
-	  	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino-wifizine-compile-done" width="350"/>
+	  	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino window with "Done compiling" message in the bottom bar of the window" width="350"/>
 	  
     - **If the compilation process ends abnormally, it will give an orange error**
   
     	- If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
     	  
-    	  <img src="./images/arduino-wifizine-compile-failed.png" alt="arduino-wifizine-compile-failed" width="350"/>
+    	  <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
 
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
@@ -456,9 +461,9 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 	- Yosemite (10.10.x)
 		- [Legacy driver must be installed, instead normal one.](https://www.silabs.com/community/interface/forum.topic.html/latest_vcp_driverfo-96RK)
         
-        <img src="./images/yosemite-cp2102.png" alt="yosemite-cp2102" width="550"/>
+        <img src="./images/yosemite-cp2102.png" alt="screenshot of silabs installer window, with on the left folder called "Legacy MacVCP driver"" width="550"/>
         
-        <img src="./images/yosemite-cp2102-legacy.png" alt="yosemite-cp2102-legacy" width="550"/>
+        <img src="./images/yosemite-cp2102-legacy.png" alt="screenshot of the contents of the "Legacy MacVCP driver folder, containing"LegacyDriverReadme.txt, ReleaseNotes.txt and Silicon Labs VCP Driver.pkg" width="550"/>
 
 
 
@@ -487,25 +492,24 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
     - System Preferences -> Security & Privacy -> General
       
-		<img src="./images/gatekeeper-check.png" alt="gatekeeper-check" width="550"/>
+		<img src="./images/gatekeeper-check.png" alt="screenshot of mac os settings pane with the tile "security & privacy highlighted" width="550"/>
       
-		<img src="./images/gatekeeper-check-popup.png" alt="gatekeeper-check-popup" width="550"/>
+		<img src="./images/gatekeeper-check-popup.png" alt="screenshot of the security & privacy menu at the tab "general", with the window under "allow apps downloaded from" highlighted, this is where potential errors will show up, if any" width="550"/>
 
 
-      If there is an error message in the red box area, GateKeeper is interrupting the driver's operation.
+      If there is an error message in the red box area, GateKeeper is interrupting the driver's operation. If this is the case, click 'Allow' and confirm with administrator password, **then restart your computer**.
 
-	<img src="./images/security_and_privacy_kextload_approval.png" alt="security_and_privacy_kextload_approval" width="550"/>
+	<img src="./images/security_and_privacy_kextload_approval.png" alt="screenshot of the settings pane > security and privacy with message "System software from developer "Intel Corporation Apps" was blocked from loading" and a button ALLOW next to it" width="550"/>
 
 
- - If you are in a similar state as above, click 'Allow' and confirm with administrator password, **then restart your computer**.
 
- - After starting the Arduino IDE, make sure it can communicate with the ESP32 module
+### **After starting the Arduino IDE, make sure it can communicate with the ESP32 module**
     
-  	<img src="./images/arduino-esp32-comm.png" alt="arduino-esp32-comm" width="450"/>
+  <img src="./images/arduino-esp32-comm.png" alt="screenshot of Arduino window with menu > Tools > Port > /dev/cu.SLAB_USBtoUART selected" width="450"/>
 
-- If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) as above.
+- If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different) as shown in the picture above.
 
-<img src="./images/arduino-esp32-comm-failed.png" alt="arduino-esp32-comm-failed." width="550"/>
+	<img src="./images/arduino-esp32-comm-failed.png" alt="arduino-esp32-comm-failed." width="550"/>
 
 - If communication is not possible, /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) does not exist as above.
 
