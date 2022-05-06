@@ -394,13 +394,13 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
   
     - Don't upload the code to the board yet, first we need some more stuff
 	  	
-	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino window with "Done compiling" message in the bottom bar of the window" width="350"/>
+<img src="./images/arduino-wifizine-compile-done.png" alt="arduino window with "Done compiling" message in the bottom bar of the window" width="350"/>
 	  
-    - **If the compilation process ends abnormally, it will give an orange error**
+- **If the compilation process ends abnormally, it will give an orange error**
   
-    	- If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
+	- If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
     	  
-    	  <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
+  	  <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
 
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
