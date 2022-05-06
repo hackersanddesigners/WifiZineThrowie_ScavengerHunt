@@ -425,8 +425,9 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 		- [How to disable GateKeeper](http://osxdaily.com/2016/09/27/allow-apps-from-anywhere-macos-gatekeeper/)
 
-		 ```
-		 sudo spctl --master-disable
+			```
+			sudo spctl --master-disable
+			```
 
 	- High Sierra (10.13.x)
 
@@ -452,7 +453,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
         - [How to disable GateKeeper](https://www.tekrevue.com/tip/gatekeeper-macos-sierra/)
       
 			  ```
-			  sudo spctl --master-disable			
+			  sudo spctl --master-disable	
 			  ```	
 
 	- El capitan (10.11.x)
