@@ -504,14 +504,14 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 
 ### **After starting the Arduino IDE, make sure it can communicate with the ESP32 module**
+
+- If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different) as shown in the picture below.
     
-  <img src="./images/arduino-esp32-comm.png" alt="screenshot of Arduino window with menu > Tools > Port > /dev/cu.SLAB_USBtoUART selected" width="450"/>
+  <img src="./images/arduino-esp32-comm.png" alt="screenshot of Arduino window with menu Tools-Port-SLAB_USBtoUART selected" width="450"/>
 
-- If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different) as shown in the picture above.
+- If communication is not possible, SLAB_USBtoUART  will not show up (for other than Mac OSX, this name might be different.)
 
-	<img src="./images/arduino-esp32-comm-failed.png" alt="arduino-esp32-comm-failed." width="550"/>
-
-- If communication is not possible, /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different.) does not exist as above.
+<img src="./images/arduino-esp32-comm-failed.png" alt="arduino-esp32-comm-failed" width="550"/>
 
 
 ### Upload to the Board
