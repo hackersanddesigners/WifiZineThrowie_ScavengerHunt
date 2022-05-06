@@ -463,9 +463,9 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
         
 	- 		 [![arduino-wifizine-compile-done](./images/arduino-wifizine-compile-done.png)](./images/yosemite-cp2102.png)<br>*Screenshot of Arduino window with "done compiling" message in the bottom bar of the window*
 
-<img src="./images/yosemite-cp2102.png" alt="screenshot of silabs installer window, with on the left folder called Legacy MacVCP driver" width="550"/>
+	- <img src="./images/yosemite-cp2102.png" alt="screenshot of silabs installer window, with on the left folder called Legacy MacVCP driver" width="550"/>
         
-	- <img src="./images/yosemite-cp2102-legacy.png" alt="screenshot of the contents of the "Legacy MacVCP driver folder, containing"LegacyDriverReadme.txt, ReleaseNotes.txt and Silicon Labs VCP Driver.pkg" width="550"/>
+	- <img src="./images/yosemite-cp2102-legacy.png" alt="screenshot of the contents of the "Legacy MacVCP driver folder, containing LegacyDriverReadme.txt, ReleaseNotes.txt and Silicon Labs VCP Driver.pkg width="550"/>
 
 
 
