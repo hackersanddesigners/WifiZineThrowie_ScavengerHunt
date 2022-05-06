@@ -391,6 +391,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
     - **If the compilation process is successful, it will say "DONE COMPILING" at the bottom**
     
     - This means Arduino confirms it can find everything it needs to upload working code 
+  
     - Don't upload the code to the board yet, first we need some more stuff
 	  	
 	<img src="./images/arduino-wifizine-compile-done.png" alt="arduino window with "Done compiling" message in the bottom bar of the window" width="350"/>
