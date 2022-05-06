@@ -451,10 +451,8 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 	- Sierra (10.12.x)
         - [How to disable GateKeeper](https://www.tekrevue.com/tip/gatekeeper-macos-sierra/)
-      
-			  ```
-			  sudo spctl --master-disable	
-			  ```	
+
+				sudo spctl --master-disable
 
 	- El capitan (10.11.x)
 		- [How to disable GateKeeper](https://medium.com/@krukmat/macos-el-capitan-enabling-usb-for-cp2102-usb-to-ttl-3b63449e02e9)
