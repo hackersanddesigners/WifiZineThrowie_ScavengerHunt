@@ -518,93 +518,24 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
   - Click on the Upload button (arrow pointing right on top of the Arduino window), and then **_while_** the text '*Connecting ...*' displays in the control window at the bottom of the screen, [press and hold the' BOOT 'button on the ESP board for one second](https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/).
         
-     <img src="./images/arduino-connecting.png" alt="arduino-connecting" width="650"/>
+     <img src="./images/arduino-connecting.png" alt="when the output window in Arduino says CONNECTING, push the boot button on the board" width="650"/>
       
 - **If the upload was successful, you will see this screen**: 
 	  
-	<img src="./images/arduino-wifizine-upload-done.png" alt="arduino-wifizine-upload-done" width="450"/>
+	<img src="./images/arduino-wifizine-upload-done.png" alt="output window in Arduino stating Leaving...Hard resetting via RTS pin...." width="450"/>
 
 
 - **If the upload was unsuccessful, you will see this error**
 
-	[![arduino-wifizine-upload-failed](./images/arduino-wifizine-upload-failed.png)](./images/arduino-wifizine-upload-failed.png)
+	[![arduino window with an orange error message](./images/arduino-wifizine-upload-failed.png)](./images/arduino-wifizine-upload-failed.png)
 
 - [Troubleshooting tips for various problem factors here](https://randomnerdtutorials.com/esp32-troubleshooting-guide/)
 
-### Increasing the upload capacity of the board (optional)
+### Increasing the upload capacity of the board (at your own risk)
 
-- The flash memory capacity of the provided ESP32 module is 4MB, but not all of this is usable for Zine content. The reason for this is that many other things also need their spaces: the codes that runs the hotspot-zine, the codes that runs background to support the chip function and the data used to represent the structure of the file system (such as folder structure and file distinction), that is, the implementation overhead of SPIFFS. So we cannot claim whole memory space of 4MB.
+It is possible to increase the upload capacity of the board so you can make slightly bigger websites. This is documented by Doohoyi from Dianaband, but we haven't tried it. Proceed at your own risk!
 
-- The flash memory of the ESP32 module must be partitioned first to be used partly with different purposes.
-
-- During the above procedure, when setting up the ESP32 board, we selected:
-  
-  	<img src="./images/arduino-wifizine-config-board.png" alt="arduino-wifizine-config-board" width="350"/>
-
-
-  ```
-  Partition Scheme : Default
-  ```
-
-- The default partitioning scheme includes elements that are not necessarily required for Hot-spot zine, and the default partition configuration does have less room available for Zine content. (~ 1MB)
-
-- So, by reconfiguring the Partition Scheme more efficiently, you may be able to upload a little more Hot-spot zine content. In this way, a capacity of about 1.9 MB can be used for Zine contents.
-
-- Once you have completed this procedure, you may select,
-
-  	<img src="./images/arduino-wifizine-custom-partition.png" alt="arduino-wifizine-custom-partition" width="450"/>
-
-  ```
-  Partition Scheme : WIFI ZINE
-  ```
-
-- Work process
-
-  - Download and install [the partition configuration file](https://raw.githubusercontent.com/applecargo/WifiZineThrowie/master/partition/wifi_zine.csv)
-
-    Paste it into ~/Library/Arduino15/packages/esp32/hardware/esp32/1.0.1/tools/partitions
-    
-   	<img src="./images/arduino-partition-00001.png" alt="arduino-partition-00001" width="650"/>
-
-
-- The '~/Library/' folder is a hidden folder in the Finder, so type Cmd-Shift-G and type in 'Library'
-    
-    <img src="./images/arduino-partition-00002.png" alt="arduino-partition-00002" width="650"/>
-
-
-- Then, double-click the 'Arduino15' folder as a normal folder
-    
-    <img src="./images/arduino-partition-00003.png" alt="arduino-partition-00003" width="650"/>
-
-- Move to the above position
-    
-    <img src="./images/arduino-partition-00004.png" alt="arduino-partition-00004" width="650"/>
-
-- Make it like this.
-
-- Edit the boards.txt file
-    
-    <img src="./images/arduino-partition-00005.png" alt="arduino-partition-00005" width="650"/>
-
-- Open the file boards.txt file located in the above location and add the next four lines marked with + (remove the + sign!)
-
-    ```diff
-    --- /Users/doohoyi/Downloads/Telegram Desktop/boards.txt
-    +++ /Users/doohoyi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.1/boards.txt
-    @@ -52,6 +52,10 @@
-     esp32.menu.PartitionScheme.min_spiffs.upload.maximum_size=1966080
-     esp32.menu.PartitionScheme.fatflash=16M Fat
-     esp32.menu.PartitionScheme.fatflash.build.partitions=ffat
-    +esp32.menu.PartitionScheme.wifi_zine=WIFI ZINE
-    +esp32.menu.PartitionScheme.wifi_zine.build.partitions=wifi_zine
-    +esp32.menu.PartitionScheme.wifi_zine.upload.maximum_size=1048576
-    +esp32.menu.PartitionScheme.wifi_zine.upload.maximum_data_size=2752512
-
-     esp32.menu.CPUFreq.240=240MHz (WiFi/BT)
-     esp32.menu.CPUFreq.240.build.f_cpu=240000000L
-    ```
-
-  - After restarting the Arduino IDE, select PartitionScheme as 'WIFI ZINE' during ESP32 DEV Module setup and compile.
+[Dianaband's workshop documentation](https://github.com/applecargo/WifiZineThrowie/blob/master/docs/index.md#increasing-the-upload-capacity-of-the-board-optional)
 
 ## Publishing your first mini webpage to the module
 
