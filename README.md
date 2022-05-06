@@ -623,13 +623,9 @@ If the battery is fully powered, a second light will turn on to indicate chargin
 
 Use tie-wraps to wrap everything together nice and tight. Make a little cardboard enclosure to "hide" your wifi server. 
 
-<img src="./images/components.jpeg" width="650"/> 
-<br>
-*Image of all the components connected*
+<img src="./images/components.jpeg" width="650"/><br>*Image of all the components connected*
 
-<img src="./images/module_box2.jpg" width="650"/>
-<br>
-*Image of all the components inside a non-black box :)*
+<img src="./images/module_box2.jpg" width="650"/><br>*Image of all the components inside a non-black box :)*
 
 
 ## Previous research this project builds upon
