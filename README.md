@@ -401,7 +401,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
   
 * If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
     	  
- <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
+	 <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
 
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
