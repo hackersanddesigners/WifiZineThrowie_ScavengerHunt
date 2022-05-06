@@ -2,31 +2,65 @@
 
 # Solarpunk Kids: Wifi Scavenger Hunt 
 
-This is an adaptation of the workshop and – amazing – documentation prepared by Wonjung Shin and Dooho Yi (Dianaband) for the Walking signal / WIFI hotspot zine workshop hosted at Hackers and Designers in 2019. See original here: [https://github.com/applecargo/WifiZineThrowie](https://github.com/applecargo/WifiZineThrowie) 
+**WIP! We're still in the process of editing this document**
 
-Their workshop in turn builds up on the research by Andy Reischle (AreResearch), whose research is linked to at the bottom of this page. 
+## Workshop description
 
-**WIP! Still needs to be edited/adapted for solarpunk workshop.**
+Is all of the Internet worldwide? Can I make my own internet? How much power does it consume? Is it bad for the environment? At Hackers & Designers we are doing experiments to find out what a sustainable Internet of the future might look like. This document is a workshop script for an intergenerational workshop where we explore these things together with 7-12 year olds and their favourite grown-ups. 
 
-**To Do**: 
+This is 1-day workshop where we will make a scavenger hunt by creating wearable wifi networks to hide digital clues about hidden treasures inside the old shipwharf/warehouse at NDSM in Amsterdam Nooord. 
 
- * add own intro and activities (so it becomes workshop script)
- * add sound to html template
- * image captions/alt text
+In this workshop, young participants will learn to design a scavenger hunt and how to make a mini websites using HTML. The grown-up participants will learn how to build the HTML website (with some CSS and Javascript) and learn to program wearable wifi modules we will use to create the digital scavenger hunt. 
 
- 
+## Table of contents with short links
+
+* [About this project](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#about-this-project)
+* [Solarpunk? Internet? Kids?](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#solarpunk-internet-kids)
+* [Workshop outline](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#workshop-outline)
+* [0. Materials & preparations](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#0-materials-and-preparations)
+* [1. Hide the treasure & design clues](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#1-hide-the-treasure--create-some-clues-team-b)
+* [2. Designing a mini HTML webpage](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#2-designing-a-mini-html-webpage-css-and-javascript-optional-team-a---option-1)
+* [3. Programming the WiFi modules](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#3-programming-the-wifi-modules-team-a-option-2)
+* [4. Power up your module with a battery & solar cell](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#4-power-up-your-module-to-a-battery-and-solar-cell-team-a--b)
+* [Previous research this project builds upon](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#previous-research-this-project-builds-upon)
+* [Technical details](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#technical-details)
+
+
 ## About this project
 
-Intergenerational workshop collaboration
+This workshop was developed by Hackers & Designers as part of an intergenerational collaboration on the topics of solarpunk attitudes to the Internet of the future. Together with partners Mz* Baltazar's laboratory in Vienna, and Prototype in Pittsburgh, we will develop a series of workshops to explore formats for intergenerational learning and collaboration, as well as remote collaboration structures between the different labs. This workshop script is one of the three workshops that will be developed and shared in the context of this project. 
 
-Mz* Baltazar
-Prototype PGH
-H&D
-Funders
+### Hackers & Designers
 
-Info info info
+Hackers & Designers is a non-profit workshop initiative organizing activities at the intersection of technology, design and art. By creating shared moments of hands-on learning H&D stimulates collaboration across disciplines, technological literacy, and different levels of expertise. [Hackers & Designers](www.hackersanddesigners.nl)
 
-See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
+<img src="./images/hackersanddesigners.png" alt="H&D logo" width="250"/>
+
+### Mz* Baltazar's Laboratory
+
+Mz*Baltazar’s Lab aims at generating a culture of fearless making! An environment that fosters creativity, activism and provocative thinking! We try to build an accessible, inclusive, open, safer and radical space, from which to evolve as people and as community. Open Source Technology is at the root of our philosophy, it enables us to share and collaborate without restrictions. We need this space to experiment with things as gender, hardware or our selves. [Mz* Baltazar's Laboratory](https://www.mzbaltazarslaboratory.org/)
+
+<img src="./images/mzbaltazar.jpg" alt="Mz* Baltazar's laboratory logo" width="250"/>
+
+
+### Prototype PGH
+
+Prototype PGH's mission is to build gender and racial equity in tech and entrepreneurship by providing affordable access to high tech tools and equipment, offering workshops that center the experiences of women and underestimated communities, and cultivating a professional support network. Prototype PGH](https://prototypepgh.com/
+
+<img src="./images/prototypepgh.png" alt="logo of Prototype PGH" width="350"/>
+
+
+### Funding
+
+This project was kindly funded by [Fonds voor Cultuurparticipatie](https://cultuurparticipatie.nl/). 
+
+<img src="./images/fonds-cultuurparticipatie.jpg" alt="hand holding twig with colorful wifi signal beaming out of it" width="150"/>
+
+### Workshop background
+
+This is an adaptation of the workshop and – amazing – documentation prepared by Wonjung Shin and Dooho Yi (Dianaband) for the Walking signal / WIFI hotspot zine workshop hosted at Hackers and Designers in 2019. See original here: [https://github.com/applecargo/WifiZineThrowie](https://github.com/applecargo/WifiZineThrowie) 
+
+Their workshop in turn builds up on the research by Andy Reischle (AreResearch), whose research is linked to at the bottom of this page. See also [previous research this project builds upon](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#previous-research-this-project-builds-upon).
 
 ## Solarpunk? Internet? Kids?
 
@@ -35,34 +69,39 @@ See also: [www.hackersanddesigners.nl](www.hackersanddesigners.nl)
 * What is your name?
 * What gives you energy and a good feeling?
 
-### Why do technologies need energy? 
+### Why does the Internet need energy? 
 
 * What is energy? Where does it come from?
 
 * Only transforms, never disappears? What does it mean? 
 
 	* running, getting hot
-	* drinking tea: the kettle, our body
+	* drinking tea, from kettle to body: electrons, the wire, heating element, the water, our body
 
-* Alternative sources of energy do you know?
+### How much electricity does the Internet need?
+
+* How can we find out? 
+* What kind of devices are on the internet? 
+* How can you find out how much power they use?
+* Looking at markings on power plugs, battery holders
+* What alternative sources of energy do you know?
 
 	* Solar power
 	* Dynamo
 	* Lemons
-	* How much energy can you create with them?
+	* How much electricity can you create with them? 
+	* Can we store this electricity for later?
 
 [![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)
 <br>*Click on the image to watch on Youtube!*
 
-### Alternatives for batteries?
+### Why do we need batteries?
 
-* How much energy do we need to have Internet?
-* How can you find out? 
-* LED is easily satisfied but chips (brains) are not
+* LED is easily satisfied but chips (brains) are not, why?
 * Can we power devices that make up "the Internet" in a different way?
 * Possibilities? Difficulties? 
 
-### The incredible shrinking Internet? 
+### What if we shrank the Internet? 
 
 * What if an average webpage were only 1 MB
 * What if some of the Internet wasn't worldwide? 
