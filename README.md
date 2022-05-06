@@ -531,11 +531,6 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 - [Troubleshooting tips for various problem factors here](https://randomnerdtutorials.com/esp32-troubleshooting-guide/)
 
-### Increasing the upload capacity of the board (at your own risk)
-
-It is possible to increase the upload capacity of the board so you can make slightly bigger websites. This is documented by Doohoyi from Dianaband, but we haven't tried it. Proceed at your own risk!
-
-[Dianaband's workshop documentation](https://github.com/applecargo/WifiZineThrowie/blob/master/docs/index.md#increasing-the-upload-capacity-of-the-board-optional)
 
 ## Publishing your first mini webpage to the module
 
@@ -545,33 +540,33 @@ It is possible to increase the upload capacity of the board so you can make slig
 
   Create a folder called '~/Documents/Arduino/tools'
 
-  [![arduino-esp32fs-00002](./images/arduino-esp32fs-00002.png)](./images/arduino-esp32fs-00002.png)
+  [![Screenshot of finder window open at Arduino, showing subfolders tools](./images/arduino-esp32fs-00002.png)](./images/arduino-esp32fs-00002.png)
 
-  Copy unpacked ESP32FS to here
+  Copy unpacked ESP32FS into the subfolder tools
 
-  [![arduino-esp32fs-00003](./images/arduino-esp32fs-00003.png)](./images/arduino-esp32fs-00003.png)
+  [![screenshot of finder window open at tools with subfolder ESP32FS inside it](./images/arduino-esp32fs-00003.png)](./images/arduino-esp32fs-00003.png)
 
   Be mindful with the construction of the folders. It should be installed as shown in the following figure. (Note also that the folder name is ESP32FS!)
 
-  [![arduino-esp32fs-00004](./images/arduino-esp32fs-00004.png)](./images/arduino-esp32fs-00004.png)
+  [![Screenshot of finder wiindow open at tools, showing filepath - ESP32FS - tool - esp32fs.jar](./images/arduino-esp32fs-00004.png)](./images/arduino-esp32fs-00004.png)
 
   After restarting the Arduino IDE, verify that the plug-in installation was successful. If successful, you will see a menu called 'ESP32 Sketch Data Upload' added.
 
-  [![arduino-esp32fs-00005](./images/arduino-esp32fs-00005.png)](./images/arduino-esp32fs-00005.png)
+  [![Screenshot of Arduino window with menu open at - Tools - ESP32 Sketch Data Upload](./images/arduino-esp32fs-00005.png)](./images/arduino-esp32fs-00005.png)
 
-  When you run this menu, it will move all the files in the '~/Documents/Arduino/WifiZineThrowie/data' folder to the ESP32 module's web page store.
+  When you click this menu option, it will move all the files in the '~/Documents/Arduino/WifiZineThrowie/data' folder to the ESP32 module's web page store.
   
 ### Changing the name of your wifi network
 
 The arduino code (WifiZineThrowie.ino) specifies the name of your personal mini network by looking for a file in the data folder that ends with .ssid. In the files you downloaded you can see it is now called: "solarpunk-schat.ssid". You can change this filename to the name you like for your network (avoid symbols to be sure).  E.g. Clue1-Loes.
 
-<img src="./images/ssid_name.png" alt="ssid_name in finder" width="450"/>
+<img src="./images/ssid_name.png" alt="screenshot of finder window showing contents of the data folder, with the ssid file solarpunk-schat selected" width="450"/>
 
 ### Uploading your website to the module
 
 Then, in the Arduino software, go to > Tools and select > ESP32 Sketch Data Upload 
 
-  [![arduino-wifizine-webpage-upload](./images/arduino-wifizine-webpage-upload.png)](./images/arduino-wifizine-webpage-upload.png)
+  [![screenshot of arduino software with the WifiZineThrowie sketch open and output window saying SPIFFS uploading image...](./images/arduino-wifizine-webpage-upload.png)](./images/arduino-wifizine-webpage-upload.png)
 
 Please execute the upload. The color of the message output during upload is displayed in white instead of red.  
 
@@ -579,7 +574,7 @@ While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP bo
 
   Screen when upload is completed successfully
 
-  [![arduino-wifizine-webpage-upload-done](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
+  [![Screenshot of arduino window stating SPIFFS image uploaded](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
 
   Success! You can now find your private internet spot. Open the network settings on your phone, and select your network. Your website should pop up automatically, but some patience might help :) 
   
@@ -587,8 +582,13 @@ While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP bo
 
 Look up the list of available networks on your phone with the name you provided to the .ssid file earlier. You should see your network popping up there. Try connecting to it. Your website should come up automatically with a pop-up window. 
 
-<img src="./images/login_network.png" alt="wifi list and website" width="650"/>
+<img src="./images/login_network.png" alt="LEFT - screenshot of android phone open at wifi menu, showing all the available networkds, with network solarpunk-schat highlighted. RIGHT - screenshot of pop-up window displaying the website contents of the html file we made" width="650"/>
 
+### OPTIONAL - Increasing the upload capacity of the board (at your own risk)
+
+It is possible to increase the upload capacity of the board so you can make slightly bigger websites. This is documented by Doohoyi from Dianaband, but we haven't tried it. Proceed at your own risk!
+
+[Dianaband's workshop documentation](https://github.com/applecargo/WifiZineThrowie/blob/master/docs/index.md#increasing-the-upload-capacity-of-the-board-optional)
 
 
 ## 4. Power up your module to a battery and solar cell (team A + B)
@@ -597,7 +597,7 @@ Look up the list of available networks on your phone with the name you provided 
 
 Enforce the connections with some electrical tape (or normal tape if you don't have any, or hotglue even). 
 
-<img src="./images/solarpanel_tape.jpeg" alt="solar panel with tape" width="650"/>
+<img src="./images/solarpanel_tape.jpeg" alt="back of solar panel, connections enforced with electrical tape" width="650"/>
 
 ### Step 2: Insert the battery into the charging board
 
@@ -607,9 +607,9 @@ If you are not sure, check with a multimeter.
 
 A green light will turn on to indicate it is powered up. 
 
-<img src="./images/battery_plus-minus.png" alt="plus and minus of the battery" width="650"/>
+<img src="./images/battery_plus-minus.png" alt="close-up of the battery with LEFT showing flatter side marked with a minus sign, and RIGHT less flat side marked with a plus sign" width="650"/>
 
-<img src="./images/battery_markings.jpeg" alt="battery marks" width="650"/>
+<img src="./images/battery_markings.jpeg" alt="battery holder on the back of the charging board indicating the minus and plus side" width="650"/>
 
 ### Step 3: Plug in the USB cable and power the board
 
@@ -617,7 +617,7 @@ Connect the solar panel to the board as indicated in the image. Plug the Wifi mo
 
 If the battery is fully powered, a second light will turn on to indicate charging is done (marked CHG DONE on the PCB board). 
 
-<img src="./images/solarpad_connections.jpeg" alt="connections to solar charging board" width="650"/>
+<img src="./images/solarpad_connections.jpeg" alt="top view of the charging board, showing where the solar pad should be connected with the JST connector" width="650"/>
 
 ### Step 4: Wrap it up nicely
 
@@ -625,11 +625,11 @@ Use tie-wraps to wrap everything together nice and tight. Make a little cardboar
 
 <img src="./images/components.jpeg" width="650"/> 
 <br>
-*All the components connected*
+*Image of all the components connected*
 
 <img src="./images/module_box2.jpg" width="650"/>
 <br>
-*All the components inside a non-black box :)*
+*Image of all the components inside a non-black box :)*
 
 
 ## Previous research this project builds upon
@@ -642,7 +642,7 @@ Dianaband's workshop, and this H&D workshop builds upon the generous documentati
 [![Lighting an LED with a DC motor](https://img.youtube.com/vi/fQM-GHY6VJ8/0.jpg)](https://www.youtube.com/watch?v=fQM-GHY6VJ8)
 <br>*Click on the image to watch on Youtube!*
 
-<img src="./images/areresearch/img4.png" width="650"/>
+<img src="./images/areresearch/img4.png" width="650"/><br>*Diagram of the protocol we are using with our set-up, made by Andy Reischle*
 
 ## Technical details 
 
@@ -656,7 +656,7 @@ Below is a diagram and list of technologies ("stack") that makes up this applica
   - [A domain name server (captive portal)](https://github.com/espressif/arduino-esp32/tree/master/libraries/DNSServer)
   - Webpage (the one you wrote in HTML)
 
-<img src="./images/Wi-Fi-zine-stacks.png" width="750"/>
+<img src="./images/Wi-Fi-zine-stacks.png" width="750"/><br>*Diagram of the technology stack used in the project*
 
   - [More information](http://esp32.net/)
   - [The Wi-Fi stack is not open source](https://github.com/espressif/esp32-wifi-lib/issues/2)
