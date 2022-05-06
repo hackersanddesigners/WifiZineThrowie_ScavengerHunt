@@ -492,14 +492,14 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
     - System Preferences -> Security & Privacy -> General
       
-		<img src="./images/gatekeeper-check.png" alt="screenshot of mac os settings pane with the tile "security & privacy highlighted" width="550"/>
+		<img src="./images/gatekeeper-check.png" alt="screenshot of mac os settings pane with the tile security & privacy highlighted" width="550"/>
       
-		<img src="./images/gatekeeper-check-popup.png" alt="screenshot of the security & privacy menu at the tab "general", with the window under "allow apps downloaded from" highlighted, this is where potential errors will show up, if any" width="550"/>
+		<img src="./images/gatekeeper-check-popup.png" alt="screenshot of the security & privacy menu at the tab general, with the window under allow apps downloaded from highlighted, this is where potential errors will show up, if any" width="550"/>
 
 
       If there is an error message in the red box area, GateKeeper is interrupting the driver's operation. If this is the case, click 'Allow' and confirm with administrator password, **then restart your computer**.
 
-	<img src="./images/security_and_privacy_kextload_approval.png" alt="screenshot of the settings pane > security and privacy with message "System software from developer "Intel Corporation Apps" was blocked from loading" and a button ALLOW next to it" width="550"/>
+	<img src="./images/security_and_privacy_kextload_approval.png" alt="screenshot of the settings pane > security and privacy with message System software from developer Intel Corporation Apps was blocked from loading" and a button ALLOW next to it" width="550"/>
 
 
 
