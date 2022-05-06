@@ -463,7 +463,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 	- <img src="./images/yosemite-cp2102.png" alt="screenshot of silabs installer window, with on the left folder called Legacy MacVCP driver" width="550"/>
         
-		<img src="./images/yosemite-cp2102-legacy.png" alt="screenshot of the contents of the Legacy MacVCP driver folder, containing LegacyDriverReadme, ReleaseNotes and Silicon Labs VCP Driver width="550"/>
+		<img src="./images/yosemite-cp2102-legacy.png" alt="screenshot of the contents of the Legacy MacVCP driver folder, containing LegacyDriverReadme, ReleaseNotes and Silicon Labs VCP Driver" width="550"/>
 
 
 
