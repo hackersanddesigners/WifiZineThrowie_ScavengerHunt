@@ -394,7 +394,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
   
     * Don't upload the code to the board yet, first we need some more stuff
 	  	
- [![arduino-wifizine-compile-done](./images/arduino-wifizine-compile-done.png)](./images/arduino-00009.png)<br>*Screenshot of Arduino window with "done compiling" message in the bottom bar of the window*
+		 [![arduino-wifizine-compile-done](./images/arduino-wifizine-compile-done.png)](./images/arduino-00009.png)<br>*Screenshot of Arduino window with "done compiling" message in the bottom bar of the window*
 
 	  
 * **If the compilation process ends abnormally, it will give an orange error**
