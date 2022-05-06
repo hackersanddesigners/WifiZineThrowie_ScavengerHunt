@@ -427,7 +427,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 		 ```
 		 sudo spctl --master-disable
-		  ```
+		 
 
 	- High Sierra (10.13.x)
 
