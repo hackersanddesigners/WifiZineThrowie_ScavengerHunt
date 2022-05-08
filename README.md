@@ -141,7 +141,7 @@ We will program a small wireless device with an ESP32 chip to serve a tiny (max 
 
 ## 0. Materials and preparations
 
-*Account for one kit per duo. Total cost of the components per kit is around € 16,75 ex shipping.*
+*Account for one kit per duo. Total cost of the components per kit is around € 25,00 ex shipping.*
 
 - A computer per duo
 - A mobile phone per duo (no dataplan needed)
