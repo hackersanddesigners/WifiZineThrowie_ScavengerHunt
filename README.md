@@ -10,7 +10,9 @@ Is all of the Internet worldwide? Can I make my own internet? How much power doe
 
 This is 1-day workshop where we will make a scavenger hunt by creating wearable wifi networks to hide digital clues about hidden treasures inside the old shipwharf/warehouse at NDSM in Amsterdam Nooord. 
 
-In this workshop, young participants will learn to design a scavenger hunt and how to make a mini websites using HTML. The grown-up participants will learn how to build the HTML website (with some CSS and Javascript) and learn to program wearable wifi modules we will use to create the digital scavenger hunt. 
+During the day, young participants will learn to design a scavenger hunt and how to make a mini websites using HTML. The grown-up participants will learn how to build the HTML website (with some CSS and Javascript) and learn to program wearable wifi modules we will use to create the digital scavenger hunt. 
+
+*Note: the technical instructions in this document are biased towards MacOS operating systems, but we've included instructions for windows and linux as much as possible. Contributions specific to these operating systems are very welcome!*
 
 ## Table of contents with short links
 
@@ -62,49 +64,76 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 Their workshop in turn builds up on the research by Andy Reischle (AreResearch), whose research is linked to at the bottom of this page. See also [previous research this project builds upon](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#previous-research-this-project-builds-upon).
 
-## Solarpunk? Internet? Kids?
+## Workshop steps
 
-### Introductions
+### Introduction: Solarpunk? Internet? Kids?
 
 * What is your name?
-* What gives you energy and a good feeling?
+* What did you have for breakfast?
 
-### Why does the Internet need energy? 
+Proposal: Let's discuss the following questions together briefly to find out what we already know about energy, electricity and the Internet.
 
-* What is energy? Where does it come from?
+### What is energy?  
 
-* Only transforms, never disappears? What does it mean? 
+* **What is energy? Where does it come from?**
 
+* **Energy only transforms, never disappears? What does that mean?**
 	* running, getting hot
 	* drinking tea, from kettle to body: electrons, the wire, heating element, the water, our body
+	* electrons moving > lights, motors, buzzers go on
 
-### How much electricity does the Internet need?
-
-* How can we find out? 
-* What kind of devices are on the internet? 
-* How can you find out how much power they use?
-* Looking at markings on power plugs, battery holders
-* What alternative sources of energy do you know?
-
+* **Energy game** 
+	* Show a bunch of objects (see list below): Does it take or give energy? (hint: often both!) Discuss with the group how it gives and/or takes energy and why.
+		* a person
+		* a tree
+		* a mobile phone
+		* an apple
+		* a lemon
+		* a battery
+		* a bicycle
+		* a spaceship
+		* a race car
+		* a ball 
+	
+* **What alternative sources of energy do you know?**
 	* Solar power
 	* Dynamo
 	* Lemons
 	* How much electricity can you create with them? 
-	* Can we store this electricity for later?
+	* How can we store this electricity for later? (batteries! but we don't have an endless supply of batteries and they are polluting to make...)
 
-[![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)
-<br>*Click on the image to watch on Youtube!*
+* **Demonstrations**
 
-### Why do we need batteries?
+	* **DIY Dynamo:** turn on an LED by twisting the axis of a 1:6 geared 12V DC motor, e.g.
 
-* LED is easily satisfied but chips (brains) are not, why?
-* Can we power devices that make up "the Internet" in a different way?
-* Possibilities? Difficulties? 
+		[![Lighting an LED with a DC motor](https://img.youtube.com/vi/AXfvayFPXFU/0.jpg)](https://www.youtube.com/watch?v=AXfvayFPXFU)
+		<br>*Click on the image to watch on Youtube!*
+	
+	* Make a **lemon battery** together [instructions here](https://www.panasonic.com/global/consumer/battery/academy/lemon.html)
+	
+		<img src="./images/lemonbattery.jpg" alt="children measuring the output of a lemon battery with a multimeter" width="500"/>
+	
+
+### How much electricity does the Internet need?
+
+* Do you use the Internet? When?
+* Do you know how much electricity the Internet uses? How can we find out? 
+	* Phones and tables need to be charged
+	* Computers plugged into the wall
+	* Router box plugged into the wall (have you seen yours at home?)
+	* How can you find out how much power they use? (looking at markings on power plugs, battery holders)	
+* What else? Where does "the Internet/tiktok/youtube videos "live"?
+	* In the "cloud" (which is basically someone elses computer! What a strange name)
+	* What does that look like? Search images of datacenters
+	* How much energy do you think they need? (a lot!)
+	* Endless videowatching and online gaming and social media using takes a lottttt of energy
+
 
 ### What if we shrank the Internet? 
 
-* What if an average webpage were only 1 MB
-* What if some of the Internet wasn't worldwide? 
+* What if an average webpage were only 1 MB 
+* What if some of the Internet wasn't worldwide but more local?
+* What if the Internet only worked when the sun shines?
 
 <img src="./images/components.jpeg" alt="wifi module with solar panel and a battery" width="600"/>
 
@@ -115,13 +144,30 @@ Their workshop in turn builds up on the research by Andy Reischle (AreResearch),
 * Found it? Let's go out and find the network called **"solarpunk-schat"**.
 * When you find it, connect to it and follow the instructions to find the first treasure.
 
-<img src="./images/workshop_solar01.jpg" alt="drawing of a phone, a puzzle and wifi signal" width="600"/>
+<img src="./images/findfirstrteasure.jpg" alt="group of people looking around the space and at their phone to find the first clue" width="600"/>
 
-## Workshop outline
+<img src="./images/interpretclues.jpg" alt="people huddled around a child with a phone, interpreting the clues displayed on the webpage" width="600"/>
 
-### After we find the first treasure
+<img src="./images/hand_schat.jpg" alt="hand holding a phone displaying list of networks with" width="600"/>
 
-Then we split into groups to design our own scavenger hunt extravaganza using small wifi servers and mini websites we will make together. 
+<img src="./images/clue_page.jpg" alt="hands holding a phone with a webpage open providing clues to the treasure" width="600"/>
+
+<img src="./images/treasurefound.jpg" alt="group of kids, one holding a box (the treasure)" width="600"/>
+
+*Found it!*
+
+
+
+
+### Outline of the workshop
+
+This first hunt was a mini version of what we will make together. But instead of one treasure, and one mini website providing clues, each participant duo will hide a part of the treasure (a few pieces of the puzzle we created for the workshop), and make a small website providing clues about where the treasure can be found. 
+
+<img src="./images/puzzle1.jpg" alt="jigsaw puzzle with Hackers & Designers logo" width="600"/>
+
+When all the treasures are hidden, and all the websites are distributed around the play area, we will do the big scavenger hunt we made together and try solve the puzzle.
+
+Before we continue: we split into groups. The young participants are the designers and the adult participants take on the hacker roles. 
  
 **Designers - team B** 
 
@@ -186,9 +232,14 @@ We made a jigsaw puzzle, and each young designer will get a few pieces of the pu
 
 To make sure it's fun and safe for everyone, let's think about the rules we want to agree on (kids lead).
 
+<img src="./images/rules.jpg" alt="list of rules made up by the young designers" width="600"/>
+
 **Let's explore the space!**
 
 NDSM is a big place with lots of fun spots! We'll walk around together to get an idea. And then you can decide which hiding spot you will choose to hide your puzzle pieces (don't show the others!)
+
+<img src="./images/hidingspots.jpg" alt="two kids exploring the play area looking for spots to hide a treasure" width="600"/>
+
 
 **Choose your hiding spot and provide clues**
 
@@ -200,9 +251,12 @@ Then take 2 or 3 pictures with your phone of the surrounding area to provide a c
 
 **Back at the studio**
 
-Think a little bit about how you want to make your clues exciting on your tiny website. Do you want to add a sound clip where you tell a story? Or some mysterious sounds? Do you want to add a drawing? What is your hiding spot called? 
+Think a little bit about how you want to make your clues exciting on your tiny website. Do you want to add a sound clip where you tell a story? Or some mysterious sounds? Do you want to add a drawing? What is your hiding spot called? You can design your mini website by drawing it out, and together with your grown-up start building it with code after lunch. 
 
-You can design your mini website by drawing it out, and together with your grown-up start building it with code. 
+Find some cardboard and make a box for your module. You can use any materials you like.
+
+<img src="./images/decoratedbox.jpg" alt="one of the boxes decorated with various materials" width="600"/>
+
 
 **Lunch preparations**
 
@@ -229,6 +283,9 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
     - Decompress the .zip file by doubleclicking
     - If necessary, move the folder to some place where you would like to keep it and can find it for a while. 
     - It's good practice to change the name of the folder by deleting the part "-master" from the folder name (see images below)
+
+	<img src="./images/listening.jpg" alt="adults and children around a table with laptops, looking at a code demonstration" width="750"/> 
+
 
 ### Step 1: open the example
 
@@ -263,7 +320,11 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 	<img src="./images/deepskyblue.png" alt="html code showing color = deepskyblue" width="750"/> 
 
-**Tip**: if you want to try some other colors, replace the name "rebeccapurple" with a number you can look up with a color picker like this [color picker tool](https://imagecolorpicker.com/color-code/6800ff)
+	- **Tip**: if you want to try some other colors, replace the name "rebeccapurple" with a number you can look up with a color picker like this [color picker tool](https://imagecolorpicker.com/color-code/6800ff)
+
+	<img src="./images/programmingkids.jpg" alt="young people and adults huddled around laptops, programming their html pages" width="750"/> 
+
+
 
 
 ### Step 3: change *more* things!
@@ -289,6 +350,17 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 * [Emoji codes](https://www.w3schools.com/charsets/ref_emoji.asp) all the emoji's you ever wanted! 
 * [Color picker tool](https://imagecolorpicker.com/color-code/6800ff) to help find the code that stands for a particular color you like and want to use in the HTML.
 * [Freesound archive](https://freesound.org/) to find sound clips that are free to use
+
+
+<img src="./images/site1.png" alt="screenshots of a website made by participants" width="750"/> 
+
+<img src="./images/site2.png" alt="screenshots of a website made by participants" width="750"/> 
+
+<img src="./images/site3.png" alt="screenshots of a website made by participants" width="750"/> 
+
+
+
+
 
 ### Step 4: think of something else to try 
 
@@ -444,6 +516,26 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
+
+### Linux 3.x.x & 4.x.x
+
+ - Driver installation not required (included in kernel)
+ 	- [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
+	- [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
+
+### Linux 2.6.x
+[Linux 2.6.x](https://www.silabs.com/documents/login/software/Linux_2.6.x_VCP_Driver_Source.zip)
+		- No information
+
+### Windows
+
+- [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
+- [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip)
+- [Installation process](https://www.pololu.com/docs/0J7/all)
+
+
+### Mac OS
+
   - Check if you already have this driver installed by searching your machine for a file named "SiLabsUSBDriver.kext" AND/OR "SiLabsUSBDriverYos.kext" AND/OR "SiLabsUSBDriver64.kext". On a Mac, they can be in either of these folders listed below, depending on your system. If you find nothing, proceed to install. Otherwise, uninstall using the uninstaller provided, before re-installing (drag the uninstall.sh file into a terminal window and hit enter to uninstall.
 
  	* /Library/Extensions/SiLabsUSBDriver.kext
@@ -455,10 +547,30 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
   - Doubleclick "Install CP210x VCP Driver.app" to install it. 
   - When it gives a security message, follow the instructions to allow the install to continue
 
-### Mac OS
+
+## Check if the USB driver is working
+
+  - If you just installed the driver, restart your computer.
+
+  - For Mac OS users: after restarting, make sure GateKeeper does not interfere with driver loading.
+
+    - System Preferences -> Security & Privacy -> General
+      
+		<img src="./images/gatekeeper-check.png" alt="screenshot of mac os settings pane with the tile security & privacy highlighted" width="550"/>
+      
+		<img src="./images/gatekeeper-check-popup.png" alt="screenshot of the security & privacy menu at the tab general, with the window under allow apps downloaded from highlighted, this is where potential errors will show up, if any" width="550"/>
+
+	- If there is an error message in the red box area, GateKeeper is interrupting the driver's operation. If this is the case, click 'Allow' and confirm with administrator password, **then restart your computer**.
+
+	<img src="./images/security_and_privacy_kextload_approval.png" alt="screenshot of the settings pane - security and privacy with message System software from developer Intel Corporation Apps was blocked from loading and a button ALLOW next to it" width="550"/>
+	
+	
+- If the problem persists, troubleshoot using the following instructions as per your operating system
+
+### Bypassing gatekeeper on Mac OS
 
 - [Mac OSX](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
-	- You need to work around a safetymeasure called gatekeeper which is a little different per OS operating system. Follow instructions below for your OS or google "disable gatekeeper on mac [insert your version here, e.g. monterey]" [More info here](https://support.apple.com/en-us/HT202491)
+	- You need to work around a safety measure called gatekeeper which is a little different per OS operating system. Follow instructions below for your OS or google "disable gatekeeper on mac [insert your version here, e.g. monterey]" [More info here](https://support.apple.com/en-us/HT202491)
 
 	- Mojave (10.14.x)
 
@@ -505,43 +617,6 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 		<img src="./images/yosemite-cp2102-legacy.png" alt="screenshot of the contents of the Legacy MacVCP driver folder, containing LegacyDriverReadme, ReleaseNotes and Silicon Labs VCP Driver" width="550"/>
 
 
-
-### Linux 3.x.x & 4.x.x
-
- - Driver installation not required (included in kernel)
- 	- [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
-	- [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
-
-### Linux 2.6.x
-[Linux 2.6.x](https://www.silabs.com/documents/login/software/Linux_2.6.x_VCP_Driver_Source.zip)
-		- No information
-
-### Windows
-
-- [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
-- [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip)
-- [Installation process](https://www.pololu.com/docs/0J7/all)
-
-
-## Check if the USB driver is working
-
-  - If you just installed the driver, restart your computer.
-
-  - After restarting, make sure GateKeeper does not interfere with driver loading.
-
-    - System Preferences -> Security & Privacy -> General
-      
-		<img src="./images/gatekeeper-check.png" alt="screenshot of mac os settings pane with the tile security & privacy highlighted" width="550"/>
-      
-		<img src="./images/gatekeeper-check-popup.png" alt="screenshot of the security & privacy menu at the tab general, with the window under allow apps downloaded from highlighted, this is where potential errors will show up, if any" width="550"/>
-
-
-      If there is an error message in the red box area, GateKeeper is interrupting the driver's operation. If this is the case, click 'Allow' and confirm with administrator password, **then restart your computer**.
-
-	<img src="./images/security_and_privacy_kextload_approval.png" alt="screenshot of the settings pane > security and privacy with message System software from developer Intel Corporation Apps was blocked from loading and a button ALLOW next to it" width="550"/>
-
-
-
 ### **After starting the Arduino IDE, make sure it can communicate with the ESP32 module**
 
 - If communication is possible, you can select /dev/cu.SLAB_USBtoUART (for other than Mac OSX, this name might be different) as shown in the picture below.
@@ -570,6 +645,20 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 - [Troubleshooting tips for various problem factors here](https://randomnerdtutorials.com/esp32-troubleshooting-guide/)
 
+- **Mac OS Monterey issue during upload**
+
+	- If you're using Mac OS Monterey, you might get an error like this in the Arduino output window: 
+
+		" *exec: "python": executable file not found in $PATH error on mac monterey* "
+
+	- If that happens, open a Terminal window, and paste the code below to install the right version of Python in the right place. Then hit enter.
+
+		```
+		sed -i -e 's/=python /=python3 /g' ~/Library/Arduino15/packages/esp32/hardware/esp32/*/platform.txt
+		
+		```
+
+	- Now restart the Arduino application and try uploading the code to the board again.
 
 ## Publishing your first mini webpage to the module
 
@@ -664,7 +753,7 @@ Use tie-wraps to wrap everything together nice and tight. Make a little cardboar
 
 <img src="./images/components.jpeg" width="650"/><br>*Image of all the components connected*
 
-<img src="./images/module_box2.jpg" width="650"/><br>*Image of all the components inside a non-black box :)*
+<img src="./images/boxes.jpg" width="650"/><br>*Examples of the boxes our test participants made :)*
 
 
 ## Previous research this project builds upon
