@@ -1,6 +1,6 @@
 <img src="./images/scavengerhunt.jpg" alt="hand holding twig with colorful wifi signal beaming out of it" width="600"/>
 
-# Solarpunk Kids: Wifi Scavenger Hunt 
+# Solarpunk Kids: ~~Wifi Scavenger Hunt~~ 
 
 **WIP! We're still in the process of editing this document**
 
