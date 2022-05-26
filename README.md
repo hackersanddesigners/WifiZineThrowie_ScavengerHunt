@@ -100,10 +100,12 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 * It has to travel through all the cables under the sea and the ground to your router.
 
 <img src="./images/underseacables2.jpg" alt="Actual undersea cable, source: BBC" width="650"/>
-<br>*Actual undersea cable, source: BBC*
+<br>
+*Actual undersea cable, source: BBC*
 
 <img src="./images/underseacables.png" alt="Map of undersea cables, source: BBC" width="650"/>
-<br>*Map of undersea cables, source: BBC*
+<br>
+*Map of undersea cables, source: BBC*
 
 **What makes the internet "heavy", when can you tell? How can you know?**
 
