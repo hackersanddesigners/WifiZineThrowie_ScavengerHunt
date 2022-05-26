@@ -88,9 +88,9 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 
 * What devices connected to the power grid (phone/ipad/laptop > router > to server or data center)
 
-	<img src="./images/routers.png" alt="images of a routers inside peoples homes" width="650"/> *Images of routers inside peoples homes*
+	<img src="./images/routers.png" alt="images of a routers inside peoples homes" width="650"/> <br>*Images of routers inside peoples homes*
 
-	<img src="./images/datacenter.png" alt="image of a datacenter" width="650"/> *Image of a data center*
+	<img src="./images/datacenter.png" alt="image of a datacenter" width="650"/> <br>*Image of a data center*
 
 
 **How far does a website have to travel to get to your screen?**
@@ -100,12 +100,12 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 * It has to travel through all the cables under the sea and the ground to your router.
 
 <img src="./images/underseacables2.jpg" alt="Actual undersea cable, source: BBC" width="650"/>
-<br>
 *Actual undersea cable, source: BBC*
 
 <img src="./images/underseacables.png" alt="Map of undersea cables, source: BBC" width="650"/>
-<br>
 *Map of undersea cables, source: BBC*
+
+
 
 **What makes the internet "heavy", when can you tell? How can you know?**
 
