@@ -2,13 +2,6 @@
 
 # Solarpunk Kids: Wifi Scavenger Hunt
 
-The information that has a <strike>strike-through</strike> was part of the first workshop iteration, but will be left out for the 3-hour workshop (v.2).
-
-* <strike>v1: 6-hour workshop, Saturday 7 May 2022 at NDSM Kunststad, Amsterdam</strike>
-* v2: 3-hour workshop, Sunday 5 June 2022 at Page Not Found, The Hague 
-
-**WIP! We're still in the process of editing this document**
-
 ## Workshop description
 
 Is all of the Internet worldwide? Can I make my own internet? How much power does it consume? Is it bad for the environment? At Hackers & Designers we are doing experiments to find out what a sustainable Internet of the future might look like. This document is a workshop script for an intergenerational workshop where we explore these things together with 7-12 year olds and their favourite grown-ups. 
@@ -19,16 +12,36 @@ The young participants will learn to design a scavenger hunt. The grown-up parti
 
 *Note: the technical instructions in this document are biased towards MacOS operating systems, but we've included instructions for windows and linux as much as possible. Contributions specific to these operating systems are very welcome!*
 
+The information that has a <strike>strike-through</strike> was part of the first workshop iteration, but will be left out for the 3-hour workshop (v.2).
+
+* <strike>v1: 6-hour workshop, Saturday 7 May 2022 at NDSM Kunststad, Amsterdam</strike>
+* v2: 3-hour workshop, Sunday 5 June 2022 at Page Not Found, The Hague 
+
+**3-hour workshop outline**
+
+* 13.00 Welcome
+* 13.15 Introduction: Internet and the environment
+* 13.45 Split in to Hackers & Designers
+* 14.30 Group rejoins for website building and kitmaking
+* 15.15 Uploading (by Loes) and downtime with tea
+* 15.30 Playing the scavenger hunt in the park!
+* 16.00 Round-up with icepops
+
+*WIP! We're still in the process of editing this document*
+
 ## Table of contents with short links
 
 * [About this project](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#about-this-project)
-* [Solarpunk? Internet? Kids?](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#solarpunk-internet-kids)
-* [Workshop outline](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#workshop-outline)
-* [0. Materials & preparations](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#0-materials-and-preparations)
-* [1. Hide the treasure & design clues](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#1-hide-the-treasure--create-some-clues-team-b)
-* [2. Designing a mini HTML webpage](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#2-designing-a-mini-html-webpage-css-and-javascript-optional-team-a---option-1)
-* [3. Programming the WiFi modules](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#3-programming-the-wifi-modules-team-a-option-2)
-* [4. Power up your module with a battery & solar cell](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#4-power-up-your-module-to-a-battery-and-solar-cell-team-a--b)
+* [Materials and space requirements](UPDATE)
+* [Workshop steps](UPDATE)
+* [1. Introduction](UPDATE)
+* [2. Solarpunk: What if we shrank the Internet?](UPDATE)
+* [3. What are we making today?](UPDATE)
+* [4. Hide the treasure & create some clues (team designers)](UDPATE)
+* [5. Designing a mini webpage (team hackers)](UPDATE)
+* [6. Programming the WiFi modules (workshop facilitators)](UPDATE)
+* [7. Power up your module](UPDATE)
+* [8. Hide your hotspots and do the scavenger hunt!](UPDATE)
 * [Previous research this project builds upon](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#previous-research-this-project-builds-upon)
 * [Technical details](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#technical-details)
 
@@ -69,9 +82,48 @@ This is an adaptation of the workshop and – amazing – documentation prepare
 
 Their workshop in turn builds up on the research by Andy Reischle (AreResearch), whose research is linked to at the bottom of this page. See also [previous research this project builds upon](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#previous-research-this-project-builds-upon).
 
+## Materials and space requirements
+
+*Account for one kit per duo. Total cost of the components per kit is around € 25,00 ex shipping.*
+
+- A computer per duo
+- A mobile phone per duo (no dataplan needed)
+- Internet connection to download libraries and look things up
+- A development board with ESP32 module and 4MB flash memory, e.g. [ESP32 - CP2102](https://www.tinytronics.nl/shop/nl/development-boards/microcontroller-boards/met-wi-fi/esp32-wifi-en-bluetooth-board-cp2102)
+- A short micro USB cable e.g. [this one](https://www.tinytronics.nl/shop/nl/kabels-en-connectoren/kabels-en-adapters/usb/micro-usb/micro-usb-kabel-30cm)
+- A 5V charging board e.g. this [LilyGo TTGO H435 with a 18650 rechargeable battery holder](https://www.tinytronics.nl/shop/nl/power/bms-en-laders/li-ion-en-li-po/met-protectiecircuit/lilygo-ttgo-t-bat-met-18650-batterijhouder-cn3065)
+- A rechargeable Li-ion battery compatible with the board, e.g. [LG 18650 Li-ion battery 3400mAh](https://www.tinytronics.nl/shop/nl/power/batterijen/18650/lg-18650-li-ion-batterij-3400mah-10a-inr18650-mj1)
+- A 5.5V solar cell with JST-PH connector e.g. [Seeed Studio 5.5V Solar Panel](https://www.tinytronics.nl/shop/nl/power/zonne-energie/zonnepanelen/seeed-studio-zonnepaneel-5.5v-170ma-80x100mm-met-jst-ph-connector)
+- Web page (html / css / js + media files) (provided when you download the .zip from the github explained in the steps below). 
+- A puzzle (one you make or one you have!)
+- Tie wraps of different sizes
+- Electrical tape
+- Pens and paper, cardboard, scissors, hotglue, tape
+
+### Space
+
+In terms of space you will need a workshop space with internet access to program the modules and create the HTML pages. 
+
+And for the scavenger hunt, it's most fun if you have a large space to play in. The wifi modules have a range of 20-25 meters. The location for our first workshop was at an old warehouse in Amsterdam North, called NDSM Kunststad where our studio is (see pictures below).
+
+But since it is all wireless (and solar powered), you could also play this outside! Just take a look at the weather forecast and maybe consider making waterproof cover of sorts. 
+
+<img src="./images/kunststad1.jpg" alt="NDSM warehouse entrance" width="600"/>
+
+<img src="./images/kunststad3.jpg" alt="hallways in NDSM warehouse" width="600"/>
+
+<img src="./images/kunststad4.jpg" alt="outside view of NDSM warehouse" width="600"/>
+
+<img src="./images/kunststad5.png" alt="inside square in NDSM warehouse with large colorful curtain hanging from the sealing and seating area " width="600"/>
+
+<img src="./images/kunststad6.png" alt="one of the large empty halls inside the NDSM warehouse, lined with yellow iron columns" width="600"/>
+
+*Images by NDSM: https://www.ndsm.nl/en/location/ndsm-loods*
+
+
 ## Workshop steps
 
-### Introduction: Solarpunk? Internet? Kids?
+## 1. Introduction
 
 * What is your name?
 * What did you have for breakfast?
@@ -79,8 +131,6 @@ Their workshop in turn builds up on the research by Andy Reischle (AreResearch),
 <strike>Proposal: Let's discuss the following questions together briefly to find out what we already know about energy, electricity and the Internet.</strike>
 
 Proposal: Let's discuss the following questions briefly to find out what we already know about the Internets and its environemental impact. 
-
-### Internet and the environment
 
 **Do you use the Internet? How?**
 
@@ -103,8 +153,6 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 
 <img src="./images/underseacables.png" alt="Map of undersea cables, source: BBC" width="650"/><br>*Map of undersea cables, source: BBC*
 
-
-
 **What makes the internet "heavy", when can you tell? How can you know?**
 
 * bad connectivity
@@ -114,7 +162,11 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 * Let's check out some websites. Who owns one? [https://www.websitecarbon.com](https://www.websitecarbon.com)
 
 
-### What if we shrank the Internet? 
+## 2. Solarpunk: What if we shrank the Internet? 
+
+Being a solarpunk is about positive futures! How can we keep some of the good things of the Internet (it's fun, it's a place to share a lot of information, it's a way to connect to people), but also taking care of the environment for the future?
+
+Some proposals we  will try out today: 
 
 * What if an average webpage were only 1 MB (the equivalent of 1 minute of mp3 audio). To compare: if you spend 2 hours on your phone watching standard definition (SD) video, you use about 1GB of data (1GB = ~1000MB)
 * What if some of the Internet wasn't worldwide but more local? 
@@ -122,8 +174,7 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 
 <img src="./images/components.jpeg" alt="wifi module with solar panel and a battery" width="600"/>
 
-
-### We made a smaller internet, let's go find it!
+**We made a smaller internet, let's go find it!**
 
 * Turn off your data plan
 * Look for the list of wifi networks on your phone
@@ -201,7 +252,7 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 </strike>
 
 
-### Outline of the workshop
+## 3. What are we making today?
 
 This first hunt was a mini version of what we will make together. But instead of one treasure, and one mini website providing clues, each participant duo will hide a part of the treasure (a few pieces of the puzzle we created for the workshop), and make a small website providing clues about where the treasure can be found. 
 
@@ -230,51 +281,12 @@ After a brief tutorial, the grown-ups will play and experiment with the HTML/CSS
 <img src="./images/workshop_solar02.jpg" alt="drawing explaining roles of team A and team B and how they come together" width="600"/>
 
 
-### What are we making? 
+### What are these nodes? How does it work exactly? 
 
 We will program a small wireless device with an ESP32 chip to serve a tiny (~1MB) html websites via WiFi. The module is powered by a battery, which in turn is charged by a solar cell. The Wifi module "serves" a small website anytime a smartphone tries to log on to the network it is broadcasting (like an internet hotspot). It allows you to redesign the "log-in" screen that usually pops up when you try to log on to public WiFi networks, and hijack it to publish content you want to share WiFi, but only with your neighbours and local friends within a ~25 m range. 
 
 
-## 0. Materials and preparations
-
-*Account for one kit per duo. Total cost of the components per kit is around € 25,00 ex shipping.*
-
-- A computer per duo
-- A mobile phone per duo (no dataplan needed)
-- Internet connection to download libraries and look things up
-- A development board with ESP32 module and 4MB flash memory, e.g. [ESP32 - CP2102](https://www.tinytronics.nl/shop/nl/development-boards/microcontroller-boards/met-wi-fi/esp32-wifi-en-bluetooth-board-cp2102)
-- A short micro USB cable e.g. [this one](https://www.tinytronics.nl/shop/nl/kabels-en-connectoren/kabels-en-adapters/usb/micro-usb/micro-usb-kabel-30cm)
-- A 5V charging board e.g. this [LilyGo TTGO H435 with a 18650 rechargeable battery holder](https://www.tinytronics.nl/shop/nl/power/bms-en-laders/li-ion-en-li-po/met-protectiecircuit/lilygo-ttgo-t-bat-met-18650-batterijhouder-cn3065)
-- A rechargeable Li-ion battery compatible with the board, e.g. [LG 18650 Li-ion battery 3400mAh](https://www.tinytronics.nl/shop/nl/power/batterijen/18650/lg-18650-li-ion-batterij-3400mah-10a-inr18650-mj1)
-- A 5.5V solar cell with JST-PH connector e.g. [Seeed Studio 5.5V Solar Panel](https://www.tinytronics.nl/shop/nl/power/zonne-energie/zonnepanelen/seeed-studio-zonnepaneel-5.5v-170ma-80x100mm-met-jst-ph-connector)
-- Web page (html / css / js + media files) (provided when you download the .zip from the github explained in the steps below). 
-- A puzzle (one you make or one you have!)
-- Tie wraps of different sizes
-- Electrical tape
-- Pens and paper, cardboard, scissors, hotglue, tape
-
-### Space
-
-In terms of space you will need a workshop space with internet access to program the modules and create the HTML pages. 
-
-And for the scavenger hunt, it's most fun if you have a large space to play in. The wifi modules have a range of 20-25 meters. The location for our first workshop was at an old warehouse in Amsterdam North, called NDSM Kunststad where our studio is (see pictures below).
-
-But since it is all wireless (and solar powered), you could also play this outside! Just take a look at the weather forecast and maybe consider making waterproof cover of sorts. 
-
-<img src="./images/kunststad1.jpg" alt="NDSM warehouse entrance" width="600"/>
-
-<img src="./images/kunststad3.jpg" alt="hallways in NDSM warehouse" width="600"/>
-
-<img src="./images/kunststad4.jpg" alt="outside view of NDSM warehouse" width="600"/>
-
-<img src="./images/kunststad5.png" alt="inside square in NDSM warehouse with large colorful curtain hanging from the sealing and seating area " width="600"/>
-
-<img src="./images/kunststad6.png" alt="one of the large empty halls inside the NDSM warehouse, lined with yellow iron columns" width="600"/>
-
-*Images by NDSM: https://www.ndsm.nl/en/location/ndsm-loods*
-
-
-## 1. Hide the treasure & create some clues (team B)
+## 4. Hide the treasure & create some clues (team designers)
 
 We made a jigsaw puzzle, and each young designer will get a few pieces of the puzzle to hide in the space. 
 
@@ -313,7 +325,7 @@ Find some cardboard and make a box for your module. You can use any materials yo
 Around 12 o'clock the designers will prepare lunch together so we can all eat! 
 </strike>
 
-## 2. Designing a mini HTML webpage (CSS and Javascript optional) (team A - option 1)
+## 5. Designing a mini webpage (team hackers)
 
 Download a code editing tool to create your HTML code. We really like Brackets, because it has a feature to show you a live preview of what you are writing in the code, in a separate browser window (see below). 
 
@@ -422,9 +434,14 @@ Use whatever skills and knowledge you already have, or look things up on the int
 
 Note that your entire website (so the index.html plus any other files like images, has to be **_around 1MB_** in total or it will fail to upload (we're not sure about the exact number) This is not a lot of space! That's why we call them tiny websites :-) If the files are too big, try compressing your images. We've listed a tool in the segment below, but Google knows many. 
 
-<strike>
 
-## 3. Programming the WiFi modules (team A option 2)
+## 6. Programming the WiFi modules (workshop faciltators)
+
+For the 3-hour workshop, we will do this for you! That's because preparing your computer to program the WiFi modules takes quite some time to set up. We decided to focus on designing the websites. When you finish your page, you can give your folder with all the files to Loes and she will put them on the module. Then all you have to do is plug in the solar panel and battery, which is described in [step 4 on the bottom of this page](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#4-power-up-your-module-to-a-battery-and-solar-cell-team-a--b).
+
+*Note for workshop facilitators: go through these steps before the workshop to make sure it all works.*
+
+<strike>
 
 First we need to download some tools (more to follow along the way!)
 
@@ -771,7 +788,7 @@ It is possible to increase the upload capacity of the board so you can make slig
 
 </strike>
 
-## 4. Power up your module to a battery and solar cell (team A + B)
+## 7. Power up your module!
 
 ### Step 1: Prepare the solar panel
 
@@ -806,6 +823,30 @@ Use tie-wraps to wrap everything together nice and tight. Make a little cardboar
 <img src="./images/components.jpeg" width="650"/><br>*Image of all the components connected*
 
 <img src="./images/boxes.jpg" width="650"/><br>*Examples of the boxes our test participants made :)*
+
+## 8. Hide your hotspots and do the scavenger hunt!
+
+When all the hotspots are programmed and powered up with a solar panel, one of the workshop facilitators will go and hide the modules in the park or space you decided to play at. 
+
+**Make a list with the network names**
+
+In the meantime, make a list together with all the names of your wifi modules, so everyone knows what to look for in their wifi list. Write them on a big piece of paper
+
+<img src="./images/networkslist.jpg" width="650"/><br>*List of networks on a big piece of paper, and puzzle*
+
+**Rules for playing**
+
+Decide on the rules to make the game the most fun, e.g.: 
+
+* don't tell the other players where you hid your treasure :) 
+* decide on a homebase where somebody stays with the list of network names
+* when you find puzzle pieces, first you have to come back to the homebase and cross off the network name from the list that you "solved"
+* then you can go back in to search for another treasure
+* once the are pieces of the puzzle, players can start laying the puzzle at the home base station (handy to have a table there).
+
+**GO!**
+
+<img src="./images/go.jpg" width="650"/><br>*go go go!*
 
 
 ## Previous research this project builds upon
