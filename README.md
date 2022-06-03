@@ -378,7 +378,8 @@ Oooh if you are fancy and have Photoshop installed with a licence, you probably 
 In this pop-up window, you can choose **PNG-8 with dithering**. This allows you to compress even more with nice color effects. You simplify the image in terms of color (e.g. only 2, 4, 8 or more that you can handpick yourself). You can specify the dimensions and on the bottom left you can see the size of the resulting file. With *dithering* you can easily go as low as 20KB and still have a really cool looking image!
 
 
-<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/> *Save for web pop-up menu*
+<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/> 
+*Save for web pop-up menu*
 
 ### Compressing audio with VLC
 
@@ -386,7 +387,8 @@ VLC is an open-source, cross-platform software. [https://www.videolan.org/vlc/](
 
 It's mostly a mediaplayer, but you can also use it to convert files into other formats. You can rip the audio from a video or compress an audiofile like so: 
 
-<img src="./images/vlc.png" alt="Screenshot of Convert/Stream pop-up menu in VLC"/> *Screenshot of Convert/Stream pop-up menu in VLC*
+<img src="./images/vlc.png" alt="Screenshot of Convert/Stream pop-up menu in VLC" width="750"/> 
+*Screenshot of Convert/Stream pop-up menu in VLC*
 
 Under **File** (top bar menu), you can find the option **Convert / Stream**. Selecting it opens the pop-up you see in the picture above. 
 
@@ -396,7 +398,8 @@ Under **File** (top bar menu), you can find the option **Convert / Stream**. Sel
 * Click the button *Save as file*
 * Indicate where you want to save your file. Now go check out how small it is!
 
-<img src="./images/vlc_audiocodec.png" alt="Audio coded menu in VLC"/> *Screenshot of Audio codec options in VLC*
+<img src="./images/vlc_audiocodec.png" alt="Audio coded menu in VLC" width="750"/> 
+*Screenshot of Audio codec options in VLC*
 
 
 ### Step 0: Download our github repository for all the required code and HTML templates
