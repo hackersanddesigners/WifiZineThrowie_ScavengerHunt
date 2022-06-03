@@ -378,7 +378,7 @@ Oooh if you are fancy and have Photoshop installed with a licence, you probably 
 In this pop-up window, you can choose **PNG-8 with dithering**. This allows you to compress even more with nice color effects. You simplify the image in terms of color (e.g. only 2, 4, 8 or more that you can handpick yourself). You can specify the dimensions and on the bottom left you can see the size of the resulting file. With *dithering* you can easily go as low as 20KB and still have a really cool looking image!
 
 
-<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="650"/><br>*Save for web pop-up menu*
+<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/><br>*Save for web pop-up menu*
 
 ### Compressing audio with VLC
 
