@@ -380,6 +380,23 @@ In this pop-up window, you can choose **PNG-8 with dithering**. This allows you 
 
 <img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/> *Save for web pop-up menu*
 
+### Compressing audio with VLC
+
+VLC is an open-source, cross-platform software. [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/) 
+
+It's mostly a mediaplayer, but you can also use it to convert files into other formats. You can rip the audio from a video or compress an audiofile like so: 
+
+<img src="./images/vlc.png" alt="Screenshot of Convert/Stream pop-up menu in VLC"/> *Screenshot of Convert/Stream pop-up menu in VLC*
+
+Under **File** (top bar menu), you can find the option **Convert / Stream**. Selecting it opens the pop-up you see in the picture above. 
+
+* Select the file you want to compress with *Open media...* 
+* Choose the profile: Audio - MP3
+* Go into *Customize* and lower the *Sample Rate* under the *Audio codec* tab (see below). Set this to 11025 or even lower if you dare! 
+* Click the button *Save as file*
+* Indicate where you want to save your file. Now go check out how small it is!
+
+<img src="./images/vlc_audiocodec.png" alt="Audio coded menu in VLC"/> *Screenshot of Audio codec options in VLC*
 
 
 ### Step 0: Download our github repository for all the required code and HTML templates
