@@ -130,7 +130,7 @@ But since it is all wireless (and solar powered), you could also play this outsi
 
 <strike>Proposal: Let's discuss the following questions together briefly to find out what we already know about energy, electricity and the Internet.</strike>
 
-Proposal: Let's discuss the following questions briefly to find out what we already know about the Internets and its environemental impact. 
+Proposal: Let's discuss the following questions briefly to find out what we already know about the Internets and its environmental impact. 
 
 **Do you use the Internet? How?**
 
@@ -164,7 +164,7 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 
 ## 2. Solarpunk: What if we shrank the Internet? 
 
-Being a solarpunk is about positive futures! How can we keep some of the good things of the Internet (it's fun, it's a place to share a lot of information, it's a way to connect to people), but also taking care of the environment for the future?
+Being a solarpunk is about imagining positive futures! How can we keep some of the good things of the Internet (it's fun, it's a place to share a lot of information, it's a way to connect to people), but also taking care of the environment for the future?
 
 Some proposals we  will try out today: 
 
@@ -327,13 +327,68 @@ Around 12 o'clock the designers will prepare lunch together so we can all eat!
 
 ## 5. Designing a mini webpage (team hackers)
 
+### Prepare some images for the small internet
+
+We want supertiny images because the websites we're making are less than 1MB (a full resolution image is easily 10 MB!). Some methods to compress and scale down images that will still be clearly visible on an average phone screen.
+
+**Preview (Mac)**
+
+*Cost: having a Mac laptop*
+
+Preview (software that comes standard with a mac computer has an easy built-in tool to compress images. Open your image(s) in Preview. Then go to the menu bar and select **Tools**. And then select **Adjust Size...** from the dropdown. 
+
+<img src="./images/preview_adjustsize.png" alt="Menu in Preview pointing at Tools | Adjust Size..." width="750"/> *In preview, go to Tools and then Adjust Size...*
+
+In the settings pane that pops up, put in the following settings. Make sure the little lock is closed to keep the aspect ratio the same. Then type in **400** for **WIDTH** and choose **PIXELS**. Most mobile phones don't have a screen with a viewport wider than 400 px, so this seems small on your laptop but is more than enough!
+
+Under resolution, you can put in **72** and choose **PIXELS PER INCH** from the dropdown. This is standard definition for phone so it's not high-definition, but it is legible and nice and small.
+
+It might take a sec to calculate, but will tell you the resulting size of your compression. We just went from 11MB to 38KB, YES! That's more like it.
+
+<img src="./images/preview_settings.png" alt="Menu in Preview pointing at Tools | Adjust Size..." width="750"/> *In the settings panel, choose Custom, and width 400 pixels at 72 dpi.*
+
+
+**Whatsapp + online imagecompressor** 
+
+*Cost: your data*
+
+1. Go to [https://web.whatsapp.com/](https://web.whatsapp.com/) and connect your mobile phone
+2. Send one or two pictures via Whatsapp to someone you know
+3. With the default settings, Whatsapp will compress large images to max 300kb. This is a good start. To be sure, check the settings: 
+
+	* Open the WhatsApp application on your phone.
+	* Tap on the three-dot icon at the top and select *Settings*
+	* On the Settings page, tap on *Storage and data* options.
+	* Scroll to the bottom of the screen and under the *Media upload quality*, tap on *Photo upload quality*.
+	* *Auto* or *Data savers* should be selected now.
+
+4. On your laptop: go to whatsapp web and save the image to your desktop or somewhere you can find it. 
+5. Go to [https://imagecompressor.com/](https://imagecompressor.com/)
+6. Drag and drop your files to upload them, then scroll done to set the quality. Set the quality to about 40 or whenever the resulting image size is between 50-75 kb. 
+7. Then press download to get your compressed image file.
+
+<img src="./images/imagecompressor40.png" alt="Screenshot of image compressor interface" width="750"/> 
+
+**Photoshop**
+
+*Cost: from €24 a month, meh*
+
+Oooh if you are fancy and have Photoshop installed with a licence, you probably know how to resize a picture. Otherwise give Google a call. Nice bonus for photoshoppers is the dithering functionality under the menu **File**, then **Export...**, then **Save for web...**
+
+In this pop-up window, you can choose **PNG-8 with dithering**. This allows you to compress even more with nice color effects. You simplify the image in terms of color (e.g. only 2, 4, 8 or more that you can handpick yourself). You can specify the dimensions and on the bottom left you can see the size of the resulting file. With *dithering* you can easily go as low as 20KB and still have a really cool looking image!
+
+
+<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/> *Save for web pop-up menu*
+
+
+
+### Step 0: Download our github repository for all the required code and HTML templates
+
 Download a code editing tool to create your HTML code. We really like Brackets, because it has a feature to show you a live preview of what you are writing in the code, in a separate browser window (see below). 
 
 - [**Brackets code editor**](https://brackets.io/) to edit your HTML page
 
 <img src="./images/brackets_preview.png" alt="brackets code editor and preview window of the example website" width="600"/>
-
-### Download our github repository for all the required code and HTML templates
 
   - Navigate to the [H&D Scavenger hunt Github Repository](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt)
 	
