@@ -132,9 +132,9 @@ But since it is all wireless (and solar powered), you could also play this outsi
 
 Proposal: Let's discuss the following questions briefly to find out what we already know about the Internets and its environmental impact. 
 
-**Do you use the Internet? How?**
+**Do you use the Internet? How? When?**
 
-**Where is the internet? where can you find it?**
+**Where is the internet? How big is it? Where can you find it?**
 
 * What devices connected to the power grid (phone/ipad/laptop > router > to server or data center)
 
@@ -142,16 +142,22 @@ Proposal: Let's discuss the following questions briefly to find out what we alre
 
 	<img src="./images/datacenter.png" alt="image of a datacenter" width="650"/> <br>*Image of a data center*
 
-
 **How far does a website have to travel to get to your screen?**
 
+* Internet pages live on other people's computers. These computers are open, so everyone can look into them. They always have to be on. 
 * You want to check out a website of your friends in South-Korea [http://www.dianaband.info](http://www.dianaband.info)
 * Their website lives on a computer of a host somewhere else in Seoul or around, right? Let's check: [https://hostingchecker.com](https://hostingchecker.com)
-* It has to travel through all the cables under the sea and the ground to your router.
+* It has to travel through all the cables under the sea and the ground to your router. Only the very last bit goes through the air (wifi)
 
 <img src="./images/underseacables2.jpg" alt="Actual undersea cable, source: BBC" width="650"/><br>*Actual undersea cable, source: BBC*
 
 <img src="./images/underseacables.png" alt="Map of undersea cables, source: BBC" width="650"/><br>*Map of undersea cables, source: BBC*
+
+
+**Why do you think the Internet might be bad for the environment?**
+
+* let's take another look at the routers and the datacenters, what do you see? (cables, lights > how are they powered?)
+* What are cables made of?
 
 **What makes the internet "heavy", when can you tell? How can you know?**
 
@@ -327,78 +333,6 @@ Around 12 o'clock the designers will prepare lunch together so we can all eat!
 
 ## 5. Designing a mini webpage (team hackers)
 
-### Prepare some images for the small internet
-
-We want supertiny images because the websites we're making are less than 1MB (a full resolution image is easily 10 MB!). Some methods to compress and scale down images that will still be clearly visible on an average phone screen.
-
-**Preview (Mac)**
-
-*Cost: having a Mac laptop*
-
-Preview (software that comes standard with a mac computer has an easy built-in tool to compress images. Open your image(s) in Preview. Then go to the menu bar and select **Tools**. And then select **Adjust Size...** from the dropdown. 
-
-<img src="./images/preview_adjustsize.png" alt="Menu in Preview pointing at Tools | Adjust Size..." width="750"/> *In preview, go to Tools and then Adjust Size...*
-
-In the settings pane that pops up, put in the following settings. Make sure the little lock is closed to keep the aspect ratio the same. Then type in **400** for **WIDTH** and choose **PIXELS**. Most mobile phones don't have a screen with a viewport wider than 400 px, so this seems small on your laptop but is more than enough!
-
-Under resolution, you can put in **72** and choose **PIXELS PER INCH** from the dropdown. This is standard definition for phone so it's not high-definition, but it is legible and nice and small.
-
-It might take a sec to calculate, but will tell you the resulting size of your compression. We just went from 11MB to 38KB, YES! That's more like it.
-
-<img src="./images/preview_settings.png" alt="Menu in Preview pointing at Tools | Adjust Size..." width="750"/> *In the settings panel, choose Custom, and width 400 pixels at 72 dpi.*
-
-
-**Whatsapp + online imagecompressor** 
-
-*Cost: your data*
-
-1. Go to [https://web.whatsapp.com/](https://web.whatsapp.com/) and connect your mobile phone
-2. Send one or two pictures via Whatsapp to someone you know
-3. With the default settings, Whatsapp will compress large images to max 300kb. This is a good start. To be sure, check the settings: 
-
-	* Open the WhatsApp application on your phone.
-	* Tap on the three-dot icon at the top and select *Settings*
-	* On the Settings page, tap on *Storage and data* options.
-	* Scroll to the bottom of the screen and under the *Media upload quality*, tap on *Photo upload quality*.
-	* *Auto* or *Data savers* should be selected now.
-
-4. On your laptop: go to whatsapp web and save the image to your desktop or somewhere you can find it. 
-5. Go to [https://imagecompressor.com/](https://imagecompressor.com/)
-6. Drag and drop your files to upload them, then scroll done to set the quality. Set the quality to about 40 or whenever the resulting image size is between 50-75 kb. 
-7. Then press download to get your compressed image file.
-
-<img src="./images/imagecompressor40.png" alt="Screenshot of image compressor interface" width="750"/> 
-
-**Photoshop**
-
-*Cost: from €24 a month, meh*
-
-Oooh if you are fancy and have Photoshop installed with a licence, you probably know how to resize a picture. Otherwise give Google a call. Nice bonus for photoshoppers is the dithering functionality under the menu **File**, then **Export...**, then **Save for web...**
-
-In this pop-up window, you can choose **PNG-8 with dithering**. This allows you to compress even more with nice color effects. You simplify the image in terms of color (e.g. only 2, 4, 8 or more that you can handpick yourself). You can specify the dimensions and on the bottom left you can see the size of the resulting file. With *dithering* you can easily go as low as 20KB and still have a really cool looking image!
-
-
-<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/><br>*Save for web pop-up menu*
-
-### Compressing audio with VLC
-
-VLC is an open-source, cross-platform software. [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/) 
-
-It's mostly a mediaplayer, but you can also use it to convert files into other formats. You can rip the audio from a video or compress an audiofile like so: 
-
-<img src="./images/vlc.png" alt="Screenshot of Convert/Stream pop-up menu in VLC" width="650"/><br>*Screenshot of Convert/Stream pop-up menu in VLC*
-
-Under **File** (top bar menu), you can find the option **Convert / Stream**. Selecting it opens the pop-up you see in the picture above. 
-
-* Select the file you want to compress with *Open media...* 
-* Choose the profile: Audio - MP3
-* Go into *Customize* and lower the *Sample Rate* under the *Audio codec* tab (see below). Set this to 11025 or even lower if you dare! 
-* Click the button *Save as file*
-* Indicate where you want to save your file. Now go check out how small it is!
-
-<img src="./images/vlc_audiocodec.png" alt="Audio coded menu in VLC" width="650"/><br>*Screenshot of Audio codec options in VLC*
-
-
 ### Step 0: Download our github repository for all the required code and HTML templates
 
 Download a code editing tool to create your HTML code. We really like Brackets, because it has a feature to show you a live preview of what you are writing in the code, in a separate browser window (see below). 
@@ -475,7 +409,80 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 
 - Is it doing some thing different than what you expected? Look very carefully! Small typos can make a big difference. We're also around to help. 
 
-**Some tools that are useful for designing your mini website**
+
+### Prepare some images for the small internet
+
+We want supertiny images because the websites we're making are less than 1MB (a full resolution image is easily 10 MB!). Some methods to compress and scale down images that will still be clearly visible on an average phone screen.
+
+**Preview (Mac)**
+
+*Cost: having a Mac laptop*
+
+Preview (software that comes standard with a mac computer has an easy built-in tool to compress images. Open your image(s) in Preview. Then go to the menu bar and select **Tools**. And then select **Adjust Size...** from the dropdown. 
+
+<img src="./images/preview_adjustsize.png" alt="Menu in Preview pointing at Tools | Adjust Size..." width="750"/> *In preview, go to Tools and then Adjust Size...*
+
+In the settings pane that pops up, put in the following settings. Make sure the little lock is closed to keep the aspect ratio the same. Then type in **400** for **WIDTH** and choose **PIXELS**. Most mobile phones don't have a screen with a viewport wider than 400 px, so this seems small on your laptop but is more than enough!
+
+Under resolution, you can put in **72** and choose **PIXELS PER INCH** from the dropdown. This is standard definition for phone so it's not high-definition, but it is legible and nice and small.
+
+It might take a sec to calculate, but will tell you the resulting size of your compression. We just went from 11MB to 38KB, YES! That's more like it.
+
+<img src="./images/preview_settings.png" alt="Menu in Preview pointing at Tools | Adjust Size..." width="750"/> *In the settings panel, choose Custom, and width 400 pixels at 72 dpi.*
+
+
+**Whatsapp + online imagecompressor** 
+
+*Cost: your data*
+
+1. Go to [https://web.whatsapp.com/](https://web.whatsapp.com/) and connect your mobile phone
+2. Send one or two pictures via Whatsapp to someone you know
+3. With the default settings, Whatsapp will compress large images to max 300kb. This is a good start. To be sure, check the settings: 
+
+	* Open the WhatsApp application on your phone.
+	* Tap on the three-dot icon at the top and select *Settings*
+	* On the Settings page, tap on *Storage and data* options.
+	* Scroll to the bottom of the screen and under the *Media upload quality*, tap on *Photo upload quality*.
+	* *Auto* or *Data savers* should be selected now.
+
+4. On your laptop: go to whatsapp web and save the image to your desktop or somewhere you can find it. 
+5. Go to [https://imagecompressor.com/](https://imagecompressor.com/)
+6. Drag and drop your files to upload them, then scroll done to set the quality. Set the quality to about 40 or whenever the resulting image size is between 50-75 kb. 
+7. Then press download to get your compressed image file.
+
+<img src="./images/imagecompressor40.png" alt="Screenshot of image compressor interface" width="750"/> 
+
+**Photoshop**
+
+*Cost: from €24 a month, meh*
+
+Oooh if you are fancy and have Photoshop installed with a licence, you probably know how to resize a picture. Otherwise give Google a call. Nice bonus for photoshoppers is the dithering functionality under the menu **File**, then **Export...**, then **Save for web...**
+
+In this pop-up window, you can choose **PNG-8 with dithering**. This allows you to compress even more with nice color effects. You simplify the image in terms of color (e.g. only 2, 4, 8 or more that you can handpick yourself). You can specify the dimensions and on the bottom left you can see the size of the resulting file. With *dithering* you can easily go as low as 20KB and still have a really cool looking image!
+
+
+<img src="./images/dithering.png" alt="Screenshot of photoshop's save for web option" width="750"/><br>*Save for web pop-up menu*
+
+### Compressing audio with VLC
+
+VLC is an open-source, cross-platform software. [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/) 
+
+It's mostly a mediaplayer, but you can also use it to convert files into other formats. You can rip the audio from a video or compress an audiofile like so: 
+
+<img src="./images/vlc.png" alt="Screenshot of Convert/Stream pop-up menu in VLC" width="650"/><br>*Screenshot of Convert/Stream pop-up menu in VLC*
+
+Under **File** (top bar menu), you can find the option **Convert / Stream**. Selecting it opens the pop-up you see in the picture above. 
+
+* Select the file you want to compress with *Open media...* 
+* Choose the profile: Audio - MP3
+* Go into *Customize* and lower the *Sample Rate* under the *Audio codec* tab (see below). Set this to 11025 or even lower if you dare! 
+* Click the button *Save as file*
+* Indicate where you want to save your file. Now go check out how small it is!
+
+<img src="./images/vlc_audiocodec.png" alt="Audio coded menu in VLC" width="650"/><br>*Screenshot of Audio codec options in VLC*
+
+
+**Some other tools that are useful for designing your mini website**
 
 * [Online image compression tool](https://www.iloveimg.com/compress-image) (to make your pictures smaller)
 * [W3 schools tutorials](https://www.w3schools.com/html/default.asp) to look up how to write html bits and bobs
@@ -483,7 +490,7 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 * [Libre fonts by wxmen](https://www.design-research.be/by-womxn/) find a cool typeface!
 * [Emoji codes](https://www.w3schools.com/charsets/ref_emoji.asp) all the emoji's you ever wanted! 
 * [Color picker tool](https://imagecolorpicker.com/color-code/6800ff) to help find the code that stands for a particular color you like and want to use in the HTML.
-* [Freesound archive](https://freesound.org/) to find sound clips that are free to use
+* [Freesound archive](https://freesound.org/) to find sound clips that are free to use (user: hackersdesigners pass: Designers&Hackers)
 
 
 <img src="./images/site1.png" alt="screenshots of a website made by participants" width="750"/> 
@@ -491,9 +498,6 @@ Download a code editing tool to create your HTML code. We really like Brackets, 
 <img src="./images/site2.png" alt="screenshots of a website made by participants" width="750"/> 
 
 <img src="./images/site3.png" alt="screenshots of a website made by participants" width="750"/> 
-
-
-
 
 
 ### Step 4: think of something else to try 
