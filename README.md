@@ -1,6 +1,5 @@
-<img src="./images/scavengerhunt.jpg" alt="hand holding twig with colorful wifi signal beaming out of it" width="600"/>
 
-# Solarpunk Kids: Wifi Scavenger Hunt
+# Soilpunk
 
 ## Workshop description
 
