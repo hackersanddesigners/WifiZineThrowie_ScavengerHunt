@@ -152,7 +152,7 @@ void setup(){
     int dot = n.lastIndexOf(".");
     String ext = n.substring( dot );
     if ( ext == ".ssid" ) {
-      hostName = n.substring( 1, dot ); // first index is 1 to skip the "/"
+      hostName = n.substring( 0, dot ); // set the ssid to the filename without .ssid
     }
     file = root.openNextFile();
   }
