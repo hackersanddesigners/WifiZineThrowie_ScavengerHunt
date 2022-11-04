@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Solarpunk Kids!</title>
+	<style>
+		@font-face {
+			font-family: 'x-cription';
+			src: url("XCryption-w636.woff") format('woff');
+		}
+
+		@font-face {
+			font-family: 'hackattack';
+			src: url("HackAttackLight-7BmZl.woff") format('woff');
+		}
+
+		html:before {
+			content: "";
+			width: 100%;
+			height: 100vh;
+			background-image: url('blackhole.gif');
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		body {
+			font-family: 'hackattack', serif;
+			font-size: 40px;
+			color: #00ff00;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-family: 'x-cription', sans-serif;
+			word-break: break-all;
+		}
+
+		h3 {
+			font-size: 15px;
+			color: dimgray;
+			text-align: center;
+		}
+
+		.ascii-art {
+			font-family: monospace;
+			white-space: pre;
+			font-size: 10px;
+			text-align: center;
+		}
+
+		.button-common {
+			border: 10px solid #00ff00;
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			opacity: 0.75;
+			font-size: 80px;
+			color: #0f0;
+		}
+
+		.hidden-image img {
+			display: none;
+			position: fixed;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			max-width: 80vw;
+			max-height: 80vh;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+
+		.hidden-image input:checked~img {
+			display: block;
+		}
+
+		.hidden-image label>input~img {
+			display: block;
+		}
+	</style>
+
+</head>
+
+<header>
+	<h1 style="text-align:center;">
+		Hallo Solarpunk Kids!
+	</h1>
+
+	<h3>
+		<div id="button-group">
+			<button id="button1" class="button-common">&#128373;</button>
+		</div>
+	</h3>
+
+	<p style="text-align:center;font-size:80px;">
+		&#127760; &#128104;&#127997;&#8205;&#128187;
+	</p>
+</header>
+
+<body>
+
+	<p style="text-align:left;">De eerste aanwijzing is van Loes & Pernilla (niets verklappen jullie twee!) </p>
+
+	<!-- Anything you write here is hidden -->
+
+	<p style="text-align:center;">Hieronder zie je drie afbeeldingen van een plek binnen Page Not Found. </p>
+
+	<p style="text-align:right"> Kijk goed, kun je deze plek vinden? Hier is een pakket verstopt!</p>
+
+	<div class="hidden-image">
+		<input id="img1" type="checkbox"><label for="img1">[hack]</label>
+		<img src="clue1.jpeg" width="70%">
+	</div>
+	<div class="hidden-image">
+		<input id="img2" type="checkbox"><label for="img2">[hack]</label>
+		<img src="clue2.jpeg" width="70%">
+	</div>
+	<div class="hidden-image">
+		<input id="img3" type="checkbox"><label for="img3">[hack]</label>
+		<img src="clue3.jpeg" width="70%">
+	</div>
+
+
+	<h3>Typeface Iconian Fonts, Font by Iconian Fonts, 2021, hello@sunyoungoh.com</h3>
+
+	<div class="ascii-art">
+
+		╋╋╋╋╋╋┏┓╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┓
+		╋╋╋╋╋╋┃┃╋╋╋╋╋╋╋╋╋╋╋╋╋╋┃┃
+		┏━━┳━━┫┃┏━━┳━┳━━┳┓┏┳━┓┃┃┏┓
+		┃━━┫┏┓┃┃┃┏┓┃┏┫┏┓┃┃┃┃┏┓┫┗┛┛
+		┣━━┃┗┛┃┗┫┏┓┃┃┃┗┛┃┗┛┃┃┃┃┏┓┓
+		┗━━┻━━┻━┻┛┗┻┛┃┏━┻━━┻┛┗┻┛┗┛
+		╋╋╋╋╋╋╋╋╋╋╋╋╋┃┃
+		╋╋╋╋╋╋╋╋╋╋╋╋╋┗┛
+	</div>
+
+	<!-- audio playing is done by Tone.js -->
+	<script type="text/javascript" src="./Tone.min.js"></script>
+	<script>
+		var gn;
+
+		//sound
+		var sound1 = new Tone
+			.Player("./modem_8000.mp3", function () {
+
+				document
+					.getElementById('button1')
+					.onclick = function () {
+						if (sound1.state == 'stopped')
+							sound1.start();
+						else if (sound1.state == 'started')
+							sound1.stop();
+					};
+			})
+			.toMaster();
+		sound1.loop = true;
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+		<title>Scrollllllllllll</title>
+		<style>
+			@font-face {
+				font-family: 'murmure';
+				src: url("le-murmure.woff") format('woff');
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				font: 90px 'murmure', sans-serif;
+			}
+			.block {
+				position: sticky;
+				position: -webkit-sticky;
+				top: 0;
+				min-height: 100vh;
+				background-position: top center;
+				background-size: cover;
+				background-attachment: scroll;
+				background-repeat: no-repeat;
+			}
+
+			.sticky-container {
+				position: sticky;
+				position: -webkit-sticky;
+				top: 40vh;
+				color: #fff;
+				text-align: center;
+				text-shadow: 0 0 20px magenta;
+			}
+
+			cite {
+				word-break: break-all;
+			}
+
+			.last {
+				min-height: 100vh;
+			}
+
+			.last .sticky-container {
+				top: auto;
+				font-size: 40px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="block" style="background-image: url('1.gif'); background-color: yellow; background-blend-mode: darken;">
+			<div class="sticky-container">
+				<div class=sticky-content>
+      Hoeveel km per jaar leg jij af op je mobiel?
+    </div>
+			</div>
+		</div>
+		<div class="block" style="background-image: url('2.gif'); background-color: blue; background-blend-mode: difference;">
+			<div class="sticky-container">
+				<div class=sticky-content>
+        Scroll down.
+      </div>
+			</div>
+		</div>
+		<div class="block" style="background-image: url('3.gif');background-color: green; background-blend-mode: hard-light;">
+			<div class="sticky-container">
+				<div class=sticky-content>
+      More...
+    </div>
+			</div>
+		</div>
+		<div class="block" style="background-image: url('4.gif');background-color: cyan; background-blend-mode: darken;">
+			<div class="sticky-container">
+				<div class=sticky-content>
+      Almost...
+    </div>
+			</div>
+		</div>
+		<div class="block" style="background-image: url('5.gif');background-color: magenta; background-blend-mode: darken;">
+			<div class="sticky-container">
+				<div class=sticky-content>
+      Really almost...
+    </div>
+			</div>
+		</div>
+		<div class="block last" style="background-color:blue">
+			<div class="sticky-container">
+				<div class=sticky-content>
+					<h1>Ongeveer 141 km per jaar!</h1>
+					<p>
+Op basis van onderzoek uitgevoerd door Statista wordt geconcludeerd dat de gemiddelde persoon 108 minuten op diens telefoon zat in 2021. Of 6480 seconden per dag scrollen op social media.
+</p>
+					<p>
+Als we aannemen dat je gemiddeld elke 5 seconden zo’n 30 cm scrollt (afgeleid de gemiddelde lengte van een swipe) kom je uit op 6 cm scrollen per seconde.
+</p>
+					<p>
+6480 seconden per dag x 6 cm = 38 880 cm per dag = 388 m per dag<br/>
+388 meter x 365 dagen = 141620 m p/j = 141 km per jaar<br/>
+						<br/>
+In 23 dagen scroll je de mount Everest (8.8 km)
+</p>
+
+					<cite>Bron: https://www.fasthosts.co.uk/blog/app-scrolling-distance/ </cite>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
