@@ -517,7 +517,7 @@ For the 3-hour workshop, we will do this for you! That's because preparing your 
 
 *Note for workshop facilitators: go through these steps before the workshop to make sure it all works.*
 
-<strike>
+
 
 First we need to download some tools (more to follow along the way!)
 
@@ -862,7 +862,7 @@ It is possible to increase the upload capacity of the board so you can make slig
 
 [Dianaband's workshop documentation](https://github.com/applecargo/WifiZineThrowie/blob/master/docs/index.md#increasing-the-upload-capacity-of-the-board-optional)
 
-</strike>
+
 
 ## 7. Power up your module!
 
