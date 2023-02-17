@@ -669,7 +669,7 @@ Driver installation not required (included in kernel)
 - You should be able to just upload a sketch through the port `/dev/ttyUSB0`
   - it is possible that you need to change the permissions on this port by:
   ```sh
-sudo chmod a+rw /dev/ttyUSB0
+  sudo chmod a+rw /dev/ttyUSB0
   ```
 - [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
 - [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
