@@ -520,9 +520,8 @@ For the 3-hour workshop, we will do this for you! That's because preparing your 
 
 
 First we need to download some tools (more to follow along the way!)
-
 - [**Arduino Download**](https://www.arduino.cc/en/Main/Software)
-
+  - Please note: Download a version earlier than 2.0.0, as at the time of writing (February 2023), the plugin we use for SPIFFS image creation and upload is not compatible with 2.0.0+
 - **Installing Arduino**
 
   - [Windows](https://www.arduino.cc/en/Guide/Windows)
@@ -653,8 +652,11 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 	  
 * **If the compilation process ends abnormally, it will give an orange error**
-  
 * If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
+  * For debian linux: an error we experienced was the compilation missing the python3 library pyserial. This can be fixed by installing the package globally:
+  ```sh
+sudo apt install python3-serial
+  ```
     	  
 	 <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
 
@@ -663,9 +665,14 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 
 ### Linux 3.x.x & 4.x.x
 
- - Driver installation not required (included in kernel)
- 	- [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
-	- [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
+Driver installation not required (included in kernel)
+- You should be able to just upload a sketch through the port `/dev/ttyUSB0`
+  - it is possible that you need to change the permissions on this port by:
+  ```sh
+sudo chmod a+rw /dev/ttyUSB0
+  ```
+- [udev rules update required](https://docs.platformio.org/en/latest/faq.html#platformio-udev-rules)
+- [99-platformio-udev.rules](https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules)
 
 ### Linux 2.6.x
 [Linux 2.6.x](https://www.silabs.com/documents/login/software/Linux_2.6.x_VCP_Driver_Source.zip)
@@ -848,7 +855,16 @@ While 'Connecting ...' displays, [press and hold the' BOOT 'button on the ESP bo
 
   [![Screenshot of arduino window stating SPIFFS image uploaded](./images/arduino-wifizine-webpage-upload-done.png)](./images/arduino-wifizine-webpage-upload-done.png)
 
-  Success! You can now find your private internet spot. Open the network settings on your phone, and select your network. Your website should pop up automatically, but some patience might help :) 
+  Success! You can now find your private internet spot. Open the network settings on your phone, and select your network. Your website should pop up automatically, but some patience might help :)
+  
+####  Note for Debian/Ubuntu Linux users
+  
+  We ran into the issue that uploading would print the error message "**SPIFFS Upload failed!**" without further explanation. [Thankfully, this person ran into the same issue and fixed it by opening a terminal and running these commands](https://github.com/me-no-dev/arduino-esp32fs-plugin/issues/41):
+ ```sh
+sudo apt update
+sudo apt install python-is-python3
+```
+  
   
 ### Find your wifi network!
 
