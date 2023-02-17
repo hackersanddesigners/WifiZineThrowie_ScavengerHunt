@@ -655,7 +655,7 @@ Next, we need some libraries. They are in the .zip file you downloaded before, b
 * If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
   * For debian linux: an error we experienced was the compilation missing the python3 library pyserial. This can be fixed by installing the package globally:
   ```sh
-sudo apt install python3-serial
+  sudo apt install python3-serial
   ```
     	  
 	 <img src="./images/arduino-wifizine-compile-failed.png" alt="Arduino window with an orange error message" width="350"/>
