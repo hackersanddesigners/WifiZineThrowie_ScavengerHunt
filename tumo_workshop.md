@@ -9,16 +9,8 @@
 
 This document describes how to program small wireless device with an ESP32 chip to serve a tiny (<2MB) html websites via WiFi. The module is powered by a battery, which in turn is charged by a solar cell. The Wifi module "serves" a small website anytime a smartphone tries to log on to the network it is broadcasting (like an internet hotspot). It allows you to redesign the "log-in" screen that usually pops up when you try to log on to public WiFi networks, and hijack it to publish content you want to share WiFi, but only with your neighbours and local friends within a ~25 m range. 
 
-## Table of contents 
 
-
-* [Programming the WiFi modules](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#6-programming-the-wifi-modules-workshop-faciltators)
-* [Power up your module](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#7-power-up-your-module)
-* [Previous research this project builds upon](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#previous-research-this-project-builds-upon)
-* [Technical details](https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt#technical-details)
-
-
-### Funding
+### Support
 
 This project was kindly funded by [Fonds voor Cultuurparticipatie](https://cultuurparticipatie.nl/). 
 
@@ -100,8 +92,7 @@ First we need to download some tools (more to follow along the way!)
 
 ## Download the example files
 
-[ADD GOOGLE DRIVE LINK HERE!]()
-
+[https://bit.ly/hardware_drive](https://bit.ly/hardware_drive)
 
 ## Installing the ESPAsyncWebServer library
 
@@ -151,7 +142,7 @@ Copy these 2 renamed folders to ~/Documents/Arduino/libraries. It should look li
       * Flash Frequency : 80MHz
       * Flash Mode : QIO
       * Flash Size : 4MB (32Mb)
-      * **Partition Scheme : Default 4 MB with spiffs (1.2MB app, 1.5MB spiffs)**
+      * Partition Scheme : Default 4 MB with spiffs (1.2MB app, 1.5MB spiffs)
       * Core Debug Level : None
       * PSRAM : Disabled
 
