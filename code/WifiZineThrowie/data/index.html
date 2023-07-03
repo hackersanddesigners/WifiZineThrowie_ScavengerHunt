@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+    <title>Scrollllllllllll</title>
+    <style>
+        @font-face {
+            font-family: 'murmure';
+            src: url("le-murmure.woff") format('woff');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font: 90px 'murmure', sans-serif;
+        }
+
+        .block {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            min-height: 100vh;
+            background-position: top center;
+            background-size: cover;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+
+        .sticky-container {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 40vh;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 20px magenta;
+        }
+
+        cite {
+            word-break: break-all;
+        }
+
+        .last {
+            min-height: 100vh;
+        }
+
+        .last .sticky-container {
+            top: auto;
+            font-size: 40px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="block" style="background-image: url('1.gif'); background-color: yellow; background-blend-mode: darken;">
+        <div class="sticky-container">
+            <div class=sticky-content>
+                How many km per year do you travel with your thumb?
+            </div>
+        </div>
+    </div>
+    <div class="block" style="background-image: url('2.gif'); background-color: blue; background-blend-mode: difference;">
+        <div class="sticky-container">
+            <div class=sticky-content>
+                Scroll down.
+            </div>
+        </div>
+    </div>
+    <div class="block" style="background-image: url('3.gif');background-color: green; background-blend-mode: hard-light;">
+        <div class="sticky-container">
+            <div class=sticky-content>
+                More...
+            </div>
+        </div>
+    </div>
+    <div class="block" style="background-image: url('4.gif');background-color: cyan; background-blend-mode: darken;">
+        <div class="sticky-container">
+            <div class=sticky-content>
+                Almost...
+            </div>
+        </div>
+    </div>
+    <div class="block" style="background-image: url('5.gif');background-color: magenta; background-blend-mode: darken;">
+        <div class="sticky-container">
+            <div class=sticky-content>
+                Really almost...
+            </div>
+        </div>
+    </div>
+    <div class="block last" style="background-color:blue">
+        <div class="sticky-container">
+            <div class=sticky-content>
+                <h1>Find the answer in an envelope underneath on of the seats!</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

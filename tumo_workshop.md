@@ -107,7 +107,7 @@ Next, we need some libraries.
 	   - [![arduino-00004](./images/arduino-00004.png)](./images/arduino-00004.png)<br>*Screenshots showing folder name, one with -master at the and and one with that part removed.*
 
 
-## Installing the AsyntTCP library
+## Installing the AsyncTCP library
 
   - Click 'Clone or download' -> 'Download ZIP' on the github page for the [AsyncTCP library](https://github.com/me-no-dev/AsyncTCP).
 
@@ -167,11 +167,20 @@ Copy these 2 renamed folders to ~/Documents/Arduino/libraries. It should look li
 * **If the compilation process ends abnormally, it will give an orange error**
 
 * If necessary, troubleshoot using the error messages (if you don't get any, check that "verbose" is checked in settings of Arduino. 
-* For debian linux: an error we experienced the compilation was missing the python3 library pyserial. This can be fixed by installing the package globally. To do so, open a Terminal window, and execute this command.
+* **for Mac**: you might see an error concerning a missing path for python with the error error *exec: "python": executable file not found in \$PATH*. If this is the case, you check which python you have installed: ```python -version```. If you have python3, it cannot find the right version because version 2 is referred to as "python" and v3 is referred to as "python3". To fix this, you have to replace the reference by entering the following command into terminal and press enter:
+
+
+```
+sed -i -e 's/=python /=python3 /g' ~/Library/Arduino15/packages/esp32/hardware/esp32/*/platform.txt
+```
+
+* **For debian linux**: an error we experienced the compilation was missing the python3 library pyserial. This can be fixed by installing the package globally. To do so, open a Terminal window, and execute this command.
 
 ```
 sudo apt install python3-serial
 ```
+
+
     	  
 ## Installing a USB device driver to communicate with the ESP32 module (chip name: SiliconLabs CP2012)
 
