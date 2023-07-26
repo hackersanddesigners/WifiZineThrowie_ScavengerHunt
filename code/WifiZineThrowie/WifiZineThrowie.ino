@@ -152,7 +152,14 @@ void setup(){
     int dot = n.lastIndexOf(".");
     String ext = n.substring( dot );
     if ( ext == ".ssid" ) {
-      hostName = n.substring( 1, dot ); // first index is 1 to skip the "/"
+			// if the filename starts with "/", skip it.
+			if(n.substring( 0, 1 ) == "/") {
+				hostName = n.substring( 1, dot ); // first index is 2 to skip the "/"
+			} else {
+				hostName = n.substring( 0, dot );
+			}
+      Serial.print("Using hostname: ");
+      Serial.println(hostName);
     }
     file = root.openNextFile();
   }
